@@ -1,0 +1,2134 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"componen",
+				"componentDidMount	Life Cycle Method"
+			],
+			[
+				"mock",
+				"mock-alert"
+			],
+			[
+				"componentWill",
+				"componentWillUnmount	Life Cycle Method"
+			],
+			[
+				"shipping",
+				"shipping_exp"
+			],
+			[
+				"shippingK",
+				"shippingKeys"
+			],
+			[
+				"TCCN",
+				"TCCNavigationHeader"
+			],
+			[
+				"container",
+				"containerId"
+			],
+			[
+				"listen",
+				"listenTo"
+			],
+			[
+				"open",
+				"openOrderId"
+			],
+			[
+				"get",
+				"getInitialState"
+			],
+			[
+				"new",
+				"newParams"
+			],
+			[
+				"retu",
+				"returnOrder"
+			],
+			[
+				"trans",
+				"transitionRoute"
+			],
+			[
+				"load",
+				"loadOrders"
+			],
+			[
+				"q",
+				"queryIndex"
+			],
+			[
+				"path",
+				"pathname"
+			],
+			[
+				"order",
+				"orderId"
+			],
+			[
+				"onOrders",
+				"onOrdersLoaded"
+			],
+			[
+				"Checkout",
+				"CheckoutAddressEditShipping"
+			],
+			[
+				"entity",
+				"entityid"
+			],
+			[
+				"saved",
+				"savedOrders"
+			],
+			[
+				"orderhis",
+				"orderHistoryListIds"
+			],
+			[
+				"Test",
+				"TestData"
+			],
+			[
+				"climate",
+				"climate_userid__c"
+			],
+			[
+				"not",
+				"notASavedDealerOrder"
+			],
+			[
+				"Na",
+				"isNaN"
+			],
+			[
+				"opphas",
+				"oppHasRequiredFields"
+			],
+			[
+				"oppo",
+				"opportunity_origin__c"
+			],
+			[
+				"curr",
+				"current"
+			],
+			[
+				"AddressS",
+				"AddressStore"
+			],
+			[
+				"_update",
+				"_updateTax"
+			],
+			[
+				"has",
+				"hasShippableItems"
+			],
+			[
+				"shipp",
+				"shippingstate__c"
+			],
+			[
+				"bill",
+				"billingstate__c"
+			],
+			[
+				"pos",
+				"postalCode"
+			],
+			[
+				"colum",
+				"ColumnForm"
+			],
+			[
+				"payment",
+				"paymentData"
+			],
+			[
+				"valid",
+				"validateExpiry"
+			],
+			[
+				"paymen",
+				"paymentData"
+			],
+			[
+				"form",
+				"formatExpiry"
+			],
+			[
+				"padd",
+				"padding-right: "
+			],
+			[
+				"margin",
+				"margin-bottom: "
+			],
+			[
+				"exi",
+				"existingOrderLoaded"
+			],
+			[
+				"firs",
+				"firstKey"
+			],
+			[
+				"cart",
+				"cartData"
+			],
+			[
+				"produc",
+				"productKey"
+			],
+			[
+				"prod",
+				"productRestriction"
+			],
+			[
+				"response",
+				"responseJson"
+			],
+			[
+				"_onV",
+				"_onVersionsError"
+			],
+			[
+				"restri",
+				"restricted"
+			],
+			[
+				"restr",
+				"restricted"
+			],
+			[
+				"filte",
+				"filteredOrders"
+			],
+			[
+				"field",
+				"fieldData"
+			],
+			[
+				"requ",
+				"requestBody"
+			],
+			[
+				"para",
+				"paragraphs"
+			],
+			[
+				"dis",
+				"display: "
+			],
+			[
+				"product",
+				"productData"
+			],
+			[
+				"user",
+				"user_role"
+			],
+			[
+				"selec",
+				"selectedProductId"
+			],
+			[
+				"dismi",
+				"dismissable"
+			],
+			[
+				"sele",
+				"selectItem"
+			],
+			[
+				"require",
+				"requirement"
+			],
+			[
+				"marign",
+				"margin-bottom: "
+			],
+			[
+				"max",
+				"max-height: "
+			],
+			[
+				"filterd",
+				"filteredIndicies"
+			],
+			[
+				"fuse",
+				"fuseList"
+			],
+			[
+				"filter",
+				"filteredIndicies"
+			],
+			[
+				"coll",
+				"collapse"
+			],
+			[
+				"fus",
+				"fuseList"
+			],
+			[
+				"prop",
+				"props"
+			],
+			[
+				"back",
+				"background-color: "
+			],
+			[
+				"test",
+				"testElement"
+			],
+			[
+				"Package",
+				"Package_Components__c"
+			],
+			[
+				"package",
+				"packageid"
+			],
+			[
+				"render",
+				"renderedElement"
+			],
+			[
+				"moc",
+				"mockItemId"
+			],
+			[
+				"cli",
+				"climatePro"
+			],
+			[
+				"nonPackge",
+				"nonPackagedItems"
+			],
+			[
+				"pack",
+				"packageOlis"
+			],
+			[
+				"opportu",
+				"opportunitylineitem"
+			],
+			[
+				"opportunity",
+				"opportunitylineitem"
+			],
+			[
+				"packa",
+				"packageProduct"
+			],
+			[
+				"toggle",
+				"toggleProduct"
+			],
+			[
+				"produ",
+				"productCodes"
+			],
+			[
+				"_getPac",
+				"_getPackageComponents"
+			],
+			[
+				"toggl",
+				"toggleTier"
+			],
+			[
+				"remove",
+				"onRemoveEntityProduct"
+			],
+			[
+				"reom",
+				"removeProduct"
+			],
+			[
+				"togg",
+				"toggleProduct"
+			],
+			[
+				"starterPAckage",
+				"hasStarterPackage"
+			],
+			[
+				"sear",
+				"searchEntity"
+			],
+			[
+				"selected",
+				"selectedType"
+			],
+			[
+				"payme",
+				"paymentData"
+			],
+			[
+				"opp",
+				"opportunity_origin__c"
+			],
+			[
+				"tar",
+				"targetComponent"
+			],
+			[
+				"even",
+				"eventsToWatch"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"promi",
+				"promises"
+			],
+			[
+				"event",
+				"eventFunction"
+			],
+			[
+				"curre",
+				"currentOperationId"
+			],
+			[
+				"operations",
+				"operationsLoaded"
+			],
+			[
+				"Software",
+				"SoftwarePromotion"
+			],
+			[
+				"current",
+				"currentOrder"
+			],
+			[
+				"_emp",
+				"_getEmptyOrder"
+			],
+			[
+				"_get",
+				"_getNewOrder"
+			],
+			[
+				"trigger",
+				"triggerUpdateAddress"
+			],
+			[
+				"_up",
+				"_updateAdjustedTotal"
+			],
+			[
+				"recalul",
+				"recalculateAdjustedTotal"
+			],
+			[
+				"Au",
+				"AuthException"
+			],
+			[
+				"where",
+				"WHERE"
+			],
+			[
+				"fro",
+				"FROM"
+			],
+			[
+				"operation",
+				"operationId"
+			],
+			[
+				"is",
+				"isEmpty"
+			],
+			[
+				"grower",
+				"growerContacts"
+			],
+			[
+				"Climate",
+				"Climate_UserId__c"
+			],
+			[
+				"oper",
+				"operationAccounts"
+			],
+			[
+				"Acc",
+				"AccountId"
+			],
+			[
+				"Agent",
+				"Agent_ID__c"
+			],
+			[
+				"Operation",
+				"OperationOwnerId__c"
+			],
+			[
+				"Clima",
+				"Climate_UserId__c"
+			],
+			[
+				"margi",
+				"margin-top: "
+			],
+			[
+				"marg",
+				"margin-top: "
+			],
+			[
+				"editing",
+				"editingKey"
+			],
+			[
+				"add",
+				"addressIsFilledOut"
+			],
+			[
+				"animat",
+				"animation-duration: "
+			],
+			[
+				"scale",
+				"scaleZ()"
+			],
+			[
+				"sca",
+				"scaleY()"
+			],
+			[
+				"opa",
+				"opacity	opacity()"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 165.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"six",
+				"Set Syntax: Six"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"dep",
+				"MavensMate: Deploy To Server..."
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"jacv",
+				"Format: Javascript"
+			],
+			[
+				"titl",
+				"Convert Case: Title Case"
+			],
+			[
+				"title",
+				"Convert Case: Title Case"
+			],
+			[
+				"refres",
+				"MavensMate: Refresh Current File From Server"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"depl",
+				"MavensMate: Deploy To Server..."
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"REMOVE PAC",
+				"Package Control: Remove Package"
+			],
+			[
+				"REMOVE",
+				"Package Control: Remove Repository"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"deplo",
+				"MavensMate: Deploy To Server..."
+			],
+			[
+				"DEP",
+				"MavensMate: Deploy Resource Bundle..."
+			],
+			[
+				"dpe",
+				"MavensMate: Deploy Resource Bundle..."
+			],
+			[
+				"html pre",
+				"HTMLPrettify"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"jso",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"foram",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"dpel",
+				"MavensMate: Deploy Resource Bundle..."
+			],
+			[
+				"deploy",
+				"MavensMate: Deploy Resource Bundle..."
+			],
+			[
+				"Lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"removepac",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"de",
+				"MavensMate: Deploy Resource Bundle..."
+			],
+			[
+				"refresh",
+				"MavensMate: Refresh Current File From Server"
+			],
+			[
+				"fo",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"refre",
+				"MavensMate: Refresh Current File From Server"
+			],
+			[
+				"incre",
+				"Increment Selection"
+			],
+			[
+				"depo",
+				"MavensMate: Deploy Resource Bundle..."
+			],
+			[
+				"fomr",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"javascrip",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"for",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"synjson",
+				"Set Syntax: JSON"
+			],
+			[
+				"synjs",
+				"Set Syntax: JSON"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"otc",
+				"Convert Case: Title Case"
+			],
+			[
+				"synta",
+				"Set Syntax: JSON"
+			],
+			[
+				"syntax",
+				"Set Syntax: JSON"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"addre",
+				"Package Control: Add Repository"
+			],
+			[
+				"add",
+				"Package Control: Add Repository"
+			],
+			[
+				"remo",
+				"Package Control: Remove Repository"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"reposito",
+				"Package Control: Remove Repository"
+			],
+			[
+				"addrep",
+				"Package Control: Add Repository"
+			],
+			[
+				"removerep",
+				"Package Control: Remove Repository"
+			],
+			[
+				"packag",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"disco",
+				"Package Control: Discover Packages"
+			],
+			[
+				"packagecontrol",
+				"Package Control: List Packages"
+			],
+			[
+				"f",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"setsynjson",
+				"Set Syntax: JSON"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"json form",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"xml",
+				"Indent XML"
+			],
+			[
+				"coffee",
+				"Set Syntax: Gruntfile Coffee"
+			],
+			[
+				"fopr",
+				"Format: Javascript"
+			],
+			[
+				"htmlp",
+				"HTMLPrettify"
+			],
+			[
+				"debug",
+				"MavensMate: New Debug Log..."
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"increme",
+				"Increment Selection"
+			],
+			[
+				"apex",
+				"MavensMate: New Apex Class"
+			],
+			[
+				"formjav",
+				"Format: Javascript"
+			],
+			[
+				"inc",
+				"Increment Selection"
+			],
+			[
+				"format",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"default",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"bundle",
+				"MavensMate: Deploy Resource Bundle..."
+			],
+			[
+				"html5",
+				"Snippet: Simple HTML5 Boilerplate"
+			],
+			[
+				"resou",
+				"MavensMate: Deploy Resource Bundle..."
+			],
+			[
+				"visual",
+				"Set Syntax: Visualforce"
+			],
+			[
+				"resource",
+				"MavensMate: Create Resource Bundle..."
+			],
+			[
+				"case",
+				"Convert Case: Upper Case"
+			],
+			[
+				"snipp",
+				"Snippet: html"
+			],
+			[
+				"sub",
+				"Preferences: SublimeLinter Settings – Default"
+			],
+			[
+				"sublime",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"show",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"rw",
+				"Word Wrap: Toggle"
+			],
+			[
+				"block",
+				"Toggle Block Comment"
+			],
+			[
+				"bloc",
+				"Toggle Block Comment"
+			],
+			[
+				"blo",
+				"Toggle Block Comment"
+			],
+			[
+				"delete",
+				"MavensMate: Delete File From Server..."
+			],
+			[
+				"svn",
+				"SVN: Checkout…"
+			],
+			[
+				"isntal",
+				"Package Control: Install Package"
+			],
+			[
+				"s",
+				"SVN: Checkout…"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"ope",
+				"MavensMate: Open Project..."
+			],
+			[
+				"reposi",
+				"Package Control: Add Repository"
+			],
+			[
+				"remv",
+				"Package Control: Remove Package"
+			],
+			[
+				"updat",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"remvoe",
+				"Package Control: Remove Package"
+			],
+			[
+				"prefix",
+				"Preferences: Prefixr Key Bindings – Default"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Preferences: Csslisible Key Bindings – User"
+			],
+			[
+				"cssli",
+				"Preferences: Csslisible Key Bindings – User"
+			],
+			[
+				"csslis",
+				"Preferences: Csslisible Key Bindings – Default"
+			],
+			[
+				"tidy",
+				"TidyHTML"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"action",
+				"Set Syntax: ActionScript 3"
+			],
+			[
+				"as3",
+				"Set Syntax: ActionScript 3"
+			],
+			[
+				"web",
+				"Web Inspector"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"scss",
+				"Set Syntax: CSS"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"conf",
+				"Set Syntax: Apache Conf"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 583.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"htmlprettify"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/grant/Git/thumper"
+	],
+	"file_history":
+	[
+		"/Users/grant/Desktop/themeforest-15228250-startui-premium-bootstrap-4-admin-dashboard-template/src/styles/main.less",
+		"/Users/grant/Desktop/themeforest-15228250-startui-premium-bootstrap-4-admin-dashboard-template/src/styles/partials/grids.less",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/Checkout/Checkout.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/routes.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/GrowerConfirmation/GrowerConfirmation.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/utils/TestData.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/utils/RouterTestUtils.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/OrderHistoryContainer/OrderHistoryContainer.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/OrderHistory/OrderHistory-dealer-for-grower.test.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/GrowerConfirmationContainer/GrowerConfirmationContainer.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/OrderHistoryList/OrderHistoryList.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/OrderHistory/OrderHistory.test.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/CheckoutPayment/CheckoutPayment.test.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/OrderTotals/OrderTotals.test.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/utils/LocalUtils.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/reducers/user.reducer.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/CheckoutTaxes/CheckoutTaxes.test.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/AppManager.js",
+		"/Users/grant/MavensMate/tccsf/OTC/test-results/Chrome_49.0.2623_(Mac_OS_X_10.11.4)/test-results.xml",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/OrderHistory/OrderHistory.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/OrderTotals/OrderTotals.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/CheckoutTaxes/CheckoutTaxes.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/actions/user.actions.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/CheckoutAddressSummaryShipping/CheckoutAddressSummaryShipping.test.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/CheckoutContainer/CheckoutContainer.js",
+		"/Users/grant/MavensMate/tccsf/OTC/test-results/PhantomJS_2.1.1_(Mac_OS_X_0.0.0)/test-results.xml",
+		"/Users/grant/MavensMate/tccsf/OTC/app/stores/FieldsStore.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/stores/OrdersStore.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/CheckoutPayment/CheckoutPayment.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/Confirmation/Confirmation.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/ConfirmationContainer/ConfirmationContainer.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/stores/UserStore.js",
+		"/Users/grant/MavensMate/tccsf/resource-bundles/OTC.resource/main.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/store.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/stores/CartStore.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/OrderSummary/OrderSummary.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/CheckoutSummary/CheckoutSummary.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/Footer/Footer.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/utils/AnalyticsUtils.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/stores/PaymentStore.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/stores/ProductStore.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/mixins/RedirectOrders.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/actions/GlobalActions.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/utils/ApiUtils.js",
+		"/Users/grant/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/Alert/Alert.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/FooterContainer/FooterContainer.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/AlertsContainer/AlertsContainer.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/stores/CheckoutStore.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/CheckoutPromotion/CheckoutPromotion.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/Alerts/Alerts.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/actions/app.actions.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/main.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/stores/ProductSelectionStore.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/ProductList/ProductList.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/Alerts/Alerts.test.js",
+		"/Users/grant/MavensMate/tccsf/OTC/webpack.config.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/Alert/Alert.test.js",
+		"/Users/grant/MavensMate/tccsf/OTC/package.json",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/CheckoutAddress/CheckoutAddress.test.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/reducers/alerts.reducer.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/CheckoutAddressSummaryShipping/CheckoutAddressSummaryShipping.js",
+		"/Users/grant/MavensMate/tccsf/OTC/karma.conf.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/ColumnForm/ColumnForm.test.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/ColumnForm/ColumnForm.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/CheckoutAddressEditBilling/CheckoutAddressEditBilling.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/Price/Price.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/ShippingOptions/ShippingOptions.js",
+		"/Users/grant/MavensMate/tccsf/src/classes/OTCController.cls",
+		"/Users/grant/MavensMate/tccsf/OTC/app/reducers/alerts.reducer.test.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/CheckoutSummary/CheckoutSummary.test.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/actions/alerts.actions.js",
+		"/Users/grant/MavensMate/tccsf/OTC/gulpfile.local.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/CheckoutPromotion/CheckoutPromotion.test.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/actions/alerts.actions.test.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/utils/QuailUtils.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/utils/EvaUtils.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/stores/PromotionStore.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/utils/AssetUtils.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/stores/AlertStore.js",
+		"/private/var/folders/jw/nvz2v68x7h1cddh20qh9jp000000gn/T/TemporaryItems/(A Document Being Saved By Illustrator CC)/ai14616514726.tmp/ai14616514726.txt",
+		"/Users/grant/MavensMate/tccsf/OTC/gulpfile.prod.js",
+		"/Users/grant/MavensMate/tccsf/OTC/gulpfile.sandbox.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/stores/index.js",
+		"/Users/grant/MavensMate/tccsf/OTC/.eslintrc.json",
+		"/Users/grant/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/grant/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/SoftwarePromotion/SoftwarePromotion.test.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/SoftwarePromotion/SoftwarePromotion.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/OrderFilter/OrderFilter.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/FieldThumbnail/FieldThumbnail.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/FieldThumbnail/FieldThumbnail.test.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/FieldFilter/FieldFilter.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/FormLabel/FormLabel.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/Find Results",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/FormPicklist/FormPicklist.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/ProductSelection/ProductSelection.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/OrderDetail/OrderDetail.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/utils/SortUtils.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/UnhandledRoute/UnhandledRoute.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/utils/ClimateScriptUtils.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/ErrorRoute/ErrorRoute.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/utils/RouteUtils.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/mixins/Transition.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/GrowerHeader/GrowerHeader.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/HardwareHero/HardwareHero.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/HardwareDrive/HardwareDrive.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/HardwareCable/HardwareCable.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/HardwareMounting/HardwareMounting.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/CheckoutAddressSummaryBilling/CheckoutAddressSummaryBilling.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/CheckoutAddressEditShipping/CheckoutAddressEditShipping.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/stores/OrderHistoryStore.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/FormInputCheckbox/FormInputCheckbox.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/FieldList/FieldList.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/FieldList/FieldList.test.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/stores/AddressStore.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/Toggle/Toggle.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/ProductListRowFieldViewStarter/ProductListRowFieldViewStarter.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/ProductListRowWholeFarm/ProductListRowWholeFarm.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/FormInputRadio/FormInputRadio.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/FormInputText/FormInputText.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/FieldListCellPro/FieldListCellPro.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/FormInputSelect/FormInputSelect.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/OrderHistoryListHeader/OrderHistoryListHeader.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/FieldListHeader/FieldListHeader.js",
+		"/Users/grant/MavensMate/tccsf/OTC/app/components/DriveCompatibilityModal/DriveCompatibilityModal.js",
+		"/Users/grant/Downloads/keynote_bundle_v4.4/Keynote Bundle V4.4/Keynotopia Readme.txt",
+		"/Users/grant/MavensMate/tccsf/OTC/app/env.js"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"",
+			"*.test.js",
+			"!*.test.js",
+			"",
+			"*Store.js",
+			"",
+			"*.test.js",
+			"-*.test.js",
+			"",
+			"*.test.js",
+			"*.test",
+			"",
+			"/Users/grant/MavensMate/tccsf/OTC,-node_modules/",
+			"/Users/grant/MavensMate/tccsf/OTC,-node_modules",
+			"/Users/grant/MavensMate/tccsf/OTC,-node-modules",
+			"/Users/grant/MavensMate/tccsf/OTC",
+			"",
+			"/Users/grant/MavensMate/tccsf/OTC",
+			"",
+			"*.test.js",
+			"",
+			"*.test.js",
+			"",
+			"/Users/grant/MavensMate/tccsf/OTC/node_modules/bootstrap-sass",
+			"",
+			"/Users/grant/MavensMate/tccsf/OTC/node_modules/bootstrap-sass",
+			"",
+			".sub-card",
+			"/Users/grant/MavensMate/tccsf/OTC/node_modules/bootstrap-sass",
+			"",
+			"/Users/grant/MavensMate/tccsf/OTC/node_modules/bootstrap-sass",
+			"OTC/node_modules/bootstrap-sass",
+			"OTC/node_modules",
+			"",
+			"*.css",
+			"-*.js",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"_indexBy",
+			"as _each",
+			"as _indexBy",
+			"indexBy as _indexBy",
+			"_filter",
+			"_indexBy",
+			"_each",
+			"RouterTestUtils",
+			"GrowerConfirmation",
+			"Checkout",
+			"user",
+			"UserStore",
+			"user.contact.restrict_hardware_sales__c.split",
+			"Dealer viewing grower",
+			"grower columns",
+			".user",
+			"105808\":",
+			"105808",
+			"user",
+			"this.props.user.taxId",
+			"this.props.user.isDealer",
+			"_addUserDataToOpp",
+			"this.orderData.current =",
+			"confirmation",
+			"Confirmation",
+			"mapStateToProps",
+			"setUserContact",
+			"_addUserDataToOpp",
+			"onaccount",
+			"{\n      type: USER_SET_CONTACT_ACCOUNT,\n      contact\n    }",
+			"GlobalActions.accountAssignedComplete",
+			"onAccountAssignedComplete",
+			"_addUserDataToOpp",
+			"this.orderData.current",
+			"state.user",
+			"state.user.climate_userid__c",
+			"user",
+			"<OrderHistoryList",
+			"OrderHistoryList",
+			"state.user.user",
+			"USER_LOADED",
+			"_userLoaded",
+			"USER_LOADED",
+			"loading",
+			"user",
+			"getState().user",
+			"GlobalActions.cartLoaded",
+			"this.orderData.current",
+			"this.user.climate_userid__c",
+			"user.hasStoredCC();",
+			"Checkout",
+			"OrderHistory",
+			"<OrderHistory",
+			"<OrderHistoryList",
+			"userData",
+			"UserStore",
+			"UserStore.user",
+			"user",
+			"UserStore.user",
+			"UserStore",
+			"user.",
+			"userdata",
+			"user",
+			"<CheckoutSummary",
+			"<OrderTotals",
+			"UserStore",
+			"this.state.userData",
+			"Checkout",
+			"user: state.user",
+			"UserStore",
+			"UserStore.user",
+			"UserStore",
+			"this.state.user",
+			"UserStore",
+			"taxes",
+			"UserStore",
+			"this.state.userData",
+			"hasStoredCC",
+			"this.state.userData",
+			"userData",
+			"user",
+			"checkoutpayment",
+			".haspaymenttoken",
+			"haspaymenttoken",
+			"hasStoredCC",
+			"UserStore.hasStoredCC",
+			"UserStore",
+			"var ",
+			"UserStore",
+			"UserStore.user",
+			"UserStore",
+			"store.getState().user",
+			"UserStore.user",
+			"UserStore",
+			"var UserStore",
+			"onLoadOperations",
+			"GlobalActions.loadOperations",
+			"GlobalActions.userLoaded",
+			"GlobalActions.cartLoaded",
+			"onCartLoaded",
+			"this.orderData.current =",
+			"onSetCurrentOrder",
+			"GlobalActions.setCurrentOrder",
+			"onSetCurrentOrder",
+			"this.orderData.current =",
+			"this.orderData.current",
+			"onAccountAssignedComplete",
+			"component",
+			"\ncomponent",
+			"component",
+			"FooterContainer",
+			"Checkout",
+			"Footer",
+			"userData",
+			"Alerts",
+			"AlertsContainer",
+			"this.state.userData",
+			"user.taxId",
+			"GlobalActions.changeTaxId",
+			"USER_SET_CONTACT_ACCOUNT",
+			"onAccountAssignedComplete",
+			"GlobalActions.accountAssignedComplete",
+			"operation",
+			"contact",
+			"newContact",
+			"newState",
+			"accountId",
+			"LOAD_USER"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"children: React.PropTypes.node",
+			"OrdersStore.orderData.current",
+			"RouterTestUtils.mockOrderById('606bxxcx'",
+			"_initialState",
+			" = _clonedeep(_intialState);",
+			"return this.;",
+			"return _clonedeep(this.);",
+			": _clonedeep(_initialState),\n	init",
+			"RouteUtils.hashPath",
+			"Utils.getHashQuery();",
+			"this.props.params",
+			"",
+			"var ReactRouter = require('react-router');",
+			"",
+			"React = require('react",
+			"var React = require('react",
+			"var TestUtils = require('react-addons-test-utils')",
+			"",
+			"TestData.orders['105810'][1]",
+			"var order = TestData.orders['105810']",
+			"var order = TestData['105810'].orders",
+			"'/nooperation/",
+			"",
+			"if(!this.state.orderData.current || !this.state.orderData.current.opportunity.id)",
+			"product-list-item",
+			"ProductList",
+			"FormPicklist",
+			"iPad 3",
+			"iPad Air",
+			"showValidation",
+			"FieldListCellPro",
+			"FieldListCellFieldscripts",
+			"farmid",
+			"\"version\": 1",
+			"event);",
+			";",
+			"	",
+			"Jukebox.playSfx(",
+			"1024px",
+			"760px",
+			",\n",
+			"goal.data"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 87.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.MavensMate-OutputPanel":
+	{
+		"height": 225.0
+	},
+	"output.find_results":
+	{
+		"height": 98.0
+	},
+	"pinned_build_system": "",
+	"project": "thumper.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"gul",
+				"gulpfile.js"
+			],
+			[
+				"orderhis",
+				"OTC/app/components/OrderHistory/OrderHistory.js"
+			],
+			[
+				"route",
+				"OTC/app/routes.js"
+			],
+			[
+				"check",
+				"OTC/app/components/Checkout/Checkout.js"
+			],
+			[
+				"orderhiscon",
+				"OTC/app/components/OrderHistoryContainer/OrderHistoryContainer.js"
+			],
+			[
+				"router",
+				"OTC/app/utils/RouterTestUtils.js"
+			],
+			[
+				"ordhiscon",
+				"OTC/app/components/OrderHistoryContainer/OrderHistoryContainer.js"
+			],
+			[
+				"orderhisdea",
+				"OTC/app/components/OrderHistory/OrderHistory-dealer-for-grower.test.js"
+			],
+			[
+				"contain",
+				"OTC/app/components/CheckoutContainer/CheckoutContainer.js"
+			],
+			[
+				"growerconfirmation",
+				"OTC/app/components/GrowerConfirmation/GrowerConfirmation.js"
+			],
+			[
+				"checkouttaxes",
+				"OTC/app/components/CheckoutTaxes/CheckoutTaxes.test.js"
+			],
+			[
+				"appma",
+				"OTC/app/components/AppManager.js"
+			],
+			[
+				"orderhistorytes",
+				"OTC/app/components/OrderHistory/OrderHistory.test.js"
+			],
+			[
+				"orderhistory/te",
+				"OTC/app/components/OrderHistory/OrderHistory.test.js"
+			],
+			[
+				"orderhistory",
+				"OTC/app/components/OrderHistory/OrderHistory.js"
+			],
+			[
+				"checkoutpayment.test.js",
+				"OTC/app/components/CheckoutPayment/CheckoutPayment.test.js"
+			],
+			[
+				"local",
+				"OTC/app/utils/LocalUtils.js"
+			],
+			[
+				"userre",
+				"OTC/app/reducers/user.reducer.js"
+			],
+			[
+				"orderhistes",
+				"OTC/app/components/OrderHistory/OrderHistory.test.js"
+			],
+			[
+				"tesda",
+				"OTC/app/utils/TestData.js"
+			],
+			[
+				"ordertot",
+				"OTC/app/components/OrderTotals/OrderTotals.js"
+			],
+			[
+				"alerttes",
+				"OTC/app/components/Alerts/Alerts.test.js"
+			],
+			[
+				"checkt",
+				"OTC/app/components/CheckoutTaxes/CheckoutTaxes.test.js"
+			],
+			[
+				"checkcon",
+				"OTC/app/components/CheckoutContainer/CheckoutContainer.js"
+			],
+			[
+				"ordertota",
+				"OTC/app/components/OrderTotals/OrderTotals.test.js"
+			],
+			[
+				"checkpa",
+				"OTC/app/components/CheckoutPayment/CheckoutPayment.js"
+			],
+			[
+				"checkoutaddresssummaryshipping",
+				"OTC/app/components/CheckoutAddressSummaryShipping/CheckoutAddressSummaryShipping.test.js"
+			],
+			[
+				"checkoutpayment",
+				"OTC/app/components/CheckoutPayment/CheckoutPayment.test.js"
+			],
+			[
+				"usera",
+				"OTC/app/actions/user.actions.js"
+			],
+			[
+				"orderhistory.js",
+				"OTC/app/components/OrderHistory/OrderHistory.js"
+			],
+			[
+				"confirmationcon",
+				"OTC/app/components/ConfirmationContainer/ConfirmationContainer.js"
+			],
+			[
+				"confirmation",
+				"OTC/app/components/Confirmation/Confirmation.js"
+			],
+			[
+				"store",
+				"OTC/app/store.js"
+			],
+			[
+				"app",
+				"OTC/app/components/AppManager.js"
+			],
+			[
+				"ordersstor",
+				"OTC/app/stores/OrdersStore.js"
+			],
+			[
+				"orderhistorylist",
+				"OTC/app/components/OrderHistoryList/OrderHistoryList.js"
+			],
+			[
+				"container",
+				"OTC/app/components/ConfirmationContainer/ConfirmationContainer.js"
+			],
+			[
+				"contianer",
+				"OTC/app/components/CheckoutContainer/CheckoutContainer.js"
+			],
+			[
+				"userac",
+				"OTC/app/actions/user.actions.js"
+			],
+			[
+				"orderstore",
+				"OTC/app/stores/OrdersStore.js"
+			],
+			[
+				"productso",
+				"OTC/app/stores/ProductStore.js"
+			],
+			[
+				"user",
+				"OTC/app/stores/UserStore.js"
+			],
+			[
+				"global",
+				"OTC/app/actions/GlobalActions.js"
+			],
+			[
+				"ordersto",
+				"OTC/app/stores/OrdersStore.js"
+			],
+			[
+				"checkoutcontainer",
+				"OTC/app/components/CheckoutContainer/CheckoutContainer.js"
+			],
+			[
+				"checkout",
+				"OTC/app/components/Checkout/Checkout.js"
+			],
+			[
+				"aler",
+				"OTC/app/components/Alert/Alert.js"
+			],
+			[
+				"footer",
+				"OTC/app/components/Footer/Footer.js"
+			],
+			[
+				"checkstore",
+				"OTC/app/stores/CheckoutStore.js"
+			],
+			[
+				"apiutils",
+				"OTC/app/utils/ApiUtils.js"
+			],
+			[
+				"glo",
+				"OTC/app/actions/GlobalActions.js"
+			],
+			[
+				"api",
+				"OTC/app/utils/ApiUtils.js"
+			],
+			[
+				"alerts",
+				"OTC/app/components/Alerts/Alerts.js"
+			],
+			[
+				"main",
+				"OTC/app/main.js"
+			],
+			[
+				"mai",
+				"OTC/app/main.js"
+			],
+			[
+				"ordersstore",
+				"OTC/app/stores/OrdersStore.js"
+			],
+			[
+				"alertcon",
+				"OTC/app/components/AlertsContainer/AlertsContainer.js"
+			],
+			[
+				"prodlis",
+				"OTC/app/components/ProductList/ProductList.js"
+			],
+			[
+				"carts",
+				"OTC/app/stores/CartStore.js"
+			],
+			[
+				"fieldstore",
+				"OTC/app/stores/FieldsStore.js"
+			],
+			[
+				"cart",
+				"OTC/app/stores/CartStore.js"
+			],
+			[
+				"payment",
+				"OTC/app/stores/PaymentStore.js"
+			],
+			[
+				"checkoutstore",
+				"OTC/app/stores/CheckoutStore.js"
+			],
+			[
+				"productselectionstore",
+				"OTC/app/stores/ProductSelectionStore.js"
+			],
+			[
+				"webpac",
+				"OTC/webpack.config.js"
+			],
+			[
+				"alert",
+				"OTC/app/components/Alert/Alert.js"
+			],
+			[
+				"alercont",
+				"OTC/app/components/AlertsContainer/AlertsContainer.js"
+			],
+			[
+				"packa",
+				"OTC/package.json"
+			],
+			[
+				"we",
+				"OTC/webpack.config.js"
+			],
+			[
+				"karam",
+				"OTC/karma.conf.js"
+			],
+			[
+				"columnform",
+				"OTC/app/components/ColumnForm/ColumnForm.js"
+			],
+			[
+				"checkoutaddress",
+				"OTC/app/components/CheckoutAddressEditBilling/CheckoutAddressEditBilling.js"
+			],
+			[
+				"alertsre",
+				"OTC/app/reducers/alerts.reducer.js"
+			],
+			[
+				"alerre",
+				"OTC/app/reducers/alerts.reducer.js"
+			],
+			[
+				"price",
+				"OTC/app/components/Price/Price.js"
+			],
+			[
+				"appmana",
+				"OTC/app/components/AppManager.js"
+			],
+			[
+				"productsto",
+				"OTC/app/stores/ProductStore.js"
+			],
+			[
+				"testda",
+				"OTC/app/utils/TestData.js"
+			],
+			[
+				"otccon",
+				"src/classes/OTCController.cls"
+			],
+			[
+				"shipping",
+				"OTC/app/components/ShippingOptions/ShippingOptions.js"
+			],
+			[
+				"redu",
+				"OTC/app/reducers/alerts.reducer.js"
+			],
+			[
+				"alerredu",
+				"OTC/app/reducers/alerts.reducer.js"
+			],
+			[
+				"actions",
+				"OTC/app/actions/alerts.actions.js"
+			],
+			[
+				"checksummte",
+				"OTC/app/components/CheckoutSummary/CheckoutSummary.test.js"
+			],
+			[
+				"checkprotes",
+				"OTC/app/components/CheckoutPromotion/CheckoutPromotion.test.js"
+			],
+			[
+				"alerttest",
+				"OTC/app/components/Alerts/Alerts.test.js"
+			],
+			[
+				"alertre",
+				"OTC/app/reducers/alerts.reducer.js"
+			],
+			[
+				"alertac",
+				"OTC/app/actions/alerts.actions.js"
+			],
+			[
+				"gulp",
+				"OTC/gulpfile.local.js"
+			],
+			[
+				"ordersstore.js",
+				"OTC/app/stores/OrdersStore.js"
+			],
+			[
+				"paymentstore.js",
+				"OTC/app/stores/PaymentStore.js"
+			],
+			[
+				"promotionstore.js",
+				"OTC/app/stores/PromotionStore.js"
+			],
+			[
+				"alertstes",
+				"OTC/app/components/Alerts/Alerts.test.js"
+			],
+			[
+				"routertes",
+				"OTC/app/utils/RouterTestUtils.js"
+			],
+			[
+				"checkpay",
+				"OTC/app/components/CheckoutPayment/CheckoutPayment.js"
+			],
+			[
+				"checkoutpay",
+				"OTC/app/components/CheckoutPayment/CheckoutPayment.js"
+			],
+			[
+				"checkpayte",
+				"OTC/app/components/CheckoutPayment/CheckoutPayment.test.js"
+			],
+			[
+				"pack",
+				"OTC/package.json"
+			],
+			[
+				"promotion",
+				"OTC/app/stores/PromotionStore.js"
+			],
+			[
+				"gulplo",
+				"OTC/gulpfile.local.js"
+			],
+			[
+				"chectax",
+				"OTC/app/components/CheckoutTaxes/CheckoutTaxes.js"
+			],
+			[
+				"checktax",
+				"OTC/app/components/CheckoutTaxes/CheckoutTaxes.test.js"
+			],
+			[
+				"gulpdas",
+				"OTC/gulpfile.sandbox.js"
+			],
+			[
+				"web",
+				"OTC/webpack.config.js"
+			],
+			[
+				"alersto",
+				"OTC/app/stores/AlertStore.js"
+			],
+			[
+				"rc.json",
+				"OTC/.eslintrc.json"
+			],
+			[
+				"softwarepr",
+				"OTC/app/components/SoftwarePromotion/SoftwarePromotion.test.js"
+			],
+			[
+				"softwarepromotion",
+				"OTC/app/components/SoftwarePromotion/SoftwarePromotion.js"
+			],
+			[
+				"fieldthu",
+				"OTC/app/components/FieldThumbnail/FieldThumbnail.js"
+			],
+			[
+				"gulpro",
+				"OTC/gulpfile.prod.js"
+			],
+			[
+				"karma.conf.js",
+				"OTC/karma.conf.js"
+			],
+			[
+				"routertestutils.js",
+				"OTC/app/utils/RouterTestUtils.js"
+			],
+			[
+				"webp",
+				"OTC/webpack.config.js"
+			],
+			[
+				"fieldfilter",
+				"OTC/app/components/FieldFilter/FieldFilter.js"
+			],
+			[
+				"formpicklist",
+				"OTC/app/components/FormPicklist/FormPicklist.js"
+			],
+			[
+				"testdata.js",
+				"OTC/app/utils/TestData.js"
+			],
+			[
+				"sortutils.js",
+				"OTC/app/utils/SortUtils.js"
+			],
+			[
+				"productselection.js",
+				"OTC/app/components/ProductSelection/ProductSelection.js"
+			],
+			[
+				"orderde",
+				"OTC/app/components/OrderDetail/OrderDetail.js"
+			],
+			[
+				"unhan",
+				"OTC/app/components/UnhandledRoute/UnhandledRoute.js"
+			],
+			[
+				"orderdetail.js",
+				"OTC/app/components/OrderDetail/OrderDetail.js"
+			],
+			[
+				"grower",
+				"OTC/app/components/GrowerConfirmation/GrowerConfirmation.js"
+			],
+			[
+				"errorroute",
+				"OTC/app/components/ErrorRoute/ErrorRoute.js"
+			],
+			[
+				"routeut",
+				"OTC/app/utils/RouteUtils.js"
+			],
+			[
+				"climatesc",
+				"OTC/app/utils/ClimateScriptUtils.js"
+			],
+			[
+				"usersto",
+				"OTC/app/stores/UserStore.js"
+			],
+			[
+				"routeutils.js",
+				"OTC/app/utils/RouteUtils.js"
+			],
+			[
+				"alerts.js",
+				"OTC/app/components/Alerts/Alerts.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "god",
+		"selected_items":
+		[
+			[
+				"god",
+				"~/Git/GodHatesCharades/GodHatesCharades.sublime-project"
+			],
+			[
+				"",
+				"~/Git/GodHatesCharades/GodHatesCharades.sublime-project"
+			],
+			[
+				"eng",
+				"~/Git/engager-app/engager-app.sublime-project"
+			],
+			[
+				"en",
+				"~/Git/engager-app/engager-app.sublime-project"
+			],
+			[
+				"eg",
+				"~/Git/engager-app/engager-app.sublime-project"
+			],
+			[
+				"engag",
+				"~/Git/engager-app/engager-app.sublime-project"
+			],
+			[
+				"enga",
+				"~/Git/engager-app/engager-app.sublime-project"
+			],
+			[
+				"godha",
+				"~/Git/GodHatesCharades/GodHatesCharades.sublime-project"
+			],
+			[
+				"csin",
+				"~/Git/CSInstanceManager/CSInstanceManager.sublime-project"
+			],
+			[
+				"twil",
+				"~/Git/TwilioForecast/TwilioForecast.sublime-project"
+			],
+			[
+				"scho",
+				"~/Git/ScholarEverywhereAdmin/ScholarEverywhereAdmin.sublime-project"
+			],
+			[
+				"godh",
+				"~/Git/GodHatesCharades/GodHatesCharades.sublime-project"
+			],
+			[
+				"give",
+				"~/Git/Give2AsiaPortal/Give2AsiaPortal.sublime-project"
+			],
+			[
+				"scholar",
+				"~/Git/ScholarEverywhereAdmin/ScholarEverywhereAdmin.sublime-project"
+			],
+			[
+				"react",
+				"~/Git/ReactCart/Reac..sublime-workspace"
+			],
+			[
+				"reactcart",
+				"~/Git/ReactCart/Reac..sublime-workspace"
+			],
+			[
+				"twilio",
+				"~/Git/TwilioForecast/TwilioForecast.sublime-project"
+			],
+			[
+				"reac",
+				"~/Git/ReactCart/ReactCart.sublime-project"
+			],
+			[
+				"t",
+				"~/MavensMate/tccsf/tccsf.sublime-project"
+			],
+			[
+				"csqu",
+				"~/Git/CSQuotingToolMockup/CSQuotingToolMockup.sublime-project"
+			],
+			[
+				"csrep",
+				"~/Git/CSRepDashboardMockup/CSRepDashboardMockup.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 400.0,
+		"last_filter": "_vari",
+		"selected_items":
+		[
+			[
+				"_vari",
+				"_valueTransaction"
+			],
+			[
+				"connec",
+				"connect"
+			],
+			[
+				"login",
+				"login"
+			],
+			[
+				"connect",
+				"connect"
+			],
+			[
+				"addgoal",
+				"addGoal"
+			],
+			[
+				"goal",
+				"onGoalChange"
+			],
+			[
+				"addca",
+				"addCard"
+			]
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 216.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
