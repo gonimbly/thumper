@@ -1,4 +1,5 @@
 {
+  "name": "thumper",
   "main": "build/thumper.js",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
