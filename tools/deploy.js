@@ -20,15 +20,8 @@ const remote = {
 export default task(async function deploy() {
   // Initialize a new Git repository inside the `/build` folder
   // if it doesn't exist yet
-  const repo = await GitRepo.open('build', { init: true });
+  const repo = await GitRepo.open('./', { init: false });
   await repo.setRemote(remote.name, remote.url);
-
-  // Fetch the remote repository if it exists
-  if ((await repo.hasRef(remote.url, remote.branch))) {
-    await repo.fetch(remote.name);
-    await repo.reset(`${remote.name}/${remote.branch}`, { hard: true });
-    await repo.clean({ force: true });
-  }
 
   // Build the project in RELEASE mode which
   // generates optimized and minimized bundles
