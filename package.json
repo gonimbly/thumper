@@ -1,6 +1,7 @@
 {
   "name": "thumper",
   "main": "build/thumper.js",
+  "version": "0.1.0"
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "babel": "^5.8.23",
