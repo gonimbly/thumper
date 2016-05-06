@@ -97,10 +97,14 @@ const config = {
 
 // Configuration for the client-side bundle
 const hotMiddlewareScript = 'webpack-hot-middleware/client';
+const thumperEntry = ['./src/thumper.js'];
+if(DEBUG) {
+  thumperEntry.push(hotMiddlewareScript);
+}
 const appConfig = merge({}, config, {
   entry: {
     'app.js': ['./app.js', hotMiddlewareScript],
-    'thumper.js': ['./src/thumper.js', hotMiddlewareScript],
+    'thumper.js': thumperEntry,
   },
   output: {
     filename: '[name]',
