@@ -28,7 +28,7 @@ export default task(async function deploy() {
   process.argv.push('release');
   await require('./build')();
 
-  // Push the contents of the build folder to the remote server via Git
+  // Push the contents of the folder to the remote server via Git
   await repo.add('--all .');
   await repo.commit('Update ' + new Date().toISOString());
   await repo.push(remote.name, 'master:' + remote.branch);
