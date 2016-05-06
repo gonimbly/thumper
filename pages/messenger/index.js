@@ -11,8 +11,8 @@ export default class extends Component {
   render() {
     return (
       <div>
-        <h1>Test Article 1</h1>
-        <p>Coming soon.</p>
+        <h1>Messenger</h1>
+        <p>Coming soon!</p>
       </div>
     );
   }

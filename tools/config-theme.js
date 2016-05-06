@@ -21,19 +21,6 @@ const AUTOPREFIXER_BROWSERS = [
   'Opera >= 12',
   'Safari >= 7.1',
 ];
-const JS_LOADER = {
-  test: /\.jsx?$/,
-  include: [
-    path.resolve(__dirname, '../components'),
-    path.resolve(__dirname, '../lib'),
-    path.resolve(__dirname, '../pages'),
-    path.resolve(__dirname, '../app.js'),
-    path.resolve(__dirname, '../config.js'),
-    path.resolve(__dirname, '../src/thumper.js'),
-  ],
-  loader: 'babel-loader',
-};
-
 
 // Base configuration
 const config = {
@@ -62,26 +49,6 @@ const config = {
       '__DEV__': DEBUG,
     }),
   ],
-  module: {
-    loaders: [
-      {
-        test: /[\\\/]app\.js$/,
-        loader: path.join(__dirname, './lib/routes-loader.js'),
-      }, {
-        test: /\.json$/,
-        loader: 'json-loader',
-      }, {
-        test: /\.txt$/,
-        loader: 'raw-loader',
-      }, {
-        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
-        loader: 'url-loader?limit=10000',
-      }, {
-        test: /\.(eot|ttf|wav|mp3)$/,
-        loader: 'file-loader',
-      },
-    ],
-  },
   postcss: function plugins() {
     return [
       require('postcss-import')({
@@ -96,14 +63,13 @@ const config = {
 };
 
 // Configuration for the client-side bundle
-const hotMiddlewareScript = 'webpack-hot-middleware/client';
 const appConfig = merge({}, config, {
-  entry: {
-    'app.js': ['./app.js', hotMiddlewareScript],
-    'thumper.js': ['./src/thumper.js', hotMiddlewareScript],
-  },
+  entry: [
+    ...(WATCH ? ['webpack-hot-middleware/client'] : []),
+    './thumper.js',
+  ],
   output: {
-    filename: '[name]',
+    filename: 'thumper.js',
   },
   // http://webpack.github.io/docs/configuration.html#devtool
   devtool: DEBUG ? 'cheap-module-eval-source-map' : false,
@@ -125,32 +91,9 @@ const appConfig = merge({}, config, {
   ],
   module: {
     loaders: [
-      WATCH ? Object.assign({}, JS_LOADER, {
-        query: {
-          // Wraps all React components into arbitrary transforms
-          // https://github.com/gaearon/babel-plugin-react-transform
-          plugins: ['react-transform'],
-          extra: {
-            'react-transform': {
-              transforms: [
-                {
-                  transform: 'react-transform-hmr',
-                  imports: ['react'],
-                  locals: ['module'],
-                }, {
-                  transform: 'react-transform-catch-errors',
-                  imports: ['react', 'redbox-react'],
-                },
-              ],
-            },
-          },
-        },
-      }) : JS_LOADER,
-      ...config.module.loaders,
       {
         test: /\.scss$/,
-        // loaders: ['style-loader', 'css-loader', 'postcss-loader'],
-        loader: 'style-loader!css-loader!sass-loader?outputStyle=compressed',
+        loaders: ['style-loader', 'css-loader', 'postcss-loader'],
       },
     ],
   },
