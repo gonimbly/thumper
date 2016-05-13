@@ -19,6 +19,7 @@ export default class extends Component {
           <a href='#' className='btn btn-link btn-inline disabled'>Link disabled</a>
         </CodeCard>
         <CodeCard id={'basicButtons'} title={'Basic Buttons'}>
+          <button type='button' className='btn btn-inline btn-default'>Default</button>
           <button type='button' className='btn btn-inline btn-primary'>Primary</button>
           <button type='button' className='btn btn-inline btn-secondary'>Secondary</button>
           <button type='button' className='btn btn-inline btn-success'>Success</button>
@@ -27,6 +28,7 @@ export default class extends Component {
           <button type='button' className='btn btn-inline btn-danger'>Danger</button>
         </CodeCard>
         <CodeCard id={'outlineButtons'} title={'Outline Buttons'}>
+          <button type='button' className='btn btn-inline btn-default-outline'>Default</button>
           <button type='button' className='btn btn-inline btn-primary-outline'>Primary</button>
           <button type='button' className='btn btn-inline btn-secondary-outline'>Secondary</button>
           <button type='button' className='btn btn-inline btn-success-outline'>Success</button>
