@@ -5,7 +5,7 @@
  */
 
 export default {
-  title: 'React Static Boilerplate',
+  title: 'Thumper by Go Nimbly',
   description: 'Static website generator for React.js web applications.',
   googleAnalyticsId: 'UA-XXXXX-X',
 };

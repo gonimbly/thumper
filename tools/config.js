@@ -63,6 +63,7 @@ const config = {
     }),
   ],
   module: {
+    noParse: [/autoit.js/],
     loaders: [
       {
         test: /[\\\/]app\.js$/,
@@ -96,21 +97,15 @@ const config = {
 };
 
 // Configuration for the client-side bundle
-const hotMiddlewareScript = 'webpack-hot-middleware/client';
 const thumperEntry = ['./src/thumper.js'];
-if(DEBUG) {
-  thumperEntry.push(hotMiddlewareScript);
-}
 const appConfig = merge({}, config, {
   entry: {
-    'app.js': ['./app.js', hotMiddlewareScript],
+    'app.js': ['./app.js'],
     'thumper.js': thumperEntry,
   },
   output: {
     filename: '[name]',
   },
-  // http://webpack.github.io/docs/configuration.html#devtool
-  devtool: DEBUG ? 'cheap-module-eval-source-map' : false,
   plugins: [
     ...config.plugins,
     ...(DEBUG ? [] : [
@@ -123,11 +118,11 @@ const appConfig = merge({}, config, {
       new webpack.optimize.AggressiveMergingPlugin(),
     ]),
     ...(WATCH ? [
-      new webpack.HotModuleReplacementPlugin(),
       new webpack.NoErrorsPlugin(),
     ] : []),
   ],
   module: {
+    noParse: [/autoit.js/],
     loaders: [
       WATCH ? Object.assign({}, JS_LOADER, {
         query: {
@@ -138,10 +133,6 @@ const appConfig = merge({}, config, {
             'react-transform': {
               transforms: [
                 {
-                  transform: 'react-transform-hmr',
-                  imports: ['react'],
-                  locals: ['module'],
-                }, {
                   transform: 'react-transform-catch-errors',
                   imports: ['react', 'redbox-react'],
                 },

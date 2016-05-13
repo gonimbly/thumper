@@ -32,7 +32,8 @@ $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
-$brand-primary:             red !default;
+$brand-primary:             #00A8FF !default;
+$brand-secondary:           #6b7a85 !default;
 $brand-success:             #5cb85c !default;
 $brand-info:                #5bc0de !default;
 $brand-warning:             #f0ad4e !default;
@@ -208,9 +209,9 @@ $list-inline-padding:         5px !default;
 $line-height-lg:         (4 / 3) !default;
 $line-height-sm:         1.5 !default;
 
-$border-radius:          .25rem !default;
-$border-radius-lg:       .3rem !default;
-$border-radius-sm:       .2rem !default;
+$border-radius:          3px !default;
+$border-radius-lg:       3px !default;
+$border-radius-sm:       3px !default;
 
 $component-active-color: #fff !default;
 $component-active-bg:    $brand-primary !default;
@@ -247,9 +248,9 @@ $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $btn-primary-bg !default;
 
-$btn-secondary-color:            $gray-dark !default;
-$btn-secondary-bg:               #fff !default;
-$btn-secondary-border:           #ccc !default;
+$btn-secondary-color:            #fff !default;
+$btn-secondary-bg:               $brand-secondary !default;
+$btn-secondary-border:           $btn-secondary-bg !default;
 
 $btn-info-color:                 #fff !default;
 $btn-info-bg:                    $brand-info !default;
@@ -660,10 +661,11 @@ $code-bg:                     #f7f7f9 !default;
 $kbd-color:                   #fff !default;
 $kbd-bg:                      #333 !default;
 
-$pre-bg:                      #f7f7f9 !default;
+$pre-bg:                      red !default;
 $pre-color:                   $gray-dark !default;
 $pre-border-color:            #ccc !default;
 $pre-scrollable-max-height:   340px !default;
 
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./thumper-buttons.scss";
