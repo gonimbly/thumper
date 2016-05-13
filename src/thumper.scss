@@ -31,13 +31,15 @@ $gray:                      #55595c !default;
 $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
+$gray-cool:                 #D1DEDE !default;
 
-$brand-primary:             #00A8FF !default;
-$brand-secondary:           #6b7a85 !default;
-$brand-success:             #5cb85c !default;
+$brand-primary:             #70BF4F !default;
+$brand-primary-alt:         #B8D482 !default;
+$brand-secondary:           #575466 !default;
+$brand-success:             $brand-primary !default;
 $brand-info:                #5bc0de !default;
-$brand-warning:             #f0ad4e !default;
-$brand-danger:              #d9534f !default;
+$brand-warning:             #FFC905 !default;
+$brand-danger:              #FF5757 !default;
 
 
 // Options
@@ -669,3 +671,4 @@ $pre-scrollable-max-height:   340px !default;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./thumper-buttons.scss";
+@import "./thumper-messages.scss";

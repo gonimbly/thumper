@@ -36,6 +36,11 @@ export default class extends Component {
           <button type='button' className='btn btn-inline btn-warning-outline'>Warning</button>
           <button type='button' className='btn btn-inline btn-danger-outline'>Danger</button>
         </CodeCard>
+        <CodeCard id={'buttonSizes'} title={'Buttons Sizes'}>
+          <button type='button' className='btn btn-inline btn-primary btn-sm'>Small</button>
+          <button type='button' className='btn btn-inline btn-primary btn-md'>Regular</button>
+          <button type='button' className='btn btn-inline btn-primary btn-lg'>Large</button>
+        </CodeCard>
         <CodeCard id={'navPills'} title={'Nav Pills'}>
             <ul className='nav nav-pills'>
               <li className='nav-item'>
@@ -77,6 +82,13 @@ export default class extends Component {
           <br notcode />
           <br notcode />
           <br notcode />
+        </CodeCard>
+        <CodeCard id={'messages'} title={'Messages'}>
+          <div className="msg-container">
+            <div className="msg msg-inbound">Hey how are you?</div>
+            <div className="msg msg-outbound">Great! Hows portland?</div>
+            <div className="msg msg-inbound">I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.</div>
+          </div>
         </CodeCard>
       </div>
     );

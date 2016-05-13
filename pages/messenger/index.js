@@ -63,29 +63,31 @@ export default class extends Component {
                               <p>18324645364</p>
                           </div>
                           <div className="col-xs-4">
-                              <button type="button" className="btn btn-default btn-block"><span className="glyphicon glyphicon-remove"></span>
+                              <button type="button" className="btn btn-danger-outline btn-block"><span className="glyphicon glyphicon-remove"></span>
                                   Cancelled
                               </button>
                           </div>
                           <div className="col-xs-4">
-                              <button type="button" className="btn btn-default btn-block"><span className="glyphicon glyphicon-calendar"></span>
+                              <button type="button" className="btn btn-secondary-outline btn-block"><span className="glyphicon glyphicon-calendar"></span>
                                   Rescheduled
                               </button>
                           </div>
                           <div className="col-xs-4">
-                              <button type="button" className="btn btn-default btn-block"><span className="glyphicon glyphicon-ok"></span>
+                              <button type="button" className="btn btn-primary-outline btn-block"><span className="glyphicon glyphicon-ok"></span>
                                   Confirmed
                               </button>
                           </div>
                       </div>
                       <div className="row">
                           <div className="messages-list">
-                              <div className="messages-content col-xs-12">
-                                  <p className=""><span className="btn btn-default">Look! A message!</span></p>
+                              <div className="messages-content col-xs-12 msg-container">
+                                <div className="msg msg-inbound">Hey how are you?</div>
+                                <div className="msg msg-outbound">Great! Hows portland?</div>
+                                <div className="msg msg-inbound">I Put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.</div>
                               </div>
                           </div>
                           <form className="input-group col-xs-12">
-                              <input type="text" className="form-control" /><span className="input-group-btn"><button type="submit" className="btn btn-default">Send</button></span></form>
+                              <input type="text" className="form-control" /><span className="input-group-btn"><button type="submit" className="btn btn-primary">Send</button></span></form>
                       </div>
                   </div>
               </div>

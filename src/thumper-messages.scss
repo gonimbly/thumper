@@ -1,0 +1,29 @@
+.msg-container {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+
+  .msg {
+    max-width: 40%;
+    padding: 6px 12px;
+    border-radius: 6px;
+
+    &:not(:first-child) {
+      margin-bottom: 10px;
+    }
+
+    &.msg-inbound {
+      background-color: $gray-cool;
+      border-bottom-left-radius: 0;
+      align-self: flex-start;
+    }
+
+    &.msg-outbound {
+      background-color: $brand-primary;
+      border-bottom-right-radius: 0;
+      align-self: flex-end;
+      color: white;
+    }
+  }
+}

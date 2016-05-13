@@ -45,7 +45,7 @@ class CodeCard extends Component {
       }
     });
     let stringCode = strChildren.join('\n');
-    let codeLabel = this.state.forceOpen ? 'Hide': 'Pin';
+    let codeLabel = this.state.forceOpen ? 'Pinned': '';
     return (
       <section className='card' id={this.props.id}>
         <h2 className='card-header'>{this.props.title}</h2>
