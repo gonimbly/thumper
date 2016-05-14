@@ -11,9 +11,9 @@ export default class extends Component {
   render() {
     return (
       <div>
-        <h1>Messenger</h1>
         <div id="content">
-          <div className="container-fluid">
+          <div className="container">
+              <h1>Messenger</h1>
               <div className="row">
                   <div className="col-xs-4 col-sm-3 col-sm-offset-1">
                       <ul className="list-group">
@@ -80,10 +80,12 @@ export default class extends Component {
                       </div>
                       <div className="row">
                           <div className="messages-list">
-                              <div className="messages-content col-xs-12 msg-container">
+                              <div className="messages-content col-xs-12 msg-container" style={{maxHeight: '500px'}}>
                                 <div className="msg msg-inbound">Hey how are you?</div>
                                 <div className="msg msg-outbound">Great! Hows portland?</div>
                                 <div className="msg msg-inbound">I Put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.</div>
+            <div className="msg msg-outbound">I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.</div>
+            <div className="msg msg-inbound">I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.</div>
                               </div>
                           </div>
                           <form className="input-group col-xs-12">

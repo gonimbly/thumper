@@ -84,9 +84,11 @@ export default class extends Component {
           <br notcode />
         </CodeCard>
         <CodeCard id={'messages'} title={'Messages'}>
-          <div className="msg-container">
+          <div className="msg-container" style={{maxHeight: '300px'}}>
             <div className="msg msg-inbound">Hey how are you?</div>
             <div className="msg msg-outbound">Great! Hows portland?</div>
+            <div className="msg msg-inbound">I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.</div>
+            <div className="msg msg-outbound">I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.</div>
             <div className="msg msg-inbound">I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.</div>
           </div>
         </CodeCard>
