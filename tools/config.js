@@ -75,12 +75,14 @@ const config = {
         test: /\.txt$/,
         loader: 'raw-loader',
       }, {
-        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
+        test: /\.(png|jpg|jpeg|gif|svg)$/,
         loader: 'url-loader?limit=10000',
       }, {
         test: /\.(eot|ttf|wav|mp3)$/,
         loader: 'file-loader',
       },
+      { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,   loader: 'url?limit=100000&mimetype=application/font-woff' },
+      { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,   loader: 'url-loader?limit=100000&minetype=application/font-woff2' },
     ],
   },
   postcss: function plugins() {
