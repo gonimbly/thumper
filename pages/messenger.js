@@ -15,51 +15,63 @@ export default class extends Component {
               <div className="container">
                   <h1>Messenger</h1>
                   <div className="row">
-                      <div className="col-xs-4 col-sm-3 col-sm-offset-1">
+                      <div className="col-xs-4 col-sm-4">
                           <ul className="list-group">
                               <li className="list-group-item active">
-                                  <p>Leo Lion</p>
-                                  <span>Fri. May 6th 7pm</span>
+                                <strong>Leo Lion</strong><br />
+                                Fri. May 6th 7pm
                               </li>
                               <li className="list-group-item">
-                                  <p>Tony Tiger</p>
-                                  <span>Sat. May 7th 10pm</span>
+                                <strong>Tony Tiger</strong><br />
+                                Sat. May 7th 10pm
                               </li>
                               <li className="list-group-item">
-                                  <p>Tubby Tabby</p>
-                                  <span>Sun. May 8th 11pm</span>
+                                <strong>Tubby Tabby</strong><br />
+                                Sun. May 8th 11pm
                               </li>
                               <li className="list-group-item">
-                                  <p>Winnie Pooh</p>
-                                  <span>Wed. May 11th 3pm</span>
+                                <strong>Winnie Pooh</strong><br />
+                                Wed. May 11th 3pm
                               </li>
                           </ul>
                       </div>
                       <div className="col-xs-8 col-sm-7">
                           <div className="row panel-body">
                               <div className="col-xs-4">
-                                  <label className="control-label">Name</label>
-                                  <p>Leo Lion</p>
+                                  <p>
+                                    <strong>Name</strong><br />
+                                    Leo Lion
+                                  </p>
                               </div>
                               <div className="col-xs-4">
-                                  <label className="control-label">Date</label>
-                                  <p>Friday, May 6th</p>
+                                  <p>
+                                    <strong>Date</strong><br />
+                                    Friday, May 6th
+                                  </p>
                               </div>
                               <div className="col-xs-4">
-                                  <label className="control-label">Type</label>
-                                  <p>Filling</p>
+                                  <p>
+                                    <strong>Type</strong><br />
+                                    Filling
+                                  </p>
                               </div>
                               <div className="col-xs-4">
-                                  <label className="control-label">Doctor</label>
-                                  <p>Dr. Lewis</p>
+                                  <p>
+                                    <strong>Doctor</strong><br />
+                                    Dr. Lewis
+                                  </p>
                               </div>
                               <div className="col-xs-4">
-                                  <label className="control-label">Time</label>
-                                  <p>7:42 PM</p>
+                                  <p>
+                                    <strong>Time</strong><br />
+                                    7:42 PM
+                                  </p>
                               </div>
                               <div className="col-xs-4">
-                                  <label className="control-label">Phone</label>
-                                  <p>18324645364</p>
+                                  <p>
+                                    <strong>Phone</strong><br />
+                                    18324645364
+                                  </p>
                               </div>
                               <div className="col-xs-4">
                                   <button type="button" className="btn btn-danger-outline btn-block"><span className="glyphicon glyphicon-remove"></span> Cancelled
