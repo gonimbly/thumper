@@ -10,7 +10,7 @@ import task from './lib/task';
 // TODO: Update deployment URL
 const remote = {
   name: 'github',
-  url: 'git@bitbucket.org:nimbly/thumper.git',
+  url: 'https://git.heroku.com/nimbly-thumper.git',
   branch: 'master',
 };
 
