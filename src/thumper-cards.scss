@@ -1,0 +1,11 @@
+.card-secondary {
+  @include card-variant($brand-secondary, $brand-secondary);
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.container > .card {
+  border-radius: .5rem;
+}

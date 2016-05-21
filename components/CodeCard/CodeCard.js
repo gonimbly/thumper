@@ -24,11 +24,24 @@ class CodeCard extends Component {
   }
 
   collapse() {
-    this.setState({isOpened: false});
+    this.setState({
+      hover: false,
+      isOpened: false
+    });
   }
 
   show() {
-    this.setState({isOpened: true});
+    this.setState({
+      hover: true
+    });
+
+    setTimeout(function() {
+      if(this.state.hover) {
+        this.setState({
+          isOpened: true
+        });
+      }
+    }.bind(this), 200);
   }
 
   toggle() {
@@ -53,9 +66,10 @@ class CodeCard extends Component {
           {this.props.children}
         </div>
         <div className='card-footer'
-             onMouseOver={this.show}
-             onMouseOut={this.collapse}
-             onClick={this.toggle}>
+             onMouseEnter={this.show}
+             onMouseLeave={this.collapse}
+             onClick={this.toggle}
+             style={{cursor: 'pointer'}}>
           <a className={'btn btn-link'}>{codeLabel} Code</a>
           <Collapse isOpened={this.state.isOpened || this.state.forceOpen}>
             <SyntaxHighlighter language='html' style={docco}>

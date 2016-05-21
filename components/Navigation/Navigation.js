@@ -5,21 +5,23 @@
  */
 
 import React, { Component } from 'react';
-import './Navigation.scss';
 import Link from '../Link';
 
 export default class extends Component {
 
   render() {
     return (
-      <ul className="Navigation" role="menu">
-        <li className="Navigation-item">
-          <a className="Navigation-link" href="/" onClick={Link.handleClick}>Home</a>
-        </li>
-        <li className="Navigation-item">
-          <a className="Navigation-link" href="/messenger" onClick={Link.handleClick}>Messenger</a>
-        </li>
-      </ul>
+      <nav className='navbar navbar-dark bg-primary navbar-fixed-top'>
+        <a className="navbar-brand" href="/">Thumper</a>
+        <ul className='nav navbar-nav'>
+          <li className='nav-item'>
+            <a className="nav-link" href="/" onClick={Link.handleClick}>Components</a>
+          </li>
+          <li className='nav-item'>
+            <a className="nav-link" href="/messenger" onClick={Link.handleClick}>Messenger</a>
+          </li>
+        </ul>
+      </nav>
     );
   }
 

@@ -16,7 +16,7 @@ class Layout extends Component {
 
   render() {
     return (
-      <div className="Layout">
+      <div>
         <Navigation />
         {this.props.children}
       </div>

@@ -1,0 +1,11 @@
+.container {
+  margin-bottom: 25px;
+
+  h1:first-child {
+    padding-top: 25px;
+  }
+}
+
+.navbar-fixed-top + .container {
+  padding-top: 54px;
+}
