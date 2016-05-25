@@ -1,0 +1,47 @@
+.nav {
+  &.nav-pills {
+    .nav-link {
+      
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &.active {
+      
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@mixin nav-color($color) {
+
+}
+
+
+
+.bg-secondary {
+  .nav-pills {
+    .nav-link {
+      color: white;
+      &.active {
+        background-color: darken($brand-secondary, 20%);
+        color: white;
+      }
+    }
+  }
+}
+
+.bg-primary {
+  .nav-pills {
+    .nav-link {
+      color: white;
+      &.active {
+        background-color: darken($brand-primary, 20%);
+        color: white;
+      }
+    }
+  }
+}

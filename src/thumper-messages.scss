@@ -1,31 +1,74 @@
-.msg-container {
-  overflow-y: scroll;
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
-  font-weight: 300;
+.msg-block {
+  padding-bottom: 0;
 
-  .msg {
-    max-width: 40%;
-    padding: 6px 12px;
-    border-radius: 6px;
-    flex-shrink: 0;
+  .msg-container {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.25rem;
+    font-weight: 300;
 
-    &:not(:first-child) {
-      margin-bottom: 10px;
+    .msg {
+      max-width: 40%;
+      padding: 6px 12px;
+      border-radius: 6px;
+      flex-shrink: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      &.msg-inbound {
+        background-color: $gray-cool;
+        border-top-left-radius: 0;
+        align-self: flex-start;
+      }
+
+      &.msg-outbound {
+        background-color: $brand-primary;
+        border-top-right-radius: 0;
+        align-self: flex-end;
+        color: white;
+      }
     }
 
-    &.msg-inbound {
-      background-color: $gray-cool;
-      border-bottom-left-radius: 0;
-      align-self: flex-start;
+    .msg-user {
+      max-width: 40%;
+      padding: 3px 0;
+      flex-shrink: 0;
+      font-size: 12px;
+      color: $gray-light;
+
+      &.msg-inbound {
+        align-self: flex-start;
+      }
+
+      &.msg-outbound {
+        align-self: flex-end;
+      }
     }
 
-    &.msg-outbound {
-      background-color: $brand-primary;
-      border-bottom-right-radius: 0;
-      align-self: flex-end;
-      color: white;
+    .msg.msg-inbound + .msg-user.msg-inbound {
+      display: none;
     }
+
+    .msg.msg-outbound + .msg-user.msg-outbound {
+      display: none;
+    }
+  }
+}
+
+.msg-footer {
+  border-top: 1px solid $gray-cool;
+  background-color: white;
+
+  input {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .btn {
+    border-radius: 0;
   }
 }

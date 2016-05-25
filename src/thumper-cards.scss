@@ -1,9 +1,44 @@
-.card-secondary {
-  @include card-variant($brand-secondary, $brand-secondary);
+$grid-half-width: $grid-gutter-width / 2;
+.card {
+  // to ensure nothing escapes the card
+  overflow: hidden;
+  & > .row {
+    .card-left-panel {
+      padding-left: $grid-gutter-width;
+      padding-right: $grid-half-width;
+      padding-top: $grid-half-width;
+      padding-bottom: $grid-half-width;
+      display: flex;
+      flex-direction: column;
+
+      & + div {
+        padding-left: 0;
+      }
+    }
+
+    .card-panel-block {
+      flex-grow: 1;
+    }
+
+    .card-panel-footer {
+      width: 100%;
+      align-self: flex-end;
+      flex-grow: 0;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-footer {
+    padding-top: $grid-half-width;
+    padding-bottom: $grid-half-width;
+  }
 }
 
-.card:last-child {
-  margin-bottom: 0;
+.card-secondary {
+  @include card-variant($brand-secondary, $brand-secondary);
 }
 
 .container > .card {
