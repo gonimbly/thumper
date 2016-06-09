@@ -61,12 +61,12 @@ export default class extends Component {
                   </ul>
                 </div>
                 <div className='card-panel-footer'>
-                  <button className='btn btn-danger btn-block'>RESET</button>
+                  <button className='btn btn-danger btn-block'><i className="fa fa-refresh fa-lg"></i>RESET</button>
                 </div>
               </div>
               <div className='col-xs-9 col-sm-9'>
                 <div className='msg-block card-block'>
-                  <div className='card' style={{marginBottom: '0'}}>
+                  <div className='card' style={{marginBottom: 0}}>
                     <div className='card-block'>
                       <div className='row'>
                         <div className='col-xs-4'>
@@ -106,15 +106,21 @@ export default class extends Component {
                             </p>
                         </div>
                         <div className='col-xs-4'>
-                            <button type='button' className='btn btn-danger-outline btn-block'><span className='glyphicon glyphicon-remove'></span> Cancelled
+                            <button type='button' className='btn btn-danger-outline btn-block'>
+                              <i className="fa fa-times fa-lg"></i>
+                              Cancelled
                             </button>
                         </div>
                         <div className='col-xs-4'>
-                            <button type='button' className='btn btn-secondary-outline btn-block'><span className='glyphicon glyphicon-calendar'></span> Rescheduled
+                            <button type='button' className='btn btn-secondary-outline btn-block'>
+                              <i className="fa fa-calendar fa-lg"></i>
+                              Rescheduled
                             </button>
                         </div>
                         <div className='col-xs-4'>
-                            <button type='button' className='btn btn-primary-outline btn-block'><span className='glyphicon glyphicon-ok'></span> Confirmed
+                            <button type='button' className='btn btn-primary-outline btn-block'>
+                              <i className="fa fa-check fa-lg"></i>
+                              Confirmed
                             </button>
                         </div>
                       </div>

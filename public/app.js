@@ -90134,6 +90134,7 @@
 	                  _react2.default.createElement(
 	                    'button',
 	                    { className: 'btn btn-danger btn-block' },
+	                    _react2.default.createElement('i', { className: 'fa fa-refresh fa-lg' }),
 	                    'RESET'
 	                  )
 	                )
@@ -90146,7 +90147,7 @@
 	                  { className: 'msg-block card-block' },
 	                  _react2.default.createElement(
 	                    'div',
-	                    { className: 'card', style: { marginBottom: '0' } },
+	                    { className: 'card', style: { marginBottom: 0 } },
 	                    _react2.default.createElement(
 	                      'div',
 	                      { className: 'card-block' },
@@ -90249,8 +90250,8 @@
 	                          _react2.default.createElement(
 	                            'button',
 	                            { type: 'button', className: 'btn btn-danger-outline btn-block' },
-	                            _react2.default.createElement('span', { className: 'glyphicon glyphicon-remove' }),
-	                            ' Cancelled'
+	                            _react2.default.createElement('i', { className: 'fa fa-times fa-lg' }),
+	                            'Cancelled'
 	                          )
 	                        ),
 	                        _react2.default.createElement(
@@ -90259,8 +90260,8 @@
 	                          _react2.default.createElement(
 	                            'button',
 	                            { type: 'button', className: 'btn btn-secondary-outline btn-block' },
-	                            _react2.default.createElement('span', { className: 'glyphicon glyphicon-calendar' }),
-	                            ' Rescheduled'
+	                            _react2.default.createElement('i', { className: 'fa fa-calendar fa-lg' }),
+	                            'Rescheduled'
 	                          )
 	                        ),
 	                        _react2.default.createElement(
@@ -90269,8 +90270,8 @@
 	                          _react2.default.createElement(
 	                            'button',
 	                            { type: 'button', className: 'btn btn-primary-outline btn-block' },
-	                            _react2.default.createElement('span', { className: 'glyphicon glyphicon-ok' }),
-	                            ' Confirmed'
+	                            _react2.default.createElement('i', { className: 'fa fa-check fa-lg' }),
+	                            'Confirmed'
 	                          )
 	                        )
 	                      )
