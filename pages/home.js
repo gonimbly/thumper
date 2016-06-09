@@ -6,7 +6,7 @@
 
 import React, { Component } from 'react';
 import CodeCard from '../components/CodeCard/CodeCard';
-import './index.scss';
+import './home.scss';
 
 export default class extends Component {
   render() {

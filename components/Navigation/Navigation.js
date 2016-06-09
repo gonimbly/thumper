@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import Link from '../Link';
+import {Link} from 'react-router';
 
 export default class extends Component {
 
@@ -15,10 +15,10 @@ export default class extends Component {
         <a className="navbar-brand" href="/">Thumper</a>
         <ul className='nav navbar-nav'>
           <li className='nav-item'>
-            <a className="nav-link" href="/" onClick={Link.handleClick}>Components</a>
+            <Link className="nav-link" to="/">Components</Link>
           </li>
           <li className='nav-item'>
-            <a className="nav-link" href="/messenger" onClick={Link.handleClick}>Messenger</a>
+            <Link className="nav-link" to="/messenger">Messenger</Link>
           </li>
         </ul>
       </nav>

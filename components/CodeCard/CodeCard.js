@@ -17,12 +17,6 @@ class CodeCard extends Component {
     this.toggle = this.toggle.bind(this);
   }
 
-  static propTypes = {
-    id: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    children: PropTypes.node.isRequired
-  }
-
   collapse() {
     this.setState({
       hover: false,
@@ -82,5 +76,11 @@ class CodeCard extends Component {
   }
 
 }
+
+CodeCard.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired
+};
 
 export default CodeCard;

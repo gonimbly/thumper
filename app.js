@@ -1,42 +1,31 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
+import React, {PropTypes} from 'react';
+import { render } from 'react-dom';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
-import 'babel/polyfill';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { canUseDOM } from 'fbjs/lib/ExecutionEnvironment';
-import Location from './lib/Location';
-import Layout from './components/Layout';
+import Navigation from './components/Navigation/Navigation';
+import Home from './pages/home';
+import Messenger from './pages/messenger';
 
-const routes = {}; // Auto-generated on build. See tools/lib/routes-loader.js
+const App = (props) => {
+  return (
+    <div>
+      <h1>App</h1>
+      <Navigation />
 
-const route = async (path, callback) => {
-  const handler = routes[path] || routes['/404'];
-  const component = await handler();
-  await callback(<Layout>{React.createElement(component)}</Layout>);
+      {props.children}
+    </div>
+  );
 };
 
-function run() {
-  const container = document.getElementById('app');
-  Location.listen(location => {
-    route(location.pathname, async (component) => ReactDOM.render(component, container, () => {
-      // Track the page view event via Google Analytics
-      window.ga('send', 'pageview');
-    }));
-  });
-}
+App.propTypes = {
+  children: PropTypes.node
+};
 
-if (canUseDOM) {
-// Run the application when both DOM is ready
-// and page content is loaded
-  if (window.addEventListener) {
-    window.addEventListener('DOMContentLoaded', run);
-  } else {
-    window.attachEvent('onload', run);
-  }
-}
-
-export default { route, routes };
+render((
+  <Router history={hashHistory}>
+    <Route path="/" component={App}>
+      <IndexRoute component={Home} />
+      <Route path="messenger" component={Messenger} />
+    </Route>
+  </Router>
+), document.getElementById('app'));

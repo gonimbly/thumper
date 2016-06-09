@@ -1,1 +1,1 @@
-import './thumper.scss'
+import './thumper.scss';
