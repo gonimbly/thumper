@@ -54,8 +54,8 @@ module.exports = function() {
            test: /\.(png|jpg|svg)$/,
            loader: 'url-loader'
         },
-        { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,   loader: 'url?limit=10000&mimetype=application/font-woff' },
-        { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,   loader: 'url-loader?limit=10000&minetype=application/font-woff2' },
+        { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,   loader: 'url?limit=100000&mimetype=application/font-woff' },
+        { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,   loader: 'url-loader?limit=100000&minetype=application/font-woff2' },
         { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,    loader: 'file-loader' },
         { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,    loader: 'file-loader' }
       ]
