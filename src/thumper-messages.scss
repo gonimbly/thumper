@@ -1,59 +1,68 @@
 .msg-block {
   padding-bottom: 0;
-
+  flex: 1;
+  display:flex;
+  flex-direction: column;
+  
   .msg-container {
     overflow-y: scroll;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1.25rem;
-    font-weight: 300;
+    flex: 1;
 
-    .msg {
-      max-width: 40%;
-      padding: 6px 12px;
-      border-radius: 6px;
-      flex-shrink: 0;
+    .msg-content {
+      min-height: 100%;
+      padding-bottom: 1.25rem;
+      font-weight: 300;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
 
-      &:not(:last-child) {
-        margin-bottom: 10px;
+      .msg {
+        max-width: 40%;
+        padding: 6px 12px;
+        border-radius: 6px;
+        flex-shrink: 0;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+
+        &.msg-inbound {
+          background-color: $gray-cool;
+          border-top-left-radius: 0;
+          align-self: flex-start;
+        }
+
+        &.msg-outbound {
+          background-color: $brand-primary;
+          border-top-right-radius: 0;
+          align-self: flex-end;
+          color: white;
+        }
       }
 
-      &.msg-inbound {
-        background-color: $gray-cool;
-        border-top-left-radius: 0;
-        align-self: flex-start;
+      .msg-user {
+        max-width: 40%;
+        padding: 3px 0;
+        flex-shrink: 0;
+        font-size: 12px;
+        color: $gray-light;
+
+        &.msg-inbound {
+          align-self: flex-start;
+        }
+
+        &.msg-outbound {
+          align-self: flex-end;
+        }
       }
 
-      &.msg-outbound {
-        background-color: $brand-primary;
-        border-top-right-radius: 0;
-        align-self: flex-end;
-        color: white;
-      }
-    }
-
-    .msg-user {
-      max-width: 40%;
-      padding: 3px 0;
-      flex-shrink: 0;
-      font-size: 12px;
-      color: $gray-light;
-
-      &.msg-inbound {
-        align-self: flex-start;
+      .msg.msg-inbound + .msg-user.msg-inbound {
+        display: none;
       }
 
-      &.msg-outbound {
-        align-self: flex-end;
+      .msg.msg-outbound + .msg-user.msg-outbound {
+        display: none;
       }
-    }
-
-    .msg.msg-inbound + .msg-user.msg-inbound {
-      display: none;
-    }
-
-    .msg.msg-outbound + .msg-user.msg-outbound {
-      display: none;
     }
   }
 }

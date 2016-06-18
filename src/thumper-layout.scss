@@ -1,11 +1,39 @@
+
+// used to make a full height app page, shouldn't have any other margin/padding in any parent dom
+// since it relys on full viewheight(100vh)
+.app-container {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
 .container {
   margin-bottom: 25px;
 
   h1:first-child {
     padding-top: 25px;
   }
+
+  &.container-flex {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .card.card-flex {
+      display: flex;
+      flex: 1;
+    }
+  }
 }
 
-.navbar-fixed-top + .container {
+.navbar-fixed-top + .container, .navbar-fixed-top + .app-container {
   padding-top: 54px;
+}
+
+.col-flex {
+  display: flex;
+  flex-direction: column;
 }

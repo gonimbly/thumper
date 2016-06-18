@@ -10,26 +10,10 @@ export default class extends Component {
 
   render() {
     return (
-      <div style={{paddingTop: '54px'}}>
-        <nav className='navbar navbar-dark bg-secondary navbar-full'>
-          <ul className='nav navbar-nav'>
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>Dashboard</a>
-            </li>
-            <li className='nav-item active'>
-              <a className='nav-link' href='#'>My Work <span className='sr-only'>(current)</span></a>
-            </li>
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>Lists</a>
-            </li>
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>Settings</a>
-            </li>
-          </ul>
-        </nav>
-        <div className='container'>
+      <div className='app-container'>
+        <div className='container container-flex'>
           <h1>My Work</h1>
-          <div className='card'>
+          <div className='card card-flex'>
             <div className='row'>
               <div className='col-xs-3 col-sm-3 card-left-panel bg-secondary'>
                 <div className='card-panel-block'>
@@ -64,7 +48,7 @@ export default class extends Component {
                   <button className='btn btn-danger btn-block'><i className="fa fa-refresh fa-lg"></i>RESET</button>
                 </div>
               </div>
-              <div className='col-xs-9 col-sm-9'>
+              <div className='col-xs-9 col-sm-9 col-flex'>
                 <div className='msg-block card-block'>
                   <div className='card' style={{marginBottom: 0}}>
                     <div className='card-block'>
@@ -126,26 +110,64 @@ export default class extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className='msg-container' style={{maxHeight: '500px'}}>
-                    <div className='msg-user msg-inbound'>Leo</div>
-                    <div className='msg msg-inbound'>
-                      Hey how are you?
-                    </div>
-                    <div className='msg-user msg-outbound'>You</div>
-                    <div className='msg msg-outbound'>
-                      Great! Hows portland?
-                    </div>
-                    <div className='msg-user msg-inbound'>Leo</div>
-                    <div className='msg msg-inbound'>
-                      I Put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.
-                    </div>
-                    <div className='msg-user msg-outbound'>You</div>
-                    <div className='msg msg-outbound'>
-                      I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.
-                    </div>
-                    <div className='msg-user msg-outbound'>You</div>
-                    <div className='msg msg-outbound'>
-                      I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.
+                  <div className='msg-container'>
+                    <div className='msg-content'>
+                      <div className='msg-user msg-inbound'>Leo</div>
+                      <div className='msg msg-inbound'>
+                        Hey how are you?
+                      </div>
+                      <div className='msg-user msg-outbound'>You</div>
+                      <div className='msg msg-outbound'>
+                        Great! Hows portland?
+                      </div>
+                      <div className='msg-user msg-inbound'>Leo</div>
+                      <div className='msg msg-inbound'>
+                        I Put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.
+                      </div>
+                      <div className='msg-user msg-outbound'>You</div>
+                      <div className='msg msg-outbound'>
+                        I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.
+                      </div>
+                      <div className='msg-user msg-outbound'>You</div>
+                      <div className='msg msg-outbound'>
+                        I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.
+                      </div>
+                      <div className='msg-user msg-outbound'>You</div>
+                      <div className='msg msg-outbound'>
+                        I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.
+                      </div>
+                      <div className='msg-user msg-outbound'>You</div>
+                      <div className='msg msg-outbound'>
+                        I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.
+                      </div>
+                      <div className='msg-user msg-outbound'>You</div>
+                      <div className='msg msg-outbound'>
+                        I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.
+                      </div>
+                      <div className='msg-user msg-outbound'>You</div>
+                      <div className='msg msg-outbound'>
+                        I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.
+                      </div>
+                      <div className='msg-user msg-outbound'>You</div>
+                      <div className='msg msg-outbound'>
+                        I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.
+                      </div>
+                      <div className='msg-user msg-outbound'>You</div>
+                      <div className='msg msg-outbound'>
+                        I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.
+                      </div>
+                      <div className='msg-user msg-outbound'>You</div>
+                      <div className='msg msg-outbound'>
+                        I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.
+                      </div>
+                      <div className='msg-user msg-outbound'>You</div>
+                      <div className='msg msg-outbound'>
+                        I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.
+                      </div>
+                      <div className='msg-user msg-outbound'>You</div>
+                      <div className='msg msg-outbound'>
+                        I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -160,6 +182,7 @@ export default class extends Component {
           </div>
         </div>
       </div>
+      
     );
   }
 

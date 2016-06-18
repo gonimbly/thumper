@@ -9,9 +9,7 @@ import Messenger from './pages/messenger';
 const App = (props) => {
   return (
     <div>
-      <h1>App</h1>
       <Navigation />
-
       {props.children}
     </div>
   );

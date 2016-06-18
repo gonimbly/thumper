@@ -72,11 +72,6 @@
 	  return _react2.default.createElement(
 	    'div',
 	    null,
-	    _react2.default.createElement(
-	      'h1',
-	      null,
-	      'App'
-	    ),
 	    _react2.default.createElement(_Navigation2.default, null),
 	    props.children
 	  );
@@ -206,6 +201,31 @@
 	// shim for using process in browser
 
 	var process = module.exports = {};
+
+	// cached from whatever global is present so that test runners that stub it
+	// don't break things.  But we need to wrap it in a try catch in case it is
+	// wrapped in strict mode code which doesn't define any globals.  It's inside a
+	// function because try/catches deoptimize in certain engines.
+
+	var cachedSetTimeout;
+	var cachedClearTimeout;
+
+	(function () {
+	  try {
+	    cachedSetTimeout = setTimeout;
+	  } catch (e) {
+	    cachedSetTimeout = function () {
+	      throw new Error('setTimeout is not defined');
+	    }
+	  }
+	  try {
+	    cachedClearTimeout = clearTimeout;
+	  } catch (e) {
+	    cachedClearTimeout = function () {
+	      throw new Error('clearTimeout is not defined');
+	    }
+	  }
+	} ())
 	var queue = [];
 	var draining = false;
 	var currentQueue;
@@ -230,7 +250,7 @@
 	    if (draining) {
 	        return;
 	    }
-	    var timeout = setTimeout(cleanUpNextTick);
+	    var timeout = cachedSetTimeout(cleanUpNextTick);
 	    draining = true;
 
 	    var len = queue.length;
@@ -247,7 +267,7 @@
 	    }
 	    currentQueue = null;
 	    draining = false;
-	    clearTimeout(timeout);
+	    cachedClearTimeout(timeout);
 	}
 
 	process.nextTick = function (fun) {
@@ -259,7 +279,7 @@
 	    }
 	    queue.push(new Item(fun, args));
 	    if (queue.length === 1 && !draining) {
-	        setTimeout(drainQueue, 0);
+	        cachedSetTimeout(drainQueue, 0);
 	    }
 	};
 
@@ -24516,11 +24536,11 @@
 	    arity: true
 	};
 
-	module.exports = function hoistNonReactStatics(targetComponent, sourceComponent) {
+	module.exports = function hoistNonReactStatics(targetComponent, sourceComponent, customStatics) {
 	    if (typeof sourceComponent !== 'string') { // don't hoist over string (html) components
 	        var keys = Object.getOwnPropertyNames(sourceComponent);
-	        for (var i=0; i<keys.length; ++i) {
-	            if (!REACT_STATICS[keys[i]] && !KNOWN_STATICS[keys[i]]) {
+	        for (var i = 0; i < keys.length; ++i) {
+	            if (!REACT_STATICS[keys[i]] && !KNOWN_STATICS[keys[i]] && (!customStatics || !customStatics[keys[i]])) {
 	                try {
 	                    targetComponent[keys[i]] = sourceComponent[keys[i]];
 	                } catch (error) {
@@ -26238,53 +26258,57 @@
 	                  { className: 'msg-container', style: { maxHeight: '300px' } },
 	                  _react2.default.createElement(
 	                    'div',
-	                    { className: 'msg-user msg-inbound' },
-	                    'Leo'
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'msg msg-inbound' },
-	                    'Hey how are you?'
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'msg-user msg-outbound' },
-	                    'You'
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'msg msg-outbound' },
-	                    'Great! Hows portland?'
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'msg-user msg-inbound' },
-	                    'Leo'
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'msg msg-inbound' },
-	                    'I Put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'msg-user msg-outbound' },
-	                    'You'
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'msg msg-outbound' },
-	                    'I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'msg-user msg-outbound' },
-	                    'You'
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'msg msg-outbound' },
-	                    'I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
+	                    { className: 'msg-content' },
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'msg-user msg-inbound' },
+	                      'Leo'
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'msg msg-inbound' },
+	                      'Hey how are you?'
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'msg-user msg-outbound' },
+	                      'You'
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'msg msg-outbound' },
+	                      'Great! Hows portland?'
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'msg-user msg-inbound' },
+	                      'Leo'
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'msg msg-inbound' },
+	                      'I Put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'msg-user msg-outbound' },
+	                      'You'
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'msg msg-outbound' },
+	                      'I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'msg-user msg-outbound' },
+	                      'You'
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'msg msg-outbound' },
+	                      'I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
+	                    )
 	                  )
 	                )
 	              )
@@ -89993,59 +90017,10 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { style: { paddingTop: '54px' } },
-	        _react2.default.createElement(
-	          'nav',
-	          { className: 'navbar navbar-dark bg-secondary navbar-full' },
-	          _react2.default.createElement(
-	            'ul',
-	            { className: 'nav navbar-nav' },
-	            _react2.default.createElement(
-	              'li',
-	              { className: 'nav-item' },
-	              _react2.default.createElement(
-	                'a',
-	                { className: 'nav-link', href: '#' },
-	                'Dashboard'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              { className: 'nav-item active' },
-	              _react2.default.createElement(
-	                'a',
-	                { className: 'nav-link', href: '#' },
-	                'My Work ',
-	                _react2.default.createElement(
-	                  'span',
-	                  { className: 'sr-only' },
-	                  '(current)'
-	                )
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              { className: 'nav-item' },
-	              _react2.default.createElement(
-	                'a',
-	                { className: 'nav-link', href: '#' },
-	                'Lists'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              { className: 'nav-item' },
-	              _react2.default.createElement(
-	                'a',
-	                { className: 'nav-link', href: '#' },
-	                'Settings'
-	              )
-	            )
-	          )
-	        ),
+	        { className: 'app-container' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'container' },
+	          { className: 'container container-flex' },
 	          _react2.default.createElement(
 	            'h1',
 	            null,
@@ -90053,7 +90028,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'card' },
+	            { className: 'card card-flex' },
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'row' },
@@ -90141,7 +90116,7 @@
 	              ),
 	              _react2.default.createElement(
 	                'div',
-	                { className: 'col-xs-9 col-sm-9' },
+	                { className: 'col-xs-9 col-sm-9 col-flex' },
 	                _react2.default.createElement(
 	                  'div',
 	                  { className: 'msg-block card-block' },
@@ -90279,56 +90254,150 @@
 	                  ),
 	                  _react2.default.createElement(
 	                    'div',
-	                    { className: 'msg-container', style: { maxHeight: '500px' } },
+	                    { className: 'msg-container' },
 	                    _react2.default.createElement(
 	                      'div',
-	                      { className: 'msg-user msg-inbound' },
-	                      'Leo'
-	                    ),
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'msg msg-inbound' },
-	                      'Hey how are you?'
-	                    ),
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'msg-user msg-outbound' },
-	                      'You'
-	                    ),
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'msg msg-outbound' },
-	                      'Great! Hows portland?'
-	                    ),
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'msg-user msg-inbound' },
-	                      'Leo'
-	                    ),
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'msg msg-inbound' },
-	                      'I Put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
-	                    ),
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'msg-user msg-outbound' },
-	                      'You'
-	                    ),
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'msg msg-outbound' },
-	                      'I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
-	                    ),
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'msg-user msg-outbound' },
-	                      'You'
-	                    ),
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'msg msg-outbound' },
-	                      'I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
+	                      { className: 'msg-content' },
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg-user msg-inbound' },
+	                        'Leo'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg msg-inbound' },
+	                        'Hey how are you?'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg-user msg-outbound' },
+	                        'You'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg msg-outbound' },
+	                        'Great! Hows portland?'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg-user msg-inbound' },
+	                        'Leo'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg msg-inbound' },
+	                        'I Put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg-user msg-outbound' },
+	                        'You'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg msg-outbound' },
+	                        'I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg-user msg-outbound' },
+	                        'You'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg msg-outbound' },
+	                        'I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg-user msg-outbound' },
+	                        'You'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg msg-outbound' },
+	                        'I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg-user msg-outbound' },
+	                        'You'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg msg-outbound' },
+	                        'I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg-user msg-outbound' },
+	                        'You'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg msg-outbound' },
+	                        'I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg-user msg-outbound' },
+	                        'You'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg msg-outbound' },
+	                        'I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg-user msg-outbound' },
+	                        'You'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg msg-outbound' },
+	                        'I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg-user msg-outbound' },
+	                        'You'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg msg-outbound' },
+	                        'I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg-user msg-outbound' },
+	                        'You'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg msg-outbound' },
+	                        'I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg-user msg-outbound' },
+	                        'You'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg msg-outbound' },
+	                        'I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg-user msg-outbound' },
+	                        'You'
+	                      ),
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: 'msg msg-outbound' },
+	                        'I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.'
+	                      )
 	                    )
 	                  )
 	                ),

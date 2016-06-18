@@ -2,12 +2,18 @@ $grid-half-width: $grid-gutter-width / 2;
 .card {
   // to ensure nothing escapes the card
   overflow: hidden;
+
+  &.flex-card {
+    display: flex;
+    flex: 1;
+  }
+  
   & > .row {
     .card-left-panel {
-      padding-left: $grid-gutter-width;
-      padding-right: $grid-half-width;
-      padding-top: $grid-half-width;
-      padding-bottom: $grid-half-width;
+      padding-left: $grid-half-width + $card-spacer-x;
+      padding-right: $card-spacer-x;
+      padding-top: $card-spacer-x;
+      padding-bottom: $card-spacer-x;
       display: flex;
       flex-direction: column;
 
@@ -32,8 +38,8 @@ $grid-half-width: $grid-gutter-width / 2;
   }
 
   .card-footer {
-    padding-top: $grid-half-width;
-    padding-bottom: $grid-half-width;
+    padding-top: $card-spacer-x;
+    padding-bottom: $card-spacer-x;
   }
 }
 
