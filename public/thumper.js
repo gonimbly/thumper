@@ -1,3 +1,8 @@
+/*!
+ * © Go Nimbly Inc.
+ * 2016
+ * Thumper 1.1.0
+ */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};

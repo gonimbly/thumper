@@ -4,6 +4,8 @@ var webpack = require('webpack');
 var WebpackNotifierPlugin = require('webpack-notifier');
 var ProgressBarPlugin = require('progress-bar-webpack-plugin');
 var autoprefixer = require('autoprefixer');
+var version = require('./package.json').version;
+console.log('webpacking', version);
 
 module.exports = function() {
   var config = {
@@ -55,14 +57,15 @@ module.exports = function() {
            loader: 'url-loader'
         },
         { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,   loader: 'url?limit=100000&mimetype=application/font-woff' },
-        { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,   loader: 'url-loader?limit=100000&minetype=application/font-woff2' },
+        { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,   loader: 'url-loader?limit=100000&mimetype=application/font-woff2' },
         { test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,    loader: 'file-loader' }
       ]
     },
 
     plugins: [
       new ProgressBarPlugin(),
-      new WebpackNotifierPlugin()
+      new WebpackNotifierPlugin(),
+      new webpack.BannerPlugin(['© Go Nimbly Inc.', new Date().getFullYear(), 'Thumper ' + version].join('\n'))
     ],
     externals: {
       // added for enzyme: https://github.com/airbnb/enzyme/blob/master/docs/guides/webpack.md
