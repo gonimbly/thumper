@@ -24,6 +24,8 @@ $grid-half-width: $grid-gutter-width / 2;
 
     .card-panel-block {
       flex-grow: 1;
+      overflow-y: scroll;
+      height: 0; //hack to allow scrolling in FF/Safari
     }
 
     .card-panel-footer {

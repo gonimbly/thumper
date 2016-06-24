@@ -3,3 +3,4 @@ build
 *.sublime-workspace
 *.log
 .env
+.DS_Store

@@ -34,13 +34,13 @@ module.exports = function() {
       preLoaders: [{
         // loads rules from .eslintrc.json
         test: /\.jsx?$/,
-        loader: 'eslint-loader',
+        loader: 'eslint',
         exclude: /node_modules/
       }],
       loaders: [
         {
           test: /\.jsx?$/,
-          loader: 'babel-loader',
+          loader: 'babel',
           exclude: /node_modules/,
           query: {
             plugins: ['transform-object-rest-spread']
@@ -48,15 +48,15 @@ module.exports = function() {
         },
         {
           test: /\.scss/,
-          loader: 'style-loader!css-loader!sass-loader?outputStyle=compressed!postcss-loader'
+          loader: 'style!css!sass?outputStyle=compressed!postcss'
         }, {
            test: /\.(png|jpg|svg)$/,
-           loader: 'url-loader'
+           loader: 'url'
         },
         { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,   loader: 'url?limit=10000&mimetype=application/font-woff' },
-        { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,   loader: 'url-loader?limit=10000&minetype=application/font-woff2' },
-        { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,    loader: 'file-loader' },
-        { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,    loader: 'file-loader' }
+        { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,   loader: 'url?limit=10000&minetype=application/font-woff2' },
+        { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,    loader: 'file' },
+        { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,    loader: 'file' }
       ]
     },
 

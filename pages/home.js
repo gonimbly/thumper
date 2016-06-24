@@ -87,7 +87,7 @@ export default class extends Component {
             </CodeCard>
             <CodeCard id={'messages'} title={'Messages'}>
               <div className="msg-block card-block">
-                <div className='msg-container' style={{maxHeight: '300px'}}>
+                <div className='msg-container' style={{minHeight: '300px'}}>
                   <div className="msg-content">
                     <div className='msg-user msg-inbound'>Leo</div>
                     <div className='msg msg-inbound'>

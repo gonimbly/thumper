@@ -12,9 +12,10 @@
 
 .container {
   margin-bottom: 25px;
+  overflow: hidden;
 
   h1:first-child {
-    padding-top: 25px;
+    margin-top: 25px;
   }
 
   &.container-flex {
@@ -25,6 +26,10 @@
     .card.card-flex {
       display: flex;
       flex: 1;
+
+      .row {
+        flex: 1;
+      }
     }
   }
 }
