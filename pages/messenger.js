@@ -40,7 +40,7 @@ export default class extends Component {
     ];
     let menuItems = _times(this.state.userCount, (n) => {
       return (
-        <li className='nav-item'>
+        <li className='nav-item' key={n}>
           <a className='nav-link'>
             <strong>{users[n % users.length]}</strong><br />
             Fri. May 6th 7pm
@@ -70,13 +70,13 @@ export default class extends Component {
       let randomN = Math.round((Math.random() * 10) * n);
       if(n % 3) {
         return [
-          (<div className='msg-user msg-inbound'>Leo</div>),
-          (<div className='msg msg-inbound'>{leosThoughts[randomN % leosThoughts.length]}</div>)
+          (<div className='msg-user msg-inbound' key={n + 'user'}>Leo</div>),
+          (<div className='msg msg-inbound' key={n + 'msg'}>{leosThoughts[randomN % leosThoughts.length]}</div>)
         ];
       } else {
         return [
-          (<div className='msg-user msg-outbound'>You</div>),
-          (<div className='msg msg-outbound'>{yourThoughts[randomN % yourThoughts.length]}</div>)
+          (<div className='msg-user msg-outbound' key={n + 'user'}>You</div>),
+          (<div className='msg msg-outbound' key={n + 'msg'}>{yourThoughts[randomN % yourThoughts.length]}</div>)
         ];
       }
     });

@@ -11,8 +11,8 @@
 }
 
 .container {
-  margin-bottom: 25px;
   overflow: hidden;
+  width: 100%;
 
   h1:first-child {
     margin-top: 25px;
@@ -32,6 +32,10 @@
       }
     }
   }
+}
+
+div:not(.navbar) > .container {
+  margin-bottom: 25px;
 }
 
 .navbar-fixed-top + .container, .navbar-fixed-top + .app-container {

@@ -12,15 +12,17 @@ export default class extends Component {
   render() {
     return (
       <nav className='navbar navbar-dark bg-primary navbar-fixed-top'>
-        <a className="navbar-brand" href="/">Thumper</a>
-        <ul className='nav navbar-nav'>
-          <li className='nav-item'>
-            <Link className="nav-link" to="/">Components</Link>
-          </li>
-          <li className='nav-item'>
-            <Link className="nav-link" to="/messenger">Messenger</Link>
-          </li>
-        </ul>
+        <div className="container">
+          <a className="navbar-brand" href="/">Thumper</a>
+          <ul className='nav navbar-nav'>
+            <li className='nav-item'>
+              <Link className="nav-link" to="/">Components</Link>
+            </li>
+            <li className='nav-item'>
+              <Link className="nav-link" to="/messenger">Messenger</Link>
+            </li>
+          </ul>
+        </div>
       </nav>
     );
   }
