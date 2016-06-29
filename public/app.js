@@ -26587,6 +26587,72 @@
 	                  )
 	                )
 	              )
+	            ),
+	            _react2.default.createElement(
+	              _CodeCard2.default,
+	              { id: 'inputs', title: 'inputs' },
+	              _react2.default.createElement(
+	                'form',
+	                null,
+	                _react2.default.createElement(
+	                  'fieldset',
+	                  { className: 'form-group' },
+	                  _react2.default.createElement(
+	                    'label',
+	                    { htmlFor: 'name' },
+	                    'Name of Business'
+	                  ),
+	                  _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'name' })
+	                ),
+	                _react2.default.createElement(
+	                  'fieldset',
+	                  { className: 'form-group' },
+	                  _react2.default.createElement(
+	                    'label',
+	                    { htmlFor: 'confirm' },
+	                    'Initial Confirmation'
+	                  ),
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'input-group' },
+	                    _react2.default.createElement('input', { type: 'number', className: 'form-control' }),
+	                    _react2.default.createElement(
+	                      'span',
+	                      { className: 'input-group-addon' },
+	                      'Days'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'small',
+	                    { className: 'text-muted' },
+	                    'Number of days before appointment date.'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'fieldset',
+	                  { className: 'form-group' },
+	                  _react2.default.createElement(
+	                    'label',
+	                    { htmlFor: 'confirm' },
+	                    'Reminder'
+	                  ),
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'input-group' },
+	                    _react2.default.createElement('input', { type: 'number', className: 'form-control' }),
+	                    _react2.default.createElement(
+	                      'span',
+	                      { className: 'input-group-addon' },
+	                      'Days'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'small',
+	                    { className: 'text-muted' },
+	                    'Number of days after initial confirmation.'
+	                  )
+	                )
+	              )
 	            )
 	          )
 	        )
@@ -51680,6 +51746,7 @@
 	    style: _react2.default.PropTypes.object, // eslint-disable-line react/forbid-prop-types
 	    springConfig: _react2.default.PropTypes.objectOf(_react2.default.PropTypes.number),
 	    keepCollapsedContent: _react2.default.PropTypes.bool,
+	    onRest: _react2.default.PropTypes.func,
 	    onHeightReady: _react2.default.PropTypes.func
 	  },
 
@@ -51869,6 +51936,7 @@
 	      _reactMotion.Motion,
 	      {
 	        defaultStyle: { height: Math.max(0, height) },
+	        onRest: this.props.onRest,
 	        style: { height: this.getMotionHeight(height) } },
 	      function (st) {
 	        _this2.height = stringHeight(st.height);

@@ -1,7 +1,7 @@
 /*!
  * © Go Nimbly Inc.
  * 2016
- * Thumper 1.4.0
+ * Thumper 1.6.0
  */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
