@@ -53,7 +53,7 @@ module.exports = function() {
         },
         {
           test: /\.scss/,
-          loader: 'style!css?sourceMap!postcss!sass?sourceMap'
+          loaders: ['style', 'css?sourceMap', 'postcss', 'sass?sourceMap']
         }, {
            test: /\.(png|jpg)$/,
            loader: 'url'
