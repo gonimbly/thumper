@@ -1,0 +1,22 @@
+.thumper-app {
+  @import "./thumper-variables.scss";
+  @import "../node_modules/bootstrap/scss/bootstrap-flex.scss";
+  @import "./thumper-fonts.scss";
+  @import "./thumper-layout.scss";
+  @import "./thumper-background.scss";
+  @import "./thumper-fontawesome.scss";
+  @import "./thumper-nav.scss";
+  @import "./thumper-cards.scss";
+  @import "./thumper-buttons.scss";
+  @import "./thumper-messages.scss";
+  @import "./thumper-forms.scss";
+  
+  // Make the `body` use the `font-size-root`
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height;
+  // Go easy on the eyes and use something other than `#000` for text
+  color: $body-color;
+  // By default, `<body>` has no `background-color` so we set one as a best practice.
+  background-color: $body-bg;
+}

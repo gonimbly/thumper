@@ -25,7 +25,7 @@ compiler.watch(300, _webpackComplete);
 
 
 // webpack thumper
-var webpackConfig = require('./webpackConfig.thumper')();
+var webpackConfig = require('./webpackConfig.thumper')(true);
 var compiler = webpack(webpackConfig);
 compiler.watch(300, _webpackComplete);
 

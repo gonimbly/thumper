@@ -8,16 +8,33 @@ var version = require('./package.json').version;
 var LiveReloadPlugin = require('webpack-livereload-plugin');
 console.log('webpacking', version);
 
-module.exports = function() {
+module.exports = function(development) {
+  var plugins = [
+    new ProgressBarPlugin(),
+    new WebpackNotifierPlugin(),
+    new webpack.BannerPlugin(['© Go Nimbly Inc.', new Date().getFullYear(), 'Thumper ' + version].join('\n'))
+  ];
+  var location;
+  if(development) {
+    location = 'public';
+    plugins.push(new LiveReloadPlugin({appendScriptTag: true}));
+  } else {
+    location = 'dist';
+    plugins.push(new webpack.optimize.UglifyJsPlugin());
+  }
+
   var config = {
     debug: false,
     context: __dirname + '/src',
-    entry: './thumper.js',
+    entry: {
+      'thumper': './thumper.js', 
+      'thumper-scoped': './thumper-scoped.js'
+    },
     devtool: 'cheap-module-source-map',
     output: {
-      path: path.join(__dirname, 'public'),
-      filename: 'thumper.js'
-    },
+        path: path.join(__dirname, location),
+        filename: '[name].js'
+      },
     stats: {
       colors: true,
       reasons: false,
@@ -64,12 +81,7 @@ module.exports = function() {
       ]
     },
 
-    plugins: [
-      new ProgressBarPlugin(),
-      new WebpackNotifierPlugin(),
-      new webpack.BannerPlugin(['© Go Nimbly Inc.', new Date().getFullYear(), 'Thumper ' + version].join('\n')),
-      new LiveReloadPlugin({appendScriptTag: true})
-    ],
+    plugins: plugins,
     externals: {
       // added for enzyme: https://github.com/airbnb/enzyme/blob/master/docs/guides/webpack.md
       'cheerio': 'window',
