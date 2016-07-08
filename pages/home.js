@@ -16,6 +16,11 @@ export default class extends Component {
         <h1>Components</h1>
         <div className='card'>
           <div className='card-block'>
+            <CodeCard id={'headers'} title={'Headers'}>
+              <h1>H1 Header</h1>
+              <h2>H2 Header</h2>
+              <h3>H3 Header</h3>
+            </CodeCard>
             <CodeCard id={'links'} title={'Links'}>
               <a href='#' className='btn btn-link btn-inline'>Link</a>
               <a href='#' className='btn btn-link btn-inline disabled'>Link disabled</a>
