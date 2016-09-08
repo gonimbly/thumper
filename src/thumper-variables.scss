@@ -33,9 +33,9 @@ $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 $gray-cool:                 #D1DEDE !default;
 
-$brand-primary:             #81C861 !default;
-// $brand-primary-hover:       #81C861 !default;
-$brand-secondary:           #646363 !default;
+$brand-primary:             #84BD5E !default;
+$brand-primary-light:       #B7D383 !default;
+$brand-secondary:           #636363 !default;
 $brand-success:             $brand-primary !default;
 $brand-info:                #5bc0de !default;
 $brand-warning:             #F3B216 !default;
@@ -96,7 +96,7 @@ $body-bg:                    #FCFDFE !default;
 //
 // Style anchor elements.
 
-// $link-color:                 $brand-primary !default;
+$link-color:                 $brand-primary-light !default;
 // $link-decoration:            none !default;
 // $link-hover-color:           darken($link-color, 15%) !default;
 // $link-hover-decoration:      underline !default;
@@ -158,7 +158,7 @@ $font-family-sans-serif:     "SourceSansPro-Regular", "Helvetica Neue", Helvetic
 // $font-size-sm:               .875rem !default;
 // $font-size-xs:               .75rem !default;
 
-$font-size-h1:               1.938rem !default; // 31px
+$font-size-h1:               2rem !default; // 32px
 $font-size-h2:               1.375rem !default; // 22px
 $font-size-h3:               1.25rem !default; // 20px
 // $font-size-h4:               1.5rem !default;

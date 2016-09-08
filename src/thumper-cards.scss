@@ -35,10 +35,6 @@ $grid-half-width: $grid-gutter-width / 2;
     }
   }
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   .card-footer {
     padding-top: $card-spacer-x;
     padding-bottom: $card-spacer-x;
@@ -51,4 +47,9 @@ $grid-half-width: $grid-gutter-width / 2;
 
 .container > .card {
   border-radius: .5rem;
+}
+
+// clearing out the padding if it's a card full of stacked cards
+.card-block > .card:last-child {
+  margin-bottom: 0;
 }
