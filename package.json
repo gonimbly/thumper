@@ -50,6 +50,7 @@
   },
   "scripts": {
     "start": "node start.js",
-    "build": "node build.js"
+    "build": "node build.js",
+    "deploy": "./bin/deploy.sh"
   }
 }
