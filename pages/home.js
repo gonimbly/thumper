@@ -22,7 +22,7 @@ export default class extends Component {
               <h3>H3 Header</h3>
             </CodeCard>
             <CodeCard id={'grid'} title={'Grid'}>
-              <p notcode>Bootstrap has a 12 column grid, we usually setup columns to become rows on mobile devices</p>
+              <p className='notcode'>Bootstrap has a 12 column grid, we usually setup columns to become rows on mobile devices</p>
               <div className='row'>
                 <div className="col-xs-12 col-md-1 bg-primary">1</div>
                 <div className="col-xs-12 col-md-1 bg-primary-light">2</div>
@@ -37,8 +37,8 @@ export default class extends Component {
                 <div className="col-xs-12 col-md-1 bg-primary">11</div>
                 <div className="col-xs-12 col-md-1 bg-primary-light">12</div>
               </div>
-              <br notcode />
-              <p notcode>50/50 grid</p>
+              <br className='notcode' />
+              <p className='notcode'>50/50 grid</p>
               <div className='row'>
                 <div className='col-xs-12 col-md-6 bg-primary'>
                   <p>col-xs-12 col-md-6 bg-primary</p>
@@ -47,8 +47,8 @@ export default class extends Component {
                   <p>col-xs-12 col-md-6 bg-primary-light</p>
                 </div>
               </div>
-              <br notcode />
-              <p notcode>You can mix and match any way.</p>
+              <br className='notcode' />
+              <p className='notcode'>You can mix and match any way.</p>
               <div className='row'>
                 <div className='col-xs-12 col-md-6 bg-primary'>
                   <p>col-xs-12 col-md-6 bg-primary</p>
@@ -60,8 +60,8 @@ export default class extends Component {
                   <p>col-xs-12 col-md-2 bg-primary</p>
                 </div>
               </div>
-              <br notcode />
-              <p notcode>You can offset columns to center them, this one collapses down to full width at smaller sizes.</p>
+              <br className='notcode' />
+              <p className='notcode'>You can offset columns to center them, this one collapses down to full width at smaller sizes.</p>
               <div className='row'>
                 <div className='col-xs-12 col-md-offset-3 col-md-6 bg-primary-light'>
                   <p>col-xs-12 col-md-offset-3 col-md-6 bg-primary-light</p>
@@ -129,13 +129,13 @@ export default class extends Component {
                   <a className='dropdown-item' href='#'>Separated link</a>
                 </div>
               </div>
-              <br notcode />
-              <br notcode />
-              <br notcode />
-              <br notcode />
-              <br notcode />
-              <br notcode />
-              <br notcode />
+              <br className='notcode' />
+              <br className='notcode' />
+              <br className='notcode' />
+              <br className='notcode' />
+              <br className='notcode' />
+              <br className='notcode' />
+              <br className='notcode' />
             </CodeCard>
             <CodeCard id={'messages'} title={'Messages'}>
               <div className='msg-block card-block'>
