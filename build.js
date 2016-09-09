@@ -8,15 +8,15 @@ compiler.watch(300, _webpackComplete);
 function _webpackComplete(err, stats) {
   if(err) {
     console.error(err);
-    return;
+    process.exit(0);
   }
   var jsonStats = stats.toJson();
   if(jsonStats.errors.length > 0){
     console.error.apply(this, jsonStats.errors);
-    return;
+    process.exit(0);
   }
   if(jsonStats.warnings.length > 0) {
     console.error.apply(this, jsonStats.warnings);
-    return;
+    process.exit(0);
   }
 }
