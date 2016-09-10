@@ -82,13 +82,13 @@ export default class extends Component {
               <button type='button' className='btn btn-inline btn-danger'>Danger</button>
             </CodeCard>
             <CodeCard id={'outlineButtons'} title={'Outline Buttons'}>
-              <button type='button' className='btn btn-inline btn-default-outline'>Default</button>
-              <button type='button' className='btn btn-inline btn-primary-outline'>Primary</button>
-              <button type='button' className='btn btn-inline btn-secondary-outline'>Secondary</button>
-              <button type='button' className='btn btn-inline btn-success-outline'>Success</button>
-              <button type='button' className='btn btn-inline btn-info-outline'>Info</button>
-              <button type='button' className='btn btn-inline btn-warning-outline'>Warning</button>
-              <button type='button' className='btn btn-inline btn-danger-outline'>Danger</button>
+              <button type='button' className='btn btn-inline btn-outline-default'>Default</button>
+              <button type='button' className='btn btn-inline btn-outline-primary'>Primary</button>
+              <button type='button' className='btn btn-inline btn-outline-secondary'>Secondary</button>
+              <button type='button' className='btn btn-inline btn-outline-success'>Success</button>
+              <button type='button' className='btn btn-inline btn-outline-info'>Info</button>
+              <button type='button' className='btn btn-inline btn-outline-warning'>Warning</button>
+              <button type='button' className='btn btn-inline btn-outline-danger'>Danger</button>
             </CodeCard>
             <CodeCard id={'buttonSizes'} title={'Buttons Sizes'}>
               <button type='button' className='btn btn-inline btn-primary btn-sm'>Small</button>

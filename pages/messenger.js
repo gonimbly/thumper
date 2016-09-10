@@ -146,19 +146,19 @@ export default class extends Component {
                       </div>
                       <div className='row'>
                         <div className='col-sm-12 col-md-4'>
-                            <button type='button' className='btn btn-danger-outline btn-block'>
+                            <button type='button' className='btn btn-outline-danger btn-block'>
                               <i className='fa fa-times fa-lg'></i>
                               Cancelled
                             </button>
                         </div>
                         <div className='col-sm-12 col-md-4'>
-                            <button type='button' className='btn btn-secondary-outline btn-block'>
+                            <button type='button' className='btn btn-outline-secondary btn-block'>
                               <i className='fa fa-calendar fa-lg'></i>
                               Rescheduled
                             </button>
                         </div>
                         <div className='col-sm-12 col-md-4'>
-                            <button type='button' className='btn btn-primary-outline btn-block'>
+                            <button type='button' className='btn btn-outline-primary btn-block'>
                               <i className='fa fa-check fa-lg'></i>
                               Confirmed
                             </button>
