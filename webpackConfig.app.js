@@ -5,12 +5,24 @@ var WebpackNotifierPlugin = require('webpack-notifier');
 var ProgressBarPlugin = require('progress-bar-webpack-plugin');
 var autoprefixer = require('autoprefixer');
 
-module.exports = function() {
+module.exports = function(development) {
+
+  var plugins = [];
+  var location;
+  if(development) {
+    location = 'public';
+    plugins.push(new WebpackNotifierPlugin());
+    plugins.push(new ProgressBarPlugin());
+  } else {
+    location = 'dist';
+    plugins.push(new webpack.optimize.UglifyJsPlugin());
+  }
+
   var config = {
     debug: false,
     entry: './app.js',
     output: {
-      path: path.join(__dirname, 'public'),
+      path: path.join(__dirname, location),
       filename: 'app.js'
     },
     stats: {
@@ -60,10 +72,7 @@ module.exports = function() {
       ]
     },
 
-    plugins: [
-      new ProgressBarPlugin(),
-      new WebpackNotifierPlugin()
-    ],
+    plugins: plugins,
     externals: {
       // added for enzyme: https://github.com/airbnb/enzyme/blob/master/docs/guides/webpack.md
       'cheerio': 'window',

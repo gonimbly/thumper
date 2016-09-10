@@ -1,11 +1,22 @@
 var webpack = require('webpack');
 
-// webpack thumper
-var webpackConfig = require('./webpackConfig.thumper')(false);
-var compiler = webpack(webpackConfig);
-compiler.watch(300, _webpackComplete);
+// webpack the app
+var webpackAppConfig = require('./webpackConfig.app')(false);
+webpack(webpackAppConfig, (err, stats) => {
+  console.log('webpack app complete');
+  _checkErrors(err, stats);
 
-function _webpackComplete(err, stats) {
+  // webpack thumper
+  var webpackThumperConfig = require('./webpackConfig.thumper')(false);
+  webpack(webpackThumperConfig, (err, stats) => {
+    console.log('webpack thumper complete');
+    _checkErrors(err, stats);
+    process.exit(0);
+  });
+});
+
+
+function _checkErrors(err, stats) {
   if(err) {
     console.error(err);
     process.exit(0);
@@ -17,6 +28,5 @@ function _webpackComplete(err, stats) {
   }
   if(jsonStats.warnings.length > 0) {
     console.error.apply(this, jsonStats.warnings);
-    process.exit(0);
   }
 }
