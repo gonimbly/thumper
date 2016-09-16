@@ -63,8 +63,8 @@ export default class extends Component {
               <br className='notcode' />
               <p className='notcode'>You can offset columns to center them, this one collapses down to full width at smaller sizes.</p>
               <div className='row'>
-                <div className='col-xs-12 col-md-offset-3 col-md-6 bg-primary-light'>
-                  <p>col-xs-12 col-md-offset-3 col-md-6 bg-primary-light</p>
+                <div className='col-xs-12 offset-md-3 col-md-6 bg-primary-light'>
+                  <p>col-xs-12 offset-md-3 col-md-6 bg-primary-light</p>
                 </div>
               </div>
             </CodeCard>
