@@ -15,6 +15,9 @@ module.exports = function(development) {
     plugins.push(new ProgressBarPlugin());
   } else {
     location = 'dist';
+    plugins.push(new webpack.DefinePlugin({
+      NODE_ENV: 'production'
+    }));
     plugins.push(new webpack.optimize.UglifyJsPlugin());
   }
 
