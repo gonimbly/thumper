@@ -75,8 +75,8 @@ module.exports = function(development) {
            test: /\.(png|jpg)$/,
            loader: 'url'
         },
-        { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,   loader: 'url?limit=100000&mimetype=application/font-woff' },
-        { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,   loader: 'url?limit=100000&mimetype=application/font-woff2' },
+        { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,   loader: 'url?limit=100000000&mimetype=application/font-woff' },
+        { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,   loader: 'url?limit=100000000&mimetype=application/font-woff2' },
         { test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,    loader: 'file' }
       ]
     },

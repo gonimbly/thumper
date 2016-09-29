@@ -32,17 +32,9 @@ module.exports = function(development) {
     },
 
     resolve: {
-      extensions: ['', '.js', '.jsx', '.scss'],
-      alias: {
-        'styles': __dirname + '/styles',
-        'mixins': __dirname + '/mixins',
-        'components': __dirname + '/components/',
-        'stores': __dirname + '/stores/',
-        'actions': __dirname + '/actions/'
-      }
+      extensions: ['', '.js', '.jsx', '.scss']
     },
     module: {
-      // payment.js is required by card-react
       preLoaders: [{
         // loads rules from .eslintrc.json
         test: /\.jsx?$/,
@@ -64,11 +56,7 @@ module.exports = function(development) {
         }, {
            test: /\.(png|jpg|svg)$/,
            loader: 'url'
-        },
-        { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,   loader: 'url?limit=10000&mimetype=application/font-woff' },
-        { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,   loader: 'url?limit=10000&minetype=application/font-woff2' },
-        { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,    loader: 'file' },
-        { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,    loader: 'file' }
+        }
       ]
     },
 
