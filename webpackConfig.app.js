@@ -16,7 +16,9 @@ module.exports = function(development) {
   } else {
     location = 'dist';
     plugins.push(new webpack.DefinePlugin({
-      NODE_ENV: 'production'
+      'process.env':{
+        'NODE_ENV': JSON.stringify('production')
+      }
     }));
     plugins.push(new webpack.optimize.UglifyJsPlugin());
   }
