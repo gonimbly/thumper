@@ -4,17 +4,29 @@ import { docco } from 'react-syntax-highlighter/dist/styles';
 import Collapse from 'react-collapse';
 import {forEach} from 'lodash';
 import jsxToString from 'jsx-to-string';
+import Clipboard from 'clipboard';
 
 class CodeCard extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      isOpened: false,
-      forceOpen: false
-    };
     this.collapse = this.collapse.bind(this);
     this.show = this.show.bind(this);
     this.toggle = this.toggle.bind(this);
+
+    let allChildren = props.children.hasOwnProperty('length') ? props.children : [props.children];
+    let strChildren = [];
+    forEach(allChildren, child => {
+      let str = jsxToString(child);
+      if(str.indexOf('notcode') === -1) {
+        strChildren.push(str);
+      }
+    });
+    let stringCode = strChildren.join('\n');
+    this.state = {
+      isOpened: false,
+      forceOpen: false,
+      stringCode: stringCode
+    };
   }
 
   collapse() {
@@ -43,36 +55,33 @@ class CodeCard extends Component {
   }
 
   render() {
-    let allChildren = this.props.children.hasOwnProperty('length') ? this.props.children : [this.props.children];
-    let strChildren = [];
-    forEach(allChildren, child => {
-      let str = jsxToString(child);
-      if(str.indexOf('notcode') === -1) {
-        strChildren.push(str);
-      }
-    });
-    let stringCode = strChildren.join('\n');
-    let codeLabel = this.state.forceOpen ? 'Pinned': '';
+    let codeLabel = this.state.forceOpen ? 'Pinned ': '';
     return (
       <section className='card' id={this.props.id}>
         <h2 className='card-header'>{this.props.title}</h2>
         <div className='card-block'>
           {this.props.children}
         </div>
-        <div className='card-footer'
-             onMouseEnter={this.show}
-             onMouseLeave={this.collapse}
-             onClick={this.toggle}
-             style={{cursor: 'pointer'}}>
-          <a className={'btn btn-link'}>{codeLabel} Code</a>
+        <div className='card-footer'>
+          <a className={'btn btn-link'} onClick={this.toggle}>{codeLabel}Code</a>
+          <a className={'btn btn-link pull-right'} ref='copyBtn' data-clipboard-text={this.state.stringCode}>Copy</a>
           <Collapse isOpened={this.state.isOpened || this.state.forceOpen}>
             <SyntaxHighlighter language='html' style={docco}>
-              {stringCode}
+              {this.state.stringCode}
             </SyntaxHighlighter>
           </Collapse>
         </div>
       </section>
     );
+  }
+
+  componentDidMount() {
+    var cb = new Clipboard(this.refs.copyBtn);
+    this.setState({clipboard: cb});
+  }
+
+  componentWillUnmount() {
+    this.state.clipboard.destroy();
   }
 
 }
