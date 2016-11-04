@@ -111,6 +111,22 @@ export default class extends Component {
                 </li>
               </ul>
             </CodeCard>
+            <CodeCard id={'navstabs'} title={'Navs Tabs'}>
+              <ul className='nav nav-tabs'>
+                <li className='nav-item'>
+                  <a className='nav-link active' href='#'>Active</a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>Link</a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#'>Link</a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link disabled' href='#'>Disabled</a>
+                </li>
+              </ul>
+            </CodeCard>
             <CodeCard id={'dropdowns'} title={'Dropdowns'}>
               <div className='btn-group open'>
                 <button type='button' className='btn btn-inline dropdown-toggle'>
@@ -282,6 +298,27 @@ export default class extends Component {
                   </tr>
                 </tbody>
               </table>
+            </CodeCard>
+            <CodeCard id={'modals'} title={'modals'}>
+              <div className='modal'>
+                <div className='modal-dialog' role='document'>
+                  <div className='modal-content'>
+                    <div className='modal-header'>
+                      <button type='button' className='close' data-dismiss='modal' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                      </button>
+                      <h4 className='modal-title'>Modal title</h4>
+                    </div>
+                    <div className='modal-body'>
+                      <p>He was lost, in the modal of nowhere.</p>
+                    </div>
+                    <div className='modal-footer'>
+                      <button type='button' className='btn btn-inline btn-secondary' data-dismiss='modal'>Close</button>
+                      <button type='button' className='btn btn-inline btn-primary'>Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </CodeCard>
           </div>
         </div>
