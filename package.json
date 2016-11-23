@@ -39,16 +39,24 @@
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack-livereload-plugin": "^0.8.2",
-    "webpack-notifier": "^1.4.1"
+    "webpack-notifier": "^1.4.1",
+    "fuse.js": "^2.5.0",
+    "lodash": "^4.17.2",
+    "clipboard": "^1.5.15",
+    "webpack": "^1.13.2"
   },
   "dependencies": {
-    "clipboard": "^1.5.15",
     "ejs": "^2.5.2",
-    "express": "^4.14.0",
-    "webpack": "^1.13.2"
+    "express": "^4.14.0"
   },
   "scripts": {
     "start": "./bin/start.sh",
     "deploy": "./bin/deploy.sh"
-  }
+  },
+  "repository": {
+    "url": "git@bitbucket.org:gonimbly/thumper.git",
+    "type": "git"
+  },
+  "author": "Grant Helton <grant@gonimbly.com>",
+  "license": "MIT"
 }

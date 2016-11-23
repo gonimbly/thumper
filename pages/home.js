@@ -1,325 +1,67 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
-
 import React, { Component } from 'react';
-import CodeCard from '../components/CodeCard/CodeCard';
+import _map from 'lodash/map';
+import Filter from '../components/Filter/Filter';
+import Headers from './examples/headers.example.js';
+import Grid from './examples/grid.example.js';
+import Links from './examples/links.example.js';
+import BasicButtons from './examples/basicButtons.example.js';
+import OutlineButtons from './examples/outlineButtons.example.js';
+import ButtonSizes from './examples/buttonSizes.example.js';
+import NavPills from './examples/navPills.example.js';
+import NavTabs from './examples/navTabs.example.js';
+import Dropdowns from './examples/dropdowns.example.js';
+import Messages from './examples/messages.example.js';
+import Cards from './examples/cards.example.js';
+import Tables from './examples/tables.example.js';
+import Modals from './examples/modals.example.js';
 import './home.scss';
 
 export default class extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      filteredData: null,
+      cards: [
+        Headers,
+        Grid,
+        Links,
+        BasicButtons,
+        OutlineButtons,
+        ButtonSizes,
+        NavPills,
+        NavTabs,
+        Dropdowns,
+        Messages,
+        Cards,
+        Tables,
+        Modals
+      ]
+    };
+  }
+
+  onDataFiltered(filteredData) {
+    this.setState({
+      filteredData: filteredData
+    });
+  }
+
   render() {
     console.log('render');
+    const cardsData = this.state.filteredData || this.state.cards;
+    const cards = _map(cardsData, (card) => {
+      let Template = card.template;
+      return <Template key={card.title} />;
+    });
     return (
       <div className='container'>
-        <h1>Components</h1>
+        <div className='header-bar'>
+          <Filter className='form-inline float-xs-right' data={this.state.cards} onDataFiltered={this.onDataFiltered.bind(this)} filterKey={'title'} />
+          <h1>Components</h1>
+        </div>
         <div className='card'>
           <div className='card-block'>
-            <CodeCard id={'headers'} title={'Headers'}>
-              <h1>H1 Header</h1>
-              <h2>H2 Header</h2>
-              <h3>H3 Header</h3>
-            </CodeCard>
-            <CodeCard id={'grid'} title={'Grid'}>
-              <p className='notcode'>Bootstrap has a 12 column grid, we usually setup columns to become rows on mobile devices</p>
-              <div className='row'>
-                <div className='col-xs-12 col-md-1 bg-primary'>1</div>
-                <div className='col-xs-12 col-md-1 bg-primary-light'>2</div>
-                <div className='col-xs-12 col-md-1 bg-primary'>3</div>
-                <div className='col-xs-12 col-md-1 bg-primary-light'>4</div>
-                <div className='col-xs-12 col-md-1 bg-primary'>5</div>
-                <div className='col-xs-12 col-md-1 bg-primary-light'>6</div>
-                <div className='col-xs-12 col-md-1 bg-primary'>7</div>
-                <div className='col-xs-12 col-md-1 bg-primary-light'>8</div>
-                <div className='col-xs-12 col-md-1 bg-primary'>9</div>
-                <div className='col-xs-12 col-md-1 bg-primary-light'>10</div>
-                <div className='col-xs-12 col-md-1 bg-primary'>11</div>
-                <div className='col-xs-12 col-md-1 bg-primary-light'>12</div>
-              </div>
-              <br className='notcode' />
-              <p className='notcode'>50/50 grid</p>
-              <div className='row'>
-                <div className='col-xs-12 col-md-6 bg-primary'>
-                  <p>col-xs-12 col-md-6 bg-primary</p>
-                </div>
-                <div className='col-xs-12 col-md-6 bg-primary-light'>
-                  <p>col-xs-12 col-md-6 bg-primary-light</p>
-                </div>
-              </div>
-              <br className='notcode' />
-              <p className='notcode'>You can mix and match any way.</p>
-              <div className='row'>
-                <div className='col-xs-12 col-md-6 bg-primary'>
-                  <p>col-xs-12 col-md-6 bg-primary</p>
-                </div>
-                <div className='col-xs-12 col-md-4 bg-primary-light'>
-                  <p>col-xs-12 col-md-4 bg-primary-light</p>
-                </div>
-                <div className='col-xs-12 col-md-2 bg-primary'>
-                  <p>col-xs-12 col-md-2 bg-primary</p>
-                </div>
-              </div>
-              <br className='notcode' />
-              <p className='notcode'>You can offset columns to center them, this one collapses down to full width at smaller sizes.</p>
-              <div className='row'>
-                <div className='col-xs-12 offset-md-3 col-md-6 bg-primary-light'>
-                  <p>col-xs-12 offset-md-3 col-md-6 bg-primary-light</p>
-                </div>
-              </div>
-            </CodeCard>
-            <CodeCard id={'links'} title={'Links'}>
-              <a href='#' className='btn btn-link btn-inline'>Link</a>
-              <a href='#' className='btn btn-link btn-inline disabled'>Link disabled</a>
-            </CodeCard>
-            <CodeCard id={'basicButtons'} title={'Basic Buttons'}>
-              <button type='button' className='btn btn-inline btn-default'>Default</button>
-              <button type='button' className='btn btn-inline btn-primary'>Primary</button>
-              <button type='button' className='btn btn-inline btn-secondary'>Secondary</button>
-              <button type='button' className='btn btn-inline btn-success'>Success</button>
-              <button type='button' className='btn btn-inline btn-info'>Info</button>
-              <button type='button' className='btn btn-inline btn-warning'>Warning</button>
-              <button type='button' className='btn btn-inline btn-danger'>Danger</button>
-            </CodeCard>
-            <CodeCard id={'outlineButtons'} title={'Outline Buttons'}>
-              <button type='button' className='btn btn-inline btn-outline-default'>Default</button>
-              <button type='button' className='btn btn-inline btn-outline-primary'>Primary</button>
-              <button type='button' className='btn btn-inline btn-outline-secondary'>Secondary</button>
-              <button type='button' className='btn btn-inline btn-outline-success'>Success</button>
-              <button type='button' className='btn btn-inline btn-outline-info'>Info</button>
-              <button type='button' className='btn btn-inline btn-outline-warning'>Warning</button>
-              <button type='button' className='btn btn-inline btn-outline-danger'>Danger</button>
-            </CodeCard>
-            <CodeCard id={'buttonSizes'} title={'Buttons Sizes'}>
-              <button type='button' className='btn btn-inline btn-primary btn-sm'>Small</button>
-              <button type='button' className='btn btn-inline btn-primary btn-md'>Regular</button>
-              <button type='button' className='btn btn-inline btn-primary btn-lg'>Large</button>
-            </CodeCard>
-            <CodeCard id={'navPills'} title={'Nav Pills'}>
-              <ul className='nav nav-pills'>
-                <li className='nav-item'>
-                  <a className='nav-link' href='#'>All</a>
-                </li>
-                <li className='nav-item'>
-                  <a className='nav-link active' href='#'>Recent</a>
-                </li>
-                <li className='nav-item'>
-                  <a className='nav-link' href='#'>Weakest</a>
-                </li>
-                <li className='nav-item'>
-                  <a className='nav-link' href='#'>Strongest</a>
-                </li>
-              </ul>
-            </CodeCard>
-            <CodeCard id={'navstabs'} title={'Navs Tabs'}>
-              <ul className='nav nav-tabs'>
-                <li className='nav-item'>
-                  <a className='nav-link active' href='#'>Active</a>
-                </li>
-                <li className='nav-item'>
-                  <a className='nav-link' href='#'>Link</a>
-                </li>
-                <li className='nav-item'>
-                  <a className='nav-link' href='#'>Link</a>
-                </li>
-                <li className='nav-item'>
-                  <a className='nav-link disabled' href='#'>Disabled</a>
-                </li>
-              </ul>
-            </CodeCard>
-            <CodeCard id={'dropdowns'} title={'Dropdowns'}>
-              <div className='btn-group open'>
-                <button type='button' className='btn btn-inline dropdown-toggle'>
-                  Action
-                </button>
-              </div>
-              <div className='btn-group open'>
-                <button type='button' className='btn btn-inline dropdown-toggle'>
-                  Action
-                </button>
-                <div className='dropdown-menu'>
-                  <a className='dropdown-item' href='#'>Action</a>
-                  <a className='dropdown-item' href='#'>Another action</a>
-                  <a className='dropdown-item' href='#'>Something else here</a>
-                  <div className='dropdown-divider'></div>
-                  <a className='dropdown-item' href='#'>Separated link</a>
-                </div>
-              </div>
-              <br className='notcode' />
-              <br className='notcode' />
-              <br className='notcode' />
-              <br className='notcode' />
-              <br className='notcode' />
-              <br className='notcode' />
-              <br className='notcode' />
-            </CodeCard>
-            <CodeCard id={'messages'} title={'Messages'}>
-              <div className='msg-block card-block'>
-                <div className='msg-container' style={{minHeight: '300px'}}>
-                  <div className='msg-content'>
-                    <div className='msg-user msg-inbound'>Leo</div>
-                    <div className='msg msg-inbound'>
-                      Hey how are you?
-                    </div>
-                    <div className='msg-user msg-outbound'>You</div>
-                    <div className='msg msg-outbound'>
-                      Great! Hows portland?
-                    </div>
-                    <div className='msg-user msg-inbound'>Leo</div>
-                    <div className='msg msg-inbound'>
-                      I Put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.
-                    </div>
-                    <div className='msg-user msg-outbound'>You</div>
-                    <div className='msg msg-outbound'>
-                      I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.
-                    </div>
-                    <div className='msg-user msg-outbound'>You</div>
-                    <div className='msg msg-outbound'>
-                      I put a bird on it with my cold-pressed juice. Just got a ethical fingerstache tote bag, seitan meggings, selvage chartreuse and cray next-level biodiesel.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </CodeCard>
-            <CodeCard id={'cards'} title={'Cards'}>
-              <div className='row'>
-                <div className='col-sm-6'>
-                  <div className='card text-xs-center'>
-                    <div className='card-block'>
-                      <h4 className='card-title'>card</h4>
-                      <blockquote className='card-blockquote'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer>Someone famous in <cite title='Source Title'>Source Title</cite></footer>
-                      </blockquote>
-                    </div>
-                  </div>
-                  <div className='card card-inverse card-primary text-xs-center'>
-                    <div className='card-block'>
-                      <h4 className='card-title'>card card-inverse card-primary</h4>
-                      <blockquote className='card-blockquote'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer>Someone famous in <cite title='Source Title'>Source Title</cite></footer>
-                      </blockquote>
-                    </div>
-                  </div>
-                  <div className='card card-warning text-xs-center'>
-                    <div className='card-block'>
-                      <h4 className='card-title'>card card-warning</h4>
-                      <blockquote className='card-blockquote'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer>Someone famous in <cite title='Source Title'>Source Title</cite></footer>
-                      </blockquote>
-                    </div>
-                  </div>
-                </div>
-                <div className='col-sm-6'>
-                  <div className='card card-inverse card-secondary text-xs-center'>
-                    <div className='card-block'>
-                      <h4 className='card-title'>card card-inverse card-secondary</h4>
-                      <blockquote className='card-blockquote'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer>Someone famous in <cite title='Source Title'>Source Title</cite></footer>
-                      </blockquote>
-                    </div>
-                  </div>
-                  <div className='card card-inverse card-info text-xs-center'>
-                    <div className='card-block'>
-                      <h4 className='card-title'>card card-inverse card-info</h4>
-                      <blockquote className='card-blockquote'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer>Someone famous in <cite title='Source Title'>Source Title</cite></footer>
-                      </blockquote>
-                    </div>
-                  </div>
-                  <div className='card card-inverse card-danger text-xs-center'>
-                    <div className='card-block'>
-                      <h4 className='card-title'>card card-inverse card-danger</h4>
-                      <blockquote className='card-blockquote'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer>Someone famous in <cite title='Source Title'>Source Title</cite></footer>
-                      </blockquote>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </CodeCard>
-            <CodeCard id={'inputs'} title={'inputs'}>
-              <form>
-                <fieldset className='form-group'>
-                  <label htmlFor='name'>Name of Business</label>
-                  <input type='text' className='form-control' id='name' />
-                </fieldset>
-                <fieldset className='form-group'>
-                  <label htmlFor='confirm'>Initial Confirmation</label>
-                  <div className='input-group'>
-                    <input type='number' className='form-control' />
-                    <span className='input-group-addon'>Days</span>
-                  </div>
-                  <small className='text-muted'>Number of days before appointment date.</small>
-                </fieldset>
-                <fieldset className='form-group'>
-                  <label htmlFor='confirm'>Reminder</label>
-                  <div className='input-group'>
-                    <input type='number' className='form-control' />
-                    <span className='input-group-addon'>Days</span>
-                  </div>
-                  <small className='text-muted'>Number of days after initial confirmation.</small>
-                </fieldset>
-              </form>
-            </CodeCard>
-            <CodeCard id={'tables'} title={'tables'}>
-              <table className='table'>
-                <thead>
-                  <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Username</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope='row'>1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope='row'>2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope='row'>3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
-            </CodeCard>
-            <CodeCard id={'modals'} title={'modals'}>
-              <div className='modal'>
-                <div className='modal-dialog' role='document'>
-                  <div className='modal-content'>
-                    <div className='modal-header'>
-                      <button type='button' className='close' data-dismiss='modal' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                      </button>
-                      <h4 className='modal-title'>Modal title</h4>
-                    </div>
-                    <div className='modal-body'>
-                      <p>He was lost, in the modal of nowhere.</p>
-                    </div>
-                    <div className='modal-footer'>
-                      <button type='button' className='btn btn-inline btn-secondary' data-dismiss='modal'>Close</button>
-                      <button type='button' className='btn btn-inline btn-primary'>Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </CodeCard>
+            {cards}
           </div>
         </div>
       </div>

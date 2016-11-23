@@ -9,4 +9,5 @@ printf "\n~~Thumper says: Running app"
 printf "\n~~Thumper says: Building app\n"
 webpack --config webpackConfig.app.js --watch & \
   webpack --config webpackConfig.thumper.js --watch & \
-  nodemon server.js
+  nodemon server.js & \
+  open localhost:4000
