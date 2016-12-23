@@ -43,6 +43,27 @@ export default class extends Component {
         min: 5,
         max: 12,
         est: 14
+      },
+      {
+        title: 'Business account check',
+        team: 'Engineering',
+        min: 7,
+        max: 12,
+        est: 10
+      },
+      {
+        title: 'Business account check',
+        team: 'Engineering',
+        min: 3,
+        max: 8,
+        est: 6
+      },
+      {
+        title: 'Find matching account by contact and relate to account',
+        team: 'Engineering',
+        min: 5,
+        max: 6,
+        est: 5
       }
     ];
     let activeSort = _find(this.state.sortedColumns);
@@ -74,7 +95,7 @@ export default class extends Component {
             <input type="number" className="form-control" placeholder="Add another task" defaultValue={row.max} />
           </div>
           <div className="col-sm-1">
-            <input type="number" className="form-control" placeholder="Add another task" defaultValue={row.est} />
+            <input disabled type="number" className="form-control" placeholder="Add another task" defaultValue={row.est} />
           </div>
         </div>
       );

@@ -14,4 +14,9 @@
   &:focus {
     border-bottom-color: $gray-dark;
   }
+
+  &:disabled {
+    border-bottom: none;
+    background-color: white;
+  }
 }
