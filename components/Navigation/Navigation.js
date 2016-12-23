@@ -21,6 +21,9 @@ export default class extends Component {
             <li className='nav-item'>
               <Link className='nav-link' to='/messenger'>Messenger</Link>
             </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/table-form'>Table Form</Link>
+            </li>
           </ul>
         </div>
       </nav>

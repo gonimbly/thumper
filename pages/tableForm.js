@@ -1,0 +1,114 @@
+import React, { Component } from 'react';
+import _map from 'lodash/map';
+import _orderBy from 'lodash/orderBy';
+import _find from 'lodash/find';
+
+const SORT = {
+  ASC: 'asc',
+  DESC: 'desc',
+  DEFAULT: 'asc'
+};
+
+export default class extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      sortColumn: null,
+      sortDirection: SORT.ASC
+    };
+  }
+  onClickHeader(columnName) {
+    let newState = {};
+    if(this.state.sortColumn === columnName) {
+      // already sorting by this column, just flip direction
+      newState.sortDirection = this.state.sortDirection === SORT.ASC ? SORT.DESC : SORT.ASC;
+    } else {
+      newState.sortColumn = columnName;
+      newState.sortDirection = SORT.DEFAULT;
+    }
+    this.setState(newState);
+  }
+  getTableHeadItemSortClass(columnName) {
+    if(this.state.sortColumn === columnName) {
+      return `table-head-item-sortable table-head-item-${this.state.sortDirection}`;
+    } else {
+      return 'table-head-item-sortable';
+    }
+  }
+  render() {
+    let rows = [
+      {
+        title: 'Batch to query new leads against contact',
+        team: 'Marketing',
+        min: 5,
+        max: 12,
+        est: 14
+      }
+    ];
+    let activeSort = _find(this.state.sortedColumns);
+    // overwrite rows if we need to sort
+    if(activeSort) {
+      rows = _orderBy(rows, activeSort, this.state.sortDirection);
+    }
+
+    // build rows
+    let tableRows = _map(rows, (row, index) => {
+      return (
+        <div className="table-row row" key={index}>
+          <div className="col-sm-1">
+            <div className="icon-group pull-right">
+              <i className="fa fa-plus" />
+              <i className="fa fa-times" />
+            </div>
+          </div>
+          <div className="col-sm-6">
+            <input type="text" className="form-control" placeholder="Add another task" defaultValue={row.title} />
+          </div>
+          <div className="col-sm-2">
+            <input type="text" className="form-control" placeholder="Add another task" defaultValue={row.team} />
+          </div>
+          <div className="col-sm-1">
+            <input type="number" className="form-control" placeholder="Add another task" defaultValue={row.min} />
+          </div>
+          <div className="col-sm-1">
+            <input type="number" className="form-control" placeholder="Add another task" defaultValue={row.max} />
+          </div>
+          <div className="col-sm-1">
+            <input type="number" className="form-control" placeholder="Add another task" defaultValue={row.est} />
+          </div>
+        </div>
+      );
+    });
+    return (
+      <div className='app-container'>
+        <div className='container container-flex'>
+          <h1>[PWB-07734]</h1>
+          <div className="table-block">
+            <div className="table-head row">
+              <div className={`col-sm-6 offset-sm-1 ${this.getTableHeadItemSortClass('title')}`} onClick={this.onClickHeader.bind(this, 'title')}>
+                Title
+              </div>
+              <div className={`col-sm-2 ${this.getTableHeadItemSortClass('team')}`} onClick={this.onClickHeader.bind(this, 'team')}>
+                Team
+              </div>
+              <div className={`col-sm-1 ${this.getTableHeadItemSortClass('min')}`} onClick={this.onClickHeader.bind(this, 'min')}>
+                Min
+              </div>
+              <div className={`col-sm-1 ${this.getTableHeadItemSortClass('max')}`} onClick={this.onClickHeader.bind(this, 'max')}>
+                Max
+              </div>
+              <div className={`col-sm-1 ${this.getTableHeadItemSortClass('est')}`} onClick={this.onClickHeader.bind(this, 'est')}>
+                Est.
+              </div>
+            </div>
+            <div className="table-rows">
+              {tableRows}
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    );
+  }
+
+}

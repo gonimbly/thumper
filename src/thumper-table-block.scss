@@ -1,0 +1,31 @@
+.table-block {
+  .table-head {
+    color: $gray;
+
+    .table-head-item-sortable {
+      cursor: pointer;
+
+      &:after {
+        content:'';
+        float: right;
+        font-family: 'FontAwesome';
+        color: $gray;
+      }
+
+      &.table-head-item-asc {
+        &:after {
+          content:'';
+          color: $gray-dark;
+        }
+      }
+
+      &.table-head-item-desc {
+        &:after {
+          content:'';
+          color: $gray-dark;
+        }
+      }
+    }
+  }
+
+}

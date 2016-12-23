@@ -5,6 +5,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import Navigation from './components/Navigation/Navigation';
 import Home from './pages/home';
 import Messenger from './pages/messenger';
+import TableForm from './pages/tableForm';
 
 const App = (props) => {
   return (
@@ -24,6 +25,7 @@ render((
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="messenger" component={Messenger} />
+      <Route path="table-form" component={TableForm} />
     </Route>
   </Router>
 ), document.getElementById('app'));

@@ -1,3 +1,17 @@
 .input-group-addon {
   line-height: 1.5;
 }
+
+.form-control {
+  padding-left: 0;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid $gray;
+  border-left: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  &:focus {
+    border-bottom-color: $gray-dark;
+  }
+}

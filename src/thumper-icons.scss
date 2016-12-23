@@ -1,0 +1,19 @@
+.icon-group {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  i:not(:first-child) {
+    margin-left: 10px;
+  }
+
+  &.pull-right {
+    i {
+      margin-left: 0;
+    }
+
+    i:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
