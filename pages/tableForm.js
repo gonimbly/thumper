@@ -95,11 +95,13 @@ export default class extends Component {
             <input type="number" className="form-control" placeholder="Add another task" defaultValue={row.max} />
           </div>
           <div className="col-sm-1">
-            <input disabled type="number" className="form-control" placeholder="Add another task" defaultValue={row.est} />
+            <p>{row.est}</p>
           </div>
         </div>
       );
     });
+
+
     return (
       <div className='app-container'>
         <div className='container container-flex'>
