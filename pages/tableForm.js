@@ -76,26 +76,20 @@ export default class extends Component {
     let tableRows = _map(rows, (row, index) => {
       return (
         <div className="table-row row" key={index}>
-          <div className="col-sm-1">
-            <div className="icon-group pull-right">
-              <i className="fa fa-plus" />
-              <i className="fa fa-times" />
-            </div>
-          </div>
-          <div className="col-sm-6">
+          <div className="col-sm-7">
             <input type="text" className="form-control" placeholder="Add another task" defaultValue={row.title} />
           </div>
           <div className="col-sm-2">
-            <input type="text" className="form-control" placeholder="Add another task" defaultValue={row.team} />
+            <input type="text" className="form-control" placeholder="Responsible" defaultValue={row.team} />
           </div>
           <div className="col-sm-1">
-            <input type="number" className="form-control" placeholder="Add another task" defaultValue={row.min} />
+            <input type="number" className="form-control text-center" placeholder="Min" defaultValue={row.min} />
           </div>
           <div className="col-sm-1">
-            <input type="number" className="form-control" placeholder="Add another task" defaultValue={row.max} />
+            <input type="number" className="form-control text-center" placeholder="Max" defaultValue={row.max} />
           </div>
           <div className="col-sm-1">
-            <p>{row.est}</p>
+            <p className="text-center">{row.est}</p>
           </div>
         </div>
       );
@@ -108,7 +102,7 @@ export default class extends Component {
           <h1>[PWB-07734]</h1>
           <div className="table-block">
             <div className="table-head row">
-              <div className={`col-sm-6 offset-sm-1 ${this.getTableHeadItemSortClass('title')}`} onClick={this.onClickHeader.bind(this, 'title')}>
+              <div className={`col-sm-7 ${this.getTableHeadItemSortClass('title')}`} onClick={this.onClickHeader.bind(this, 'title')}>
                 Title
               </div>
               <div className={`col-sm-2 ${this.getTableHeadItemSortClass('team')}`} onClick={this.onClickHeader.bind(this, 'team')}>
@@ -126,6 +120,15 @@ export default class extends Component {
             </div>
             <div className="table-rows">
               {tableRows}
+            </div>
+            <div className="row">
+              <div className="col-sm-3 offset-sm-9 table-summary">
+                <div className="row">
+                  <div className="col-sm-4 text-center">24</div>
+                  <div className="col-sm-4 text-center">46</div>
+                  <div className="col-sm-4 text-center">54</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

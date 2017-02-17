@@ -8,16 +8,16 @@ Dropdowns.title = 'Dropdowns';
 Dropdowns.template = (props) => {
   return (
     <CodeCard id={'dropdowns'} title={Dropdowns.title}>
-      <div className='btn-group open'>
+      <div className='btn-group'>
         <button type='button' className='btn btn-inline dropdown-toggle'>
           Action
         </button>
       </div>
-      <div className='btn-group open'>
+      <div className='btn-group'>
         <button type='button' className='btn btn-inline dropdown-toggle'>
           Action
         </button>
-        <div className='dropdown-menu'>
+        <div className='dropdown-menu d-block'>
           <a className='dropdown-item' href='#'>Action</a>
           <a className='dropdown-item' href='#'>Another action</a>
           <a className='dropdown-item' href='#'>Something else here</a>

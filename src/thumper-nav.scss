@@ -20,28 +20,25 @@
 
 }
 
-
-
 .bg-secondary {
-  .nav-pills {
-    .nav-link {
+  .nav-link {
+    color: white;
+    &.active {
+      background-color: darken($brand-secondary, 10%);
       color: white;
-      &.active {
-        background-color: darken($brand-secondary, 10%);
-        color: white;
-      }
     }
   }
 }
 
 .bg-primary {
-  .nav-pills {
-    .nav-link {
+  .navbar-brand {
+    color: white;
+  }
+  .nav-link {
+    color: white;
+    &.active {
+      background-color: darken($brand-primary, 10%);
       color: white;
-      &.active {
-        background-color: darken($brand-primary, 10%);
-        color: white;
-      }
     }
   }
 }

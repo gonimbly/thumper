@@ -28,4 +28,47 @@
     }
   }
 
+  .table-row {
+    background-color: #F3F3F3;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 1px;
+
+    input, p {
+      font-family: $font-family-sans-serif;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-right: 0;
+      color: #404547;
+    }
+
+    input {
+      background-color: transparent;
+
+      &:hover {
+        border-bottom: 1px dotted $gray;
+        margin-bottom: -1px;
+      }
+
+      &:focus {
+        border-bottom: 1px dotted darken($gray, 20%);
+        margin-bottom: -1px;
+      }
+    }
+
+    p {
+      line-height: 1.25;
+      font-weight: bold;
+    }
+  }
+
+  .table-summary {
+    background-color: $brand-secondary;
+    border-radius: 0 0 17px 17px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: white;
+    font-weight: bold;
+  }
+
 }

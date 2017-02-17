@@ -11,10 +11,10 @@ export default class extends Component {
 
   render() {
     return (
-      <nav className='navbar navbar-dark bg-primary navbar-fixed-top'>
+      <nav className='navbar navbar-toggleable-md navbar-dark bg-primary fixed-top'>
         <div className='container'>
           <a className='navbar-brand' href='/'>Thumper</a>
-          <ul className='nav navbar-nav'>
+          <ul className='navbar-nav'>
             <li className='nav-item'>
               <Link className='nav-link' to='/'>Components</Link>
             </li>

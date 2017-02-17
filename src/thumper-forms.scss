@@ -9,19 +9,17 @@ p {
 
 .form-control {
   padding-left: 0;
-  border-top: none;
-  border-right: none;
-  border-bottom: 1px solid $gray;
-  border-left: none;
+  border: none;
   border-radius: 0;
   box-shadow: none;
+}
 
-  &:focus {
-    border-bottom-color: $gray-dark;
-  }
-
-  &:disabled {
-    border-bottom: none;
-    background-color: white;
-  }
+/* Hide HTML5 Up and Down arrows. */
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+ 
+input[type="number"] {
+    -moz-appearance: textfield;
 }

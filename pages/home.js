@@ -55,9 +55,9 @@ export default class extends Component {
     });
     return (
       <div className='container'>
-        <div className='header-bar'>
-          <Filter className='form-inline float-xs-right' data={this.state.cards} onDataFiltered={this.onDataFiltered.bind(this)} filterKey={'title'} />
+        <div className='header-bar d-flex'>
           <h1>Components</h1>
+          <Filter className='form-inline ml-auto' data={this.state.cards} onDataFiltered={this.onDataFiltered.bind(this)} filterKey={'title'} />
         </div>
         <div className='card'>
           <div className='card-block'>
