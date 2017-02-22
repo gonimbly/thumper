@@ -88,7 +88,7 @@ export default class extends Component {
             <div className='row'>
               <div className='col-sm-5 col-md-3 card-left-panel bg-secondary'>
                 <div className='card-panel-block'>
-                  <ul className='nav nav-pills nav-stacked' onClick={this.increateUserCount.bind(this)}>
+                  <ul className='nav nav-pills flex-column' onClick={this.increateUserCount.bind(this)}>
                     <li className='nav-item'>
                       <a href='' className='nav-link active'>
                         <strong>Leo Lion</strong><br />
@@ -173,7 +173,7 @@ export default class extends Component {
                   </div>
                 </div>
                 <div className='card-footer msg-footer'>
-                  <form className='input-group'>
+                  <form className='input-group input-group-lg'>
                     <input type='text' className='form-control' placeholder='Enter Message'/>
                     <span className='input-group-btn'><button type='submit' className='btn btn-link'>Send</button></span>
                   </form>

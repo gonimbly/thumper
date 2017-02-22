@@ -38,6 +38,12 @@ class Navigation extends Component {
               <NavItem>
                 <NavLink to='/forms' activeClassName="active" tag={Link}>Forms</NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink to='/communication' activeClassName="active" tag={Link}>Communication</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to='/navigation' activeClassName="active" tag={Link}>Navigation</NavLink>
+              </NavItem>
               <NavDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                 <DropdownToggle nav caret>
                   Examples

@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import Filter from '../components/Filter/Filter';
 import CodeCards from '../components/CodeCards/CodeCards';
-import InputText from './examples/inputText.example.js';
+import Messages from './examples/messages.example.js';
 
-class Forms extends Component {
+class Communication extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
       filteredData: null,
       cards: [
-        InputText
+        Messages
       ]
     };
   }
@@ -26,7 +26,7 @@ class Forms extends Component {
     return (
       <div className='container'>
         <div className='header-bar d-flex'>
-          <h1>Forms</h1>
+          <h1>Communication</h1>
           <Filter className='form-inline ml-auto' data={this.state.cards} onDataFiltered={this.onDataFiltered.bind(this)} filterKey={'title'} />
         </div>
         <CodeCards cards={cardsData} />
@@ -36,4 +36,4 @@ class Forms extends Component {
 
 }
 
-export default Forms;
+export default Communication;

@@ -1,35 +1,22 @@
 import React, { Component } from 'react';
 import Filter from '../components/Filter/Filter';
 import CodeCards from '../components/CodeCards/CodeCards';
-import Headers from './examples/headers.example.js';
-import Grid from './examples/grid.example.js';
-import Links from './examples/links.example.js';
-import BasicButtons from './examples/basicButtons.example.js';
-import OutlineButtons from './examples/outlineButtons.example.js';
-import ButtonSizes from './examples/buttonSizes.example.js';
+import NavPills from './examples/navPills.example.js';
+import NavTabs from './examples/navTabs.example.js';
 import Dropdowns from './examples/dropdowns.example.js';
-import Cards from './examples/cards.example.js';
-import Tables from './examples/tables.example.js';
-import Modals from './examples/modals.example.js';
-import './home.scss';
+import RSDropdowns from './examples/rsDropdowns.example.js';
 
-class Home extends Component {
+class Navigation extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
       filteredData: null,
       cards: [
-        Headers,
-        Grid,
-        Links,
-        BasicButtons,
-        OutlineButtons,
-        ButtonSizes,
+        NavPills,
+        NavTabs,
         Dropdowns,
-        Cards,
-        Tables,
-        Modals
+        RSDropdowns
       ]
     };
   }
@@ -45,7 +32,7 @@ class Home extends Component {
     return (
       <div className='container'>
         <div className='header-bar d-flex'>
-          <h1>Basics</h1>
+          <h1>Navigation</h1>
           <Filter className='form-inline ml-auto' data={this.state.cards} onDataFiltered={this.onDataFiltered.bind(this)} filterKey={'title'} />
         </div>
         <CodeCards cards={cardsData} />
@@ -55,4 +42,4 @@ class Home extends Component {
 
 }
 
-export default Home;
+export default Navigation;
