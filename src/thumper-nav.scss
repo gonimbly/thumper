@@ -21,11 +21,13 @@
 }
 
 .bg-secondary {
-  .nav-link {
-    color: white;
-    &.active {
-      background-color: darken($brand-secondary, 10%);
+  .nav-item {
+    & > .nav-link {
       color: white;
+      &.active {
+        background-color: darken($brand-secondary, 10%);
+        color: white;
+      }
     }
   }
 }
@@ -34,11 +36,14 @@
   .navbar-brand {
     color: white;
   }
-  .nav-link {
-    color: white;
-    &.active {
-      background-color: darken($brand-primary, 10%);
+
+  .nav-item {
+    & > .nav-link {
       color: white;
+      &.active {
+        background-color: darken($brand-primary, 10%);
+        color: white;
+      }
     }
   }
 }

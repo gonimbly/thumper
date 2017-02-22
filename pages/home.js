@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import _map from 'lodash/map';
 import Filter from '../components/Filter/Filter';
+import CodeCards from '../components/CodeCards/CodeCards';
 import Headers from './examples/headers.example.js';
 import Grid from './examples/grid.example.js';
 import Links from './examples/links.example.js';
@@ -16,7 +16,7 @@ import Tables from './examples/tables.example.js';
 import Modals from './examples/modals.example.js';
 import './home.scss';
 
-export default class extends Component {
+class Home extends Component {
 
   constructor(props) {
     super(props);
@@ -47,25 +47,19 @@ export default class extends Component {
   }
 
   render() {
-    console.log('render');
+    console.log('render home ');
     const cardsData = this.state.filteredData || this.state.cards;
-    const cards = _map(cardsData, (card) => {
-      let Template = card.template;
-      return <Template key={card.title} />;
-    });
     return (
       <div className='container'>
         <div className='header-bar d-flex'>
-          <h1>Components</h1>
+          <h1>Basics</h1>
           <Filter className='form-inline ml-auto' data={this.state.cards} onDataFiltered={this.onDataFiltered.bind(this)} filterKey={'title'} />
         </div>
-        <div className='card'>
-          <div className='card-block'>
-            {cards}
-          </div>
-        </div>
+        <CodeCards cards={cardsData} />
       </div>
     );
   }
 
 }
+
+export default Home;

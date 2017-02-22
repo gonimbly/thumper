@@ -6,6 +6,8 @@ import {forEach} from 'lodash';
 import jsxToString from 'jsx-to-string';
 import Clipboard from 'clipboard';
 
+import './codeCard.scss';
+
 class CodeCard extends Component {
   constructor(props) {
     super(props);

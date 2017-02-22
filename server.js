@@ -13,9 +13,20 @@ if(process.env.NODE_ENV === 'production') {
 } else {
   app.use(express.static(path.join(__dirname, 'public')));
 }
-app.get('/*', function(req, res) {
+
+app.get('/', function(req, res) {
   res.render('index');
 });
+
+app.get('/:route', function(req, res) {
+  if(req.params.route.split('.').length === 1) {
+    console.log('req.params.route', req.params.route);
+    res.render('index');
+  } else {
+    res.sendStatus(404);
+  }
+});
+
 
 // start
 app.listen(process.env.PORT, function () {
