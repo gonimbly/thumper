@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import Filter from '../components/Filter/Filter';
 import CodeCards from '../components/CodeCards/CodeCards';
-import InputText from './examples/inputText.example.js';
+import BasicForm from './examples/basicForm.example.js';
+import InputGroup from './examples/inputGroup.example.js';
+import FormErrors from './examples/formErrors.example.js';
+import HeaderInput from './examples/headerInput.example.js';
 
 class Forms extends Component {
 
@@ -10,7 +13,10 @@ class Forms extends Component {
     this.state = {
       filteredData: null,
       cards: [
-        InputText
+        BasicForm,
+        InputGroup,
+        HeaderInput,
+        FormErrors
       ]
     };
   }

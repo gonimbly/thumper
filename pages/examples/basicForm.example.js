@@ -1,13 +1,13 @@
 import React from 'react';
 import CodeCard from '../../components/CodeCard/CodeCard';
 
-const InputText = {};
+const BasicForm = {};
 
-InputText.title = 'InputText';
+BasicForm.title = 'Basic Form';
 
-InputText.template = (props) => {
+BasicForm.template = (props) => {
   return (
-    <CodeCard id={'InputText'} title={InputText.title}>
+    <CodeCard id={'BasicForm'} title={BasicForm.title}>
       <form>
         <div className="form-group">
           <label htmlFor="exampleInputEmail1">Email address</label>
@@ -80,4 +80,4 @@ InputText.template = (props) => {
   );
 };
 
-export default InputText;
+export default BasicForm;

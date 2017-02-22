@@ -99,7 +99,7 @@ export default class extends Component {
     return (
       <div className='app-container'>
         <div className='container container-flex'>
-          <h1>[PWB-07734]</h1>
+          <input type="text" className="h1" value="[PWB-07734]" />
           <div className="table-block">
             <div className="table-head row">
               <div className={`col-sm-7 ${this.getTableHeadItemSortClass('title')}`} onClick={this.onClickHeader.bind(this, 'title')}>

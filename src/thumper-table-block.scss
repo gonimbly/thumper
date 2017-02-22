@@ -1,3 +1,5 @@
+@import 'mixins/thumper-forms-mixins';
+
 .table-block {
   .table-head {
     color: $gray;
@@ -40,23 +42,12 @@
       padding-bottom: 0;
       padding-right: 0;
       color: #404547;
-      border: none;
-      border-radius: 0;
     }
 
     input {
-      background-color: transparent;
-
-      &:hover {
-        border-bottom: 1px dotted $gray;
-        margin-bottom: -1px;
-      }
-
-      &:focus {
-        border-bottom: 1px dotted darken($gray, 20%);
-        margin-bottom: -1px;
-      }
+      @include inlineInput();
     }
+
 
     p {
       line-height: 1.25;

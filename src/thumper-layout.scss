@@ -12,7 +12,7 @@
 
 .container {
 
-  h1:first-child {
+  h1:first-child, .h1:first-child {
     margin-top: 25px;
   }
 
