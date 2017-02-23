@@ -75,21 +75,21 @@ export default class extends Component {
     // build rows
     let tableRows = _map(rows, (row, index) => {
       return (
-        <div className="table-row row" key={index}>
-          <div className="col-sm-7">
-            <input type="text" className="form-control" placeholder="Add another task" defaultValue={row.title} />
+        <div className='table-row row' key={index}>
+          <div className='col-sm-7'>
+            <input type='text' className='form-control' placeholder='Add another task' defaultValue={row.title} />
           </div>
-          <div className="col-sm-2">
-            <input type="text" className="form-control" placeholder="Responsible" defaultValue={row.team} />
+          <div className='col-sm-2'>
+            <input type='text' className='form-control' placeholder='Responsible' defaultValue={row.team} />
           </div>
-          <div className="col-sm-1">
-            <input type="number" className="form-control text-center" placeholder="Min" defaultValue={row.min} />
+          <div className='col-sm-1'>
+            <input type='number' className='form-control text-center' placeholder='Min' defaultValue={row.min} />
           </div>
-          <div className="col-sm-1">
-            <input type="number" className="form-control text-center" placeholder="Max" defaultValue={row.max} />
+          <div className='col-sm-1'>
+            <input type='number' className='form-control text-center' placeholder='Max' defaultValue={row.max} />
           </div>
-          <div className="col-sm-1">
-            <p className="text-center">{row.est}</p>
+          <div className='col-sm-1'>
+            <p className='text-center'>{row.est}</p>
           </div>
         </div>
       );
@@ -99,34 +99,34 @@ export default class extends Component {
     return (
       <div className='app-container'>
         <div className='container container-flex'>
-          <input type="text" className="h1" value="[PWB-07734]" />
-          <div className="table-block">
-            <div className="table-head row">
-              <div className={`col-sm-7 ${this.getTableHeadItemSortClass('title')}`} onClick={this.onClickHeader.bind(this, 'title')}>
-                Title
+          <input type='text' className='h1' value='[PWB-07734]' />
+          <div className='table-block'>
+            <div className='table-head row'>
+              <div className='col-sm-7 title-column'>
+                <input type='text' className='form-control' value='Nice milestones' placeholder='Milestone Name'/>
               </div>
-              <div className={`col-sm-2 ${this.getTableHeadItemSortClass('team')}`} onClick={this.onClickHeader.bind(this, 'team')}>
+              <div className={'col-sm-2 align-self-center'}>
                 Team
               </div>
-              <div className={`col-sm-1 ${this.getTableHeadItemSortClass('min')}`} onClick={this.onClickHeader.bind(this, 'min')}>
+              <div className={'col-sm-1 align-self-center text-center'}>
                 Min
               </div>
-              <div className={`col-sm-1 ${this.getTableHeadItemSortClass('max')}`} onClick={this.onClickHeader.bind(this, 'max')}>
+              <div className={'col-sm-1 align-self-center text-center'}>
                 Max
               </div>
-              <div className={`col-sm-1 ${this.getTableHeadItemSortClass('est')}`} onClick={this.onClickHeader.bind(this, 'est')}>
+              <div className={'col-sm-1 align-self-center text-center'}>
                 Est.
               </div>
             </div>
-            <div className="table-rows">
+            <div className='table-rows'>
               {tableRows}
             </div>
-            <div className="row">
-              <div className="col-sm-3 offset-sm-9 table-summary">
-                <div className="row">
-                  <div className="col-sm-4 text-center">24</div>
-                  <div className="col-sm-4 text-center">46</div>
-                  <div className="col-sm-4 text-center">54</div>
+            <div className='row'>
+              <div className='col-sm-3 offset-sm-9 table-summary'>
+                <div className='row'>
+                  <div className='col-sm-4 text-center'>24</div>
+                  <div className='col-sm-4 text-center'>46</div>
+                  <div className='col-sm-4 text-center'>54</div>
                 </div>
               </div>
             </div>

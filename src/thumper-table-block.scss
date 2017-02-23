@@ -2,7 +2,25 @@
 
 .table-block {
   .table-head {
-    color: $gray;
+    color: #636363;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    .title-column {
+      padding-left: 0;
+      
+      input {
+        color: #353E55;
+        font-weight: 600;
+        font-size: 20px;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        @include inlineInput();
+      }
+    }
 
     .table-head-item-sortable {
       cursor: pointer;
