@@ -118,9 +118,7 @@ export default class extends Component {
                 Est.
               </div>
             </div>
-            <div className='table-rows'>
-              {tableRows}
-            </div>
+            {tableRows}
             <div className='row'>
               <div className='col-sm-3 offset-sm-9 table-summary'>
                 <div className='row'>

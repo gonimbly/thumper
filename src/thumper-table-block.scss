@@ -1,16 +1,22 @@
 @import 'mixins/thumper-forms-mixins';
 
 .table-block {
+  & > .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .table-head {
     color: #636363;
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 12px;
     text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
 
     .title-column {
       padding-left: 0;
-      
+
       input {
         color: #353E55;
         font-weight: 600;
@@ -53,6 +59,8 @@
     padding-top: 8px;
     padding-bottom: 8px;
     margin-bottom: 1px;
+    display: flex;
+    flex-wrap: wrap;
 
     input, p {
       font-family: $font-family-sans-serif;
