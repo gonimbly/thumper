@@ -1,7 +1,7 @@
 {
   "name": "thumper",
   "main": "dist/thumper.js",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "engines": {
     "node": ">=6.1.0"
   },
