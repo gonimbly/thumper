@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import _map from 'lodash/map';
 import _orderBy from 'lodash/orderBy';
 import _find from 'lodash/find';
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 const SORT = {
   ASC: 'asc',
@@ -14,7 +15,10 @@ export default class extends Component {
     super(props);
     this.state = {
       sortColumn: null,
-      sortDirection: SORT.ASC
+      sortDirection: SORT.ASC,
+      menuHover: false,
+      leftMenuOpen: false,
+      rightMenuOpen: true
     };
   }
   onClickHeader(columnName) {
@@ -34,6 +38,18 @@ export default class extends Component {
     } else {
       return 'table-head-item-sortable';
     }
+  }
+
+  toggleDropdown(toggleKey) {
+    if(toggleKey) {
+      let newState = {};
+      newState[toggleKey] = !this.state[toggleKey];
+      this.setState(newState);
+    }
+  }
+
+  toggleHover(isOpen) {
+    this.setState({ menuHover: isOpen });
   }
   render() {
     let rows = [
@@ -72,10 +88,44 @@ export default class extends Component {
       rows = _orderBy(rows, activeSort, this.state.sortDirection);
     }
 
+    // build dropdown menu
+    var leftMenu, rightMenu;
+    if (this.state.menuHover || this.state.leftMenuOpen) {
+      leftMenu = (
+        <Dropdown className='table-left-menu'
+                  isOpen={this.state.leftMenuOpen}
+                  toggle={this.toggleDropdown.bind(this, 'leftMenuOpen')}
+                  group={false}>
+          <DropdownToggle className='fa fa-bars' />
+          <DropdownMenu>
+            <DropdownItem>Rename Milestone</DropdownItem>
+            <DropdownItem>Delete Milestone</DropdownItem>
+          </DropdownMenu>
+        </Dropdown>
+      );
+    }
+
+    if (this.state.menuHover || this.state.rightMenuOpen) {
+      rightMenu = (
+        <Dropdown className='table-right-menu'
+                  isOpen={this.state.rightMenuOpen}
+                  toggle={this.toggleDropdown.bind(this, 'rightMenuOpen')}
+                  group={false}>
+          <DropdownToggle className='fa fa-chevron-down' />
+          <DropdownMenu right>
+            <DropdownItem>Rename Milestone</DropdownItem>
+            <DropdownItem>Delete Milestone</DropdownItem>
+          </DropdownMenu>
+        </Dropdown>
+      );
+    }
+
     // build rows
     let tableRows = _map(rows, (row, index) => {
       return (
-        <div className='table-row row' key={index}>
+        <div className='table-row row' key={index}
+             onMouseOver={this.toggleHover.bind(this, true)}
+             onMouseLeave={this.toggleHover.bind(this, false)}>
           <div className='col-sm-7'>
             <input type='text' className='form-control' placeholder='Add another task' defaultValue={row.title} />
           </div>
@@ -95,26 +145,30 @@ export default class extends Component {
       );
     });
 
-
     return (
       <div className='app-container'>
         <div className='container container-flex'>
-          <input type='text' className='h1' value='[PWB-07734]' />
+          <input type='text' className='h1' defaultValue='[PWB-07734]' />
           <div className='table-block'>
-            <div className='table-head row'>
+            <div className='table-head row'
+                 onMouseOver={this.toggleHover.bind(this, true)}
+                 onMouseLeave={this.toggleHover.bind(this, false)}>
+              {leftMenu}
+              {rightMenu}
+
               <div className='col-sm-7 title-column'>
-                <input type='text' className='form-control' value='Nice milestones' placeholder='Milestone Name'/>
+                <input type='text' className='form-control' defaultValue='Nice milestones' placeholder='Milestone Name'/>
               </div>
-              <div className={'col-sm-2 align-self-center'}>
+              <div className={'col-sm-2 align-self-center table-head-item'}>
                 Team
               </div>
-              <div className={'col-sm-1 align-self-center text-center'}>
+              <div className={'col-sm-1 align-self-center text-center table-head-item'}>
                 Min
               </div>
-              <div className={'col-sm-1 align-self-center text-center'}>
+              <div className={'col-sm-1 align-self-center text-center table-head-item'}>
                 Max
               </div>
-              <div className={'col-sm-1 align-self-center text-center'}>
+              <div className={'col-sm-1 align-self-center text-center table-head-item'}>
                 Est.
               </div>
             </div>

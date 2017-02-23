@@ -2,7 +2,6 @@
   font-family: $font-family-sans-serif;
   transition: background-color .2s ease-in-out;
   font-size: 1rem;
-  cursor: pointer;
 
   &.btn-inline {
     margin-right: 10px;
@@ -13,4 +12,14 @@
     font-size: 1.25rem;
   }
   
+}
+
+button, .btn {
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus{
+    outline: none;
+  }
 }
