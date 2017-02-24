@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import Filter from '../components/Filter/Filter';
 import CodeCards from '../components/CodeCards/CodeCards';
-import BasicForm from './examples/basicForm.example.js';
-import InputGroup from './examples/inputGroup.example.js';
-import FormErrors from './examples/formErrors.example.js';
-import HeaderInput from './examples/headerInput.example.js';
+import RSDropdowns from './examples/rsDropdowns.example.js';
 import RSSearchableDropdowns from './examples/rsSearchableDropdowns.example.js';
 
 class Forms extends Component {
@@ -14,10 +11,7 @@ class Forms extends Component {
     this.state = {
       filteredData: null,
       cards: [
-        BasicForm,
-        InputGroup,
-        HeaderInput,
-        FormErrors,
+        RSDropdowns,
         RSSearchableDropdowns
       ]
     };

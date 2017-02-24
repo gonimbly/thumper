@@ -1,0 +1,15 @@
+@import 'mixins/thumper-forms-mixins';
+
+.dropdown-menu-form {
+  padding-top: 0;
+
+  .dropdown-item-form {
+    background-color: $gray-lightest;
+
+    input {
+      @include inlineInput();
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+  }
+}

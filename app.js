@@ -11,6 +11,7 @@ import Communication from './pages/communication';
 import TableForm from './pages/tableForm';
 import NoMatch from './pages/noMatch';
 import NavigationPage from './pages/navigation';
+import Reactstrap from './pages/reactstrap';
 
 const App = (props) => {
   return (
@@ -34,6 +35,7 @@ render((
       <Route path="navs" component={NavigationPage} />
       <Route path="communication" component={Communication} />
       <Route path="tables" component={Tables} />
+      <Route path="reactstrap" component={Reactstrap} />
 
       <Route path="messenger" component={Messenger} />
       <Route path="table-form" component={TableForm} />

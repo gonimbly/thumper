@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CodeCard from '../../components/CodeCard/CodeCard';
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 const RSDropdowns = {};
 
@@ -26,7 +26,7 @@ RSDropdowns.template = class extends Component {
   render() {
     return (
       <CodeCard id={'RSDropdowns'} title={RSDropdowns.title}>
-        <Dropdown isOpen={this.state.primaryOpen} toggle={this.toggle.bind(this, 'primaryOpen')}>
+        <UncontrolledDropdown isOpen={this.state.primaryOpen} toggle={this.toggle.bind(this, 'primaryOpen')}>
           <DropdownToggle caret color="primary">
             Dropdown
           </DropdownToggle>
@@ -37,9 +37,9 @@ RSDropdowns.template = class extends Component {
             <DropdownItem divider />
             <DropdownItem>Another Action</DropdownItem>
           </DropdownMenu>
-        </Dropdown>
+        </UncontrolledDropdown>
         <br className='notcode' />
-        <Dropdown isOpen={this.state.secondaryOpen} toggle={this.toggle.bind(this, 'secondaryOpen')}>
+        <UncontrolledDropdown isOpen={this.state.secondaryOpen} toggle={this.toggle.bind(this, 'secondaryOpen')}>
           <DropdownToggle caret>
             Dropdown
           </DropdownToggle>
@@ -50,7 +50,7 @@ RSDropdowns.template = class extends Component {
             <DropdownItem divider />
             <DropdownItem>Another Action</DropdownItem>
           </DropdownMenu>
-        </Dropdown>
+        </UncontrolledDropdown>
         <br className='notcode' />
         <br className='notcode' />
         <br className='notcode' />

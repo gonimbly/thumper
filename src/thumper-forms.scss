@@ -16,6 +16,12 @@ p {
 .form-control {
   border-radius: 4px;
   box-shadow: none;
+  background-color: $gray-lightest;
+
+  &::placeholder {
+    font-style: italic;
+    color: $gray-darker;
+  }
 }
 
 /* Hide HTML5 Up and Down arrows. */
