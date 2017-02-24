@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/styles';
 import Collapse from 'react-collapse';
-import {forEach} from 'lodash';
+import {forEach, cloneDeep} from 'lodash';
 import jsxToString from 'jsx-to-string';
 import Clipboard from 'clipboard';
 
@@ -16,12 +16,10 @@ class CodeCard extends Component {
     this.toggle = this.toggle.bind(this);
 
     let allChildren = props.children.hasOwnProperty('length') ? props.children : [props.children];
+    allChildren = this.removeNotCodeChildren(allChildren, '...');
     let strChildren = [];
     forEach(allChildren, child => {
-      let str = jsxToString(child);
-      if(str.indexOf('notcode') === -1) {
-        strChildren.push(str);
-      }
+      strChildren.push(jsxToString(child));
     });
     let stringCode = strChildren.join('\n');
     this.state = {
@@ -29,6 +27,32 @@ class CodeCard extends Component {
       forceOpen: false,
       stringCode: stringCode
     };
+  }
+
+  removeNotCodeChildren(children, replaceItems) {
+    var returnChildren = [];
+    forEach(children, child => {
+      // remove if child is notcode
+      child = cloneDeep(child);
+      // console.log('child: ' + jsxToString(child));
+      if(child.props) {
+        if(child.props.className && child.props.className.indexOf('notcode') > -1) {
+          if(replaceItems && this.props.showEllipsis) {
+            return returnChildren.push(replaceItems);
+          } else {
+            return;
+          }
+        }
+
+        // console.log('children: ' + child.props.children);
+        if(child.props.children && typeof child.props.children !== 'string' && child.props.children.length > 0) {
+          child.props.children = this.removeNotCodeChildren(child.props.children, replaceItems);
+        }
+      }
+      
+      returnChildren.push(child);
+    });
+    return returnChildren;
   }
 
   collapse() {
@@ -61,7 +85,7 @@ class CodeCard extends Component {
     return (
       <section className='card' id={this.props.id}>
         <h2 className='card-header'>{this.props.title}</h2>
-        <div className='card-block'>
+        <div className={`card-block ${this.props.extraSpace ? 'ml-4 mr-4': ''}`}>
           {this.props.children}
         </div>
         <div className='card-footer'>
@@ -91,7 +115,14 @@ class CodeCard extends Component {
 CodeCard.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  showEllipsis: PropTypes.bool,
+  extraSpace: PropTypes.bool
+};
+
+CodeCard.defaultProps = {
+  showEllipsis: false,
+  extraSpace: false
 };
 
 export default CodeCard;

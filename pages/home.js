@@ -9,7 +9,7 @@ import OutlineButtons from './examples/outlineButtons.example.js';
 import ButtonSizes from './examples/buttonSizes.example.js';
 import Dropdowns from './examples/dropdowns.example.js';
 import Cards from './examples/cards.example.js';
-import Tables from './examples/tables.example.js';
+import DataTable from './examples/dataTable.example.js';
 import Modals from './examples/modals.example.js';
 import './home.scss';
 
@@ -28,7 +28,7 @@ class Home extends Component {
         ButtonSizes,
         Dropdowns,
         Cards,
-        Tables,
+        DataTable,
         Modals
       ]
     };

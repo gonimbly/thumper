@@ -18,7 +18,7 @@ export default class extends Component {
       sortDirection: SORT.ASC,
       menuHover: false,
       leftMenuOpen: false,
-      rightMenuOpen: true
+      rightMenuOpen: false
     };
   }
   onClickHeader(columnName) {

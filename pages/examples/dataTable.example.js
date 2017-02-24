@@ -1,13 +1,13 @@
 import React from 'react';
 import CodeCard from '../../components/CodeCard/CodeCard';
 
-const Tables = {};
+const DataTable = {};
 
-Tables.title = 'Data Table';
+DataTable.title = 'Data Table';
 
-Tables.template = (props) => {
+DataTable.template = (props) => {
   return (
-    <CodeCard id={'tables'} title={Tables.title}>
+    <CodeCard id={'DataTable'} title={DataTable.title}>
       <table className='table'>
         <thead>
           <tr>
@@ -42,4 +42,4 @@ Tables.template = (props) => {
   );
 };
 
-export default Tables;
+export default DataTable;

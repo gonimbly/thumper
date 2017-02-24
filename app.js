@@ -5,6 +5,7 @@ import { Router, Route, IndexRoute, browserHistory } from "react-router";
 import Navigation from "./components/Navigation/Navigation";
 import Home from './pages/home';
 import Forms from './pages/forms';
+import Tables from './pages/tables';
 import Messenger from './pages/messenger';
 import Communication from './pages/communication';
 import TableForm from './pages/tableForm';
@@ -28,10 +29,13 @@ render((
   <Router history={browserHistory}>
     <Route path="/" name="home" component={App}>
       <IndexRoute component={Home} />
+
       <Route path="forms" component={Forms} />
-      <Route path="messenger" component={Messenger} />
-      <Route path="navigation" component={NavigationPage} />
+      <Route path="navs" component={NavigationPage} />
       <Route path="communication" component={Communication} />
+      <Route path="tables" component={Tables} />
+
+      <Route path="messenger" component={Messenger} />
       <Route path="table-form" component={TableForm} />
     </Route>
     <Route path="*" component={NoMatch}/>

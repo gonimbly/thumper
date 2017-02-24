@@ -42,7 +42,10 @@ class Navigation extends Component {
                 <NavLink to='/communication' activeClassName="active" tag={Link}>Communication</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to='/navigation' activeClassName="active" tag={Link}>Navigation</NavLink>
+                <NavLink to='/navs' activeClassName="active" tag={Link}>Navs</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to='/tables' activeClassName="active" tag={Link}>Tables</NavLink>
               </NavItem>
               <NavDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                 <DropdownToggle nav caret>
