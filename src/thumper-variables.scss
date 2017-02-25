@@ -26,6 +26,7 @@
 //
 // Grayscale and brand colors for use across Bootstrap.
 
+$gray-darkest:              #404547 !default;
 $gray-darker:               #636363 !default;
 $gray-dark:                 #373a3c !default;
 $gray:                      #C8C8C8 !default;
@@ -251,9 +252,9 @@ $border-radius-sm:       4px !default;
 // $btn-primary-bg:                 $brand-primary !default;
 // $btn-primary-border:             $btn-primary-bg !default;
 
-// $btn-secondary-color:            #fff !default;
-// $btn-secondary-bg:               $brand-secondary !default;
-$btn-secondary-border:           $brand-secondary !default;
+$btn-secondary-color:            #fff !default;
+$btn-secondary-bg:               $brand-secondary !default;
+// $btn-secondary-border:           $brand-secondary !default;
 
 // $btn-info-color:                 #fff !default;
 // $btn-info-bg:                    $brand-info !default;

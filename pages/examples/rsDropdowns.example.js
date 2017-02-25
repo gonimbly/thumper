@@ -31,7 +31,6 @@ RSDropdowns.template = class extends Component {
             Dropdown
           </DropdownToggle>
           <DropdownMenu>
-            <DropdownItem header>Header</DropdownItem>
             <DropdownItem disabled>Action</DropdownItem>
             <DropdownItem>Another Action</DropdownItem>
             <DropdownItem divider />
@@ -43,8 +42,7 @@ RSDropdowns.template = class extends Component {
           <DropdownToggle caret>
             Dropdown
           </DropdownToggle>
-          <DropdownMenu>
-            <DropdownItem header>Header</DropdownItem>
+          <DropdownMenu right>
             <DropdownItem disabled>Action</DropdownItem>
             <DropdownItem>Another Action</DropdownItem>
             <DropdownItem divider />

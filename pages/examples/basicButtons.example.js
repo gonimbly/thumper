@@ -8,7 +8,6 @@ BasicButtons.title = 'Basic Buttons';
 BasicButtons.template = (props) => {
   return (
     <CodeCard id={'basicButtons'} title={BasicButtons.title}>
-      <button type='button' className='btn btn-inline btn-default'>Default</button>
       <button type='button' className='btn btn-inline btn-primary'>Primary</button>
       <button type='button' className='btn btn-inline btn-secondary'>Secondary</button>
       <button type='button' className='btn btn-inline btn-success'>Success</button>
