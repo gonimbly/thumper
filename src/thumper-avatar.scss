@@ -1,0 +1,88 @@
+// space out avatars in a sequence
+.avatar-group {
+  display: flex;
+  flex-wrap: wrap;
+
+  .avatar {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform .15s ease-in-out;
+
+  img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &.avatar-sm {
+    width: 22px;
+    height: 22px;
+    border: 1px solid white;
+  }
+
+  // avatar sizes
+
+  &.avatar-md {
+    width: 38px;
+    height: 38px;
+  }
+
+  &.avatar-lg {
+    width: 54px;
+    height: 54px;
+  }
+
+  // avatar alternatives
+
+  &.avatar-placeholder {
+    border: 1px dotted #C8C8C8;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.33333em;
+    user-select: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  // avatar statuses
+  &.avatar-status-active {
+    border: 3px solid $brand-primary-light;
+  }
+  &.avatar-status-inactive {
+    border: 3px solid $gray;
+  }
+
+  &.avatar-status-new {
+    position: relative;
+
+    img {
+      padding: 3px;
+      border-radius: 50%;
+    }
+
+    &:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      border: 1px dotted #C8C8C8;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 50%;
+    }
+  }
+}
