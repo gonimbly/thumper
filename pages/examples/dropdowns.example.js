@@ -1,5 +1,6 @@
 import React from 'react';
 import CodeCard from '../../components/CodeCard/CodeCard';
+import CodeCardLink from '../../components/CodeCardLink/CodeCardLink';
 
 const Dropdowns = {};
 
@@ -8,6 +9,7 @@ Dropdowns.title = 'Dropdowns';
 Dropdowns.template = (props) => {
   return (
     <CodeCard id={'dropdowns'} title={Dropdowns.title}>
+      <CodeCardLink icon='' href='http://v4-alpha.getbootstrap.com/components/dropdowns/' />
       <div className="dropdown">
         <button type='button' className='btn btn-inline btn-primary dropdown-toggle'>
           Action

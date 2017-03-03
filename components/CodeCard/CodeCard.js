@@ -16,21 +16,24 @@ class CodeCard extends Component {
     this.toggle = this.toggle.bind(this);
 
     let allChildren = props.children.hasOwnProperty('length') ? props.children : [props.children];
-    allChildren = this.removeNotCodeChildren(allChildren, '...');
+    let separatedChildren = this.separateChildren(allChildren);
+    let codeChildren = this.removeNotCodeChildren(separatedChildren.displayChildren, '...');
     let strChildren = [];
-    forEach(allChildren, child => {
+    forEach(codeChildren, child => {
       strChildren.push(jsxToString(child));
     });
     let stringCode = strChildren.join('\n');
     this.state = {
       isOpened: false,
       forceOpen: false,
-      stringCode: stringCode
+      displayChildren: separatedChildren.displayChildren,
+      cardLinks: separatedChildren.cardLinks,
+      stringCode
     };
   }
 
   removeNotCodeChildren(children, replaceItems) {
-    var returnChildren = [];
+    var docChildren = [];
     forEach(children, child => {
       // remove if child is notcode
       child = cloneDeep(child);
@@ -38,7 +41,7 @@ class CodeCard extends Component {
       if(child.props) {
         if(child.props.className && child.props.className.indexOf('notcode') > -1) {
           if(replaceItems && this.props.showEllipsis) {
-            return returnChildren.push(replaceItems);
+            return docChildren.push(replaceItems);
           } else {
             return;
           }
@@ -49,10 +52,23 @@ class CodeCard extends Component {
           child.props.children = this.removeNotCodeChildren(child.props.children, replaceItems);
         }
       }
-      
-      returnChildren.push(child);
+      docChildren.push(child);
     });
-    return returnChildren;
+    return docChildren;
+  }
+
+  separateChildren(children) {
+    var cardLinks = [];
+    var displayChildren = [];
+    forEach(children, child => {
+      if(child.type.name === 'CodeCardLink') {
+        let clone = React.cloneElement(child, {key: cardLinks.length});
+        cardLinks.push(clone);
+      } else {
+        displayChildren.push(child);
+      }
+    });
+    return {cardLinks, displayChildren};
   }
 
   collapse() {
@@ -81,12 +97,15 @@ class CodeCard extends Component {
   }
 
   render() {
-    let codeLabel = this.state.forceOpen ? 'Pinned ': '';
+    let codeLabel = this.state.forceOpen ? 'Hide ': 'Show ';
     return (
       <section className='card' id={this.props.id}>
-        <h2 className='card-header'>{this.props.title}</h2>
+        <div className='card-header d-flex align-items-right'>
+          <h2 className='mr-auto'>{this.props.title}</h2>
+          {this.state.cardLinks}
+        </div>
         <div className={`card-block ${this.props.extraSpace ? 'ml-4 mr-4': ''}`}>
-          {this.props.children}
+          {this.state.displayChildren}
         </div>
         <div className='card-footer'>
           <a className={'btn btn-link'} onClick={this.toggle}>{codeLabel}Code</a>
