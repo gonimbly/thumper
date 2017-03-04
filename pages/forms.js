@@ -6,6 +6,7 @@ import InputGroup from './examples/inputGroup.example.js';
 import FormErrors from './examples/formErrors.example.js';
 import HeaderInput from './examples/headerInput.example.js';
 import RSSearchableDropdowns from './examples/rsSearchableDropdowns.example.js';
+import PopoverForm from './examples/popoverForm.example.js';
 
 class Forms extends Component {
 
@@ -18,7 +19,8 @@ class Forms extends Component {
         InputGroup,
         HeaderInput,
         FormErrors,
-        RSSearchableDropdowns
+        RSSearchableDropdowns,
+        PopoverForm
       ]
     };
   }

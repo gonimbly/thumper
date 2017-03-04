@@ -34,6 +34,7 @@ $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 $gray-cool:                 #D1DEDE !default;
+$gray-cool-light:           #F8FAFC !default;
 
 $brand-primary:             #84BD5E !default;
 $brand-primary-light:       #B7D383 !default;
@@ -521,7 +522,7 @@ $popover-arrow-color:                 $gray-darker !default;
 
 // $popover-arrow-outer-width:           ($popover-arrow-width + 1) !default;
 $popover-arrow-outer-color:           fade-in($gray-darker, 0.05) !default;
-
+$popover-title-padding-y:             11px;
 
 // Labels
 
