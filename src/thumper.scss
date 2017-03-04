@@ -48,7 +48,7 @@ This gives us the freedom to exclude files we dont need or want to replace.
 // Boostrap: Components that work with Bootstrap JS or Reactstrap
 @import "../node_modules/bootstrap/scss/modal";
 @import "../node_modules/bootstrap/scss/tooltip";
-@import "../node_modules/bootstrap/scss/popover";
+// @import "../node_modules/bootstrap/scss/popover"; // replaced/rewritten: thumper-popover.scss
 // @import "../node_modules/bootstrap/scss/carousel"; // we don't use this
 
 // Boostrap: Utility classes
@@ -68,3 +68,4 @@ This gives us the freedom to exclude files we dont need or want to replace.
 @import "./thumper-table-block.scss";
 @import "./thumper-icons.scss";
 @import "./thumper-avatar.scss";
+@import "./thumper-popover.scss";

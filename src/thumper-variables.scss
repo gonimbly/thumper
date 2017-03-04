@@ -44,6 +44,11 @@ $brand-warning:             #F3B216 !default;
 $brand-danger:              #E04462 !default;
 
 
+// Shadow Layers
+$shadow-layer-1: 0px 5px 2px 0px rgba(black, 0.15);
+$shadow-layer-2: 0px 5px 15px 0px rgba(black, 0.15);
+
+
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
@@ -98,7 +103,7 @@ $body-bg:                    white !default;
 //
 // Style anchor elements.
 
-$link-color:                 $brand-primary-light !default;
+$link-color:                 $brand-secondary !default;
 // $link-decoration:            none !default;
 // $link-hover-color:           darken($link-color, 15%) !default;
 // $link-hover-decoration:      underline !default;
@@ -507,15 +512,15 @@ $card-spacer-y:            $grid-gutter-width !default;
 // $popover-bg:                          #fff !default;
 // $popover-max-width:                   276px !default;
 // $popover-border-width:                $border-width !default;
-// $popover-border-color:                rgba(0,0,0,.2) !default;
+$popover-border-color:                $gray-darker !default;
 
-// $popover-title-bg:                    darken($popover-bg, 3%) !default;
+$popover-title-bg:                    $gray-darker !default;
 
 // $popover-arrow-width:                 10px !default;
-// $popover-arrow-color:                 $popover-bg !default;
+$popover-arrow-color:                 $gray-darker !default;
 
 // $popover-arrow-outer-width:           ($popover-arrow-width + 1) !default;
-// $popover-arrow-outer-color:           fade-in($popover-border-color, 0.05) !default;
+$popover-arrow-outer-color:           fade-in($gray-darker, 0.05) !default;
 
 
 // Labels

@@ -16,6 +16,7 @@
   user-select: none;
   transition: all .15s ease-in-out;
   border: none;
+  cursor: pointer;
   @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-border-radius);
 
   // Share hover and focus styles
@@ -36,14 +37,13 @@
   }
   &:hover,
   &.hover {
-    box-shadow: 0px 5px 15px 0px rgba(black, 0.15);
-    cursor: pointer;
+    box-shadow: $shadow-layer-1;
   }
 
   &:active,
   &.active {
     background-image: none;
-    box-shadow: 0px 0px 2px 0px rgba($black, 0.15);
+    box-shadow: $shadow-layer-2;
     transform: scaleY(0.96);
   }
 }
@@ -134,7 +134,7 @@ fieldset[disabled] a.btn {
 .btn-link {
   font-weight: $font-weight-normal;
   color: $link-color;
-  border-radius: 4px;
+  border-radius: $border-radius;
 
   &,
   &:active,
@@ -166,6 +166,7 @@ fieldset[disabled] a.btn {
 
   &.fa {
     text-decoration: none;
+    line-height: 1.5rem;
   }
 }
 

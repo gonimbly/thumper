@@ -8,8 +8,9 @@ Links.title = 'Links';
 Links.template = (props) => {
   return (
     <CodeCard id={'links'} title={Links.title}>
-      <a href='#' className='btn btn-link btn-inline'>Link</a>
-      <a href='#' className='btn btn-link btn-inline disabled'>Link disabled</a>
+      <a href='#'>Link</a>
+      <br className='notcode'/>
+      <a href='#' disabled>Link Disabled</a>
     </CodeCard>
   );
 };

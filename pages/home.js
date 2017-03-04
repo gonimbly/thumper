@@ -11,6 +11,7 @@ import Dropdowns from './examples/dropdowns.example.js';
 import Cards from './examples/cards.example.js';
 import DataTable from './examples/dataTable.example.js';
 import Modals from './examples/modals.example.js';
+import Popover from './examples/popover.example.js';
 import './home.scss';
 
 class Home extends Component {
@@ -29,6 +30,7 @@ class Home extends Component {
         Dropdowns,
         Cards,
         DataTable,
+        Popover,
         Modals
       ]
     };
