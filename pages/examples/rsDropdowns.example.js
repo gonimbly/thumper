@@ -7,26 +7,10 @@ const RSDropdowns = {};
 RSDropdowns.title = 'Reactstrap Dropdown';
 
 RSDropdowns.template = class extends Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      primaryOpen: false,
-      secondaryOpen: false
-    };
-  }
-
-  toggle(key) {
-    var newValue = {};
-    newValue[key] = !this.state[key];
-    this.setState(newValue);
-  }
-
   render() {
     return (
       <CodeCard id={'RSDropdowns'} title={RSDropdowns.title}>
-        <UncontrolledDropdown isOpen={this.state.primaryOpen} toggle={this.toggle.bind(this, 'primaryOpen')}>
+        <UncontrolledDropdown>
           <DropdownToggle caret color="primary">
             Dropdown
           </DropdownToggle>
@@ -38,7 +22,7 @@ RSDropdowns.template = class extends Component {
           </DropdownMenu>
         </UncontrolledDropdown>
         <br className='notcode' />
-        <UncontrolledDropdown isOpen={this.state.secondaryOpen} toggle={this.toggle.bind(this, 'secondaryOpen')}>
+        <UncontrolledDropdown>
           <DropdownToggle caret>
             Dropdown
           </DropdownToggle>

@@ -37,13 +37,13 @@
   }
   &:hover,
   &.hover {
-    box-shadow: $shadow-layer-1;
+    box-shadow: $shadow-layer-2;
   }
 
   &:active,
   &.active {
     background-image: none;
-    box-shadow: $shadow-layer-2;
+    box-shadow: $shadow-layer-1;
     transform: scaleY(0.96);
   }
 }

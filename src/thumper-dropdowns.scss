@@ -50,6 +50,7 @@
 
       .dropdown-item-form {
         background-color: $gray-lightest;
+        border-bottom: 1px solid $gray;
 
         &:active {
           background-color: $gray-lightest;
