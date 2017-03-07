@@ -42,6 +42,56 @@
     height: 54px;
   }
 
+  // avatar actions
+
+  @mixin overlay-box($color: rgba(0, 0, 0, 0.40)) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: $color;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+  }
+
+  @mixin overlay-icon($icon, $color: white) {
+    content: $icon;
+    font-family: 'FontAwesome';
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25em;
+    user-select: none;
+    color: $color;
+  }
+
+  @mixin avatar-action($icon) {
+    cursor: pointer;
+
+    &.avatar-action-dark:after {
+      @include overlay-box();
+      @include overlay-icon($icon);
+    }
+
+    &.avatar-action-light:after {
+      @include overlay-box(rgba(255, 255, 255, 0.65));
+      @include overlay-icon($icon, $gray-darker);
+    }
+  }
+
+  &.avatar-action-plus:hover {
+    @include avatar-action('');
+  }
+
+  &.avatar-action-search:hover {
+    @include avatar-action('');
+  }
+
+  &.avatar-action-times:hover {
+    @include avatar-action('');
+  }
+
   // avatar alternatives
 
   &.avatar-placeholder {

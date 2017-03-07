@@ -4,6 +4,7 @@ import CodeCards from '../components/CodeCards/CodeCards';
 import AvatarBasic from './examples/avatarBasic.example.js';
 import AvatarStatus from './examples/avatarStatus.example.js';
 import AvatarSizes from './examples/avatarSizes.example.js';
+import AvatarActions from './examples/avatarActions.example.js';
 
 class Social extends Component {
 
@@ -14,7 +15,8 @@ class Social extends Component {
       cards: [
         AvatarSizes,
         AvatarBasic,
-        AvatarStatus
+        AvatarStatus,
+        AvatarActions
       ]
     };
   }
