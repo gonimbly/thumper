@@ -34,6 +34,8 @@ Dropdowns.template = (props) => {
       <br className='notcode' />
       <br className='notcode' />
       <br className='notcode' />
+      <br className='notcode' />
+      <br className='notcode' />
     </CodeCard>
   );
 };

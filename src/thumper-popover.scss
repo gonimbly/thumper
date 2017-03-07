@@ -174,9 +174,13 @@
 // Form styles 
 
 .popover-inline-form {
-  background-color: $gray-cool-light;
-  padding: 5px 10px;
+  background-color: $gray-lightest;
+  border-bottom: 1px solid $gray;
+  padding: 0.3125rem 1rem;
+
   input {
     @include inlineInput();
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
   }
 }

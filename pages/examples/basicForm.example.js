@@ -51,19 +51,19 @@ BasicForm.template = (props) => {
           <legend>Radio buttons</legend>
           <div className="form-check">
             <label className="form-check-label">
-              <input type="radio" className="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked />
+              <input type="radio" className="form-check-input" name="optionsRadios" id="optionsRadios1" defaultValue="option1" />
               Option one is this and that&mdash;be sure to include why it's great
             </label>
           </div>
           <div className="form-check">
           <label className="form-check-label">
-              <input type="radio" className="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2" />
+              <input type="radio" className="form-check-input" name="optionsRadios" id="optionsRadios2" defaultValue="option2" />
               Option two can be something else and selecting it will deselect option one
             </label>
           </div>
           <div className="form-check disabled">
           <label className="form-check-label">
-              <input type="radio" className="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled />
+              <input type="radio" className="form-check-input" name="optionsRadios" id="optionsRadios3" defaultValue="option3" disabled />
               Option three is disabled
             </label>
           </div>

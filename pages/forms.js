@@ -7,6 +7,7 @@ import FormErrors from './examples/formErrors.example.js';
 import HeaderInput from './examples/headerInput.example.js';
 import RSSearchableDropdowns from './examples/rsSearchableDropdowns.example.js';
 import PopoverForm from './examples/popoverForm.example.js';
+import SelectGrid from './examples/selectGrid.example.js';
 
 class Forms extends Component {
 
@@ -20,7 +21,8 @@ class Forms extends Component {
         HeaderInput,
         FormErrors,
         RSSearchableDropdowns,
-        PopoverForm
+        PopoverForm,
+        SelectGrid
       ]
     };
   }

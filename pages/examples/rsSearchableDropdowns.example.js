@@ -15,9 +15,9 @@ RSSearchableDropdowns.template = class extends Component {
             Dropdown
           </DropdownToggle>
           <DropdownMenu className='dropdown-menu-form'>
-            <DropdownItem className='dropdown-item-form'>
-              <Input type="email" name="email" id="exampleEmail" placeholder="Search…" />
-            </DropdownItem>
+            <div className='dropdown-item dropdown-item-form'>
+              <Input tabIndex='0' type='email' name='email' id='exampleEmail' placeholder='Search…' />
+            </div>
             <DropdownItem disabled>Action</DropdownItem>
             <DropdownItem>Another Action</DropdownItem>
             <DropdownItem divider />
@@ -30,9 +30,9 @@ RSSearchableDropdowns.template = class extends Component {
             Dropdown
           </DropdownToggle>
           <DropdownMenu className='dropdown-menu-form'>
-            <DropdownItem className='dropdown-item-form'>
-              <Input type="email" name="email" id="exampleEmail" placeholder="Search…" />
-            </DropdownItem>
+            <div className='dropdown-item dropdown-item-form'>
+              <Input tabIndex='0' type='email' name='email' id='exampleEmail' placeholder='Search…' />
+            </div>
             <DropdownItem disabled>Action</DropdownItem>
             <DropdownItem>Another Action</DropdownItem>
             <DropdownItem divider />

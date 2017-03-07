@@ -8,11 +8,6 @@ input {
   line-height: 1.5;
 }
 
-p {
-  line-height: 2.3125rem;
-  margin-bottom: 0;
-}
-
 .form-control {
   border-radius: $border-radius;
   box-shadow: none;
@@ -46,4 +41,83 @@ input[type="number"] {
 }
 .inline-input {
   @include inlineInput();
+}
+
+// Select with thumbnails
+
+
+@mixin overlay-box() {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.40);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin overlay-icon() {
+  font-family: 'FontAwesome';
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.33333em;
+  user-select: none;
+  color: white;
+}
+
+.select-grid {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  overflow-y: scroll;
+
+  .select-grid-option {
+    background: white;
+    display: flex;
+    padding: 10px;
+    flex-basis: 12.5rem;
+    flex-grow: 1;
+    cursor: pointer;
+
+    &:hover{
+      background-color: $gray;
+
+      .select-grid-thumb:after {
+        content: ''; //plus icon
+        @include overlay-box();
+        @include overlay-icon();
+      }
+    }
+
+    .select-grid-thumb {
+      flex-grow: 0; // thumbnail should not grow
+      flex-basis: 3.375rem;
+      position: relative;
+    }
+
+    .select-grid-content {
+      flex-grow: 1;
+      padding-left: 10px;
+    }
+
+    &.select-grid-option-selected {
+      background-color: $gray-darkest;
+
+      .select-grid-thumb:after {
+        content: ''; //check icon
+        @include overlay-box();
+        @include overlay-icon();
+      }
+
+      .select-grid-content {
+        color: white;
+      }
+    }
+  }
 }

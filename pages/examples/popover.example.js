@@ -27,6 +27,8 @@ Popovers.template = (props) => {
         <br className='notcode' />
         <br className='notcode' />
         <br className='notcode' />
+        <br className='notcode' />
+        <br className='notcode' />
       </div>
       <div style={{position: 'relative', width: '50%', float: 'left'}}>
         <div className='popover popover-bottom'>
@@ -36,6 +38,8 @@ Popovers.template = (props) => {
           </div>
         </div>
 
+        <br className='notcode' />
+        <br className='notcode' />
         <br className='notcode' />
         <br className='notcode' />
         <br className='notcode' />
@@ -63,6 +67,8 @@ Popovers.template = (props) => {
         <br className='notcode' />
         <br className='notcode' />
         <br className='notcode' />
+        <br className='notcode' />
+        <br className='notcode' />
       </div>
       <div style={{position: 'relative', width: '50%', float: 'left'}}>
         <div className='popover popover-right'>
@@ -72,6 +78,8 @@ Popovers.template = (props) => {
           </div>
         </div>
 
+        <br className='notcode' />
+        <br className='notcode' />
         <br className='notcode' />
         <br className='notcode' />
         <br className='notcode' />
