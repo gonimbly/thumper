@@ -26,9 +26,9 @@
         font-weight: 600;
         font-size: 20px;
         width: 100%;
+        @include inlineInput();
         padding-top: 5px;
         padding-bottom: 5px;
-        @include inlineInput();
       }
     }
 
