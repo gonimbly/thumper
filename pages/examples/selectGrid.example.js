@@ -1,5 +1,7 @@
 import React from 'react';
 import CodeCard from '../../components/CodeCard/CodeCard';
+import Jen from './img/Jen_final_mug_Square.jpg';
+import Troy from './img/Troy_Final_Square.jpg';
 import _times from 'lodash/times';
 
 const SelectGrid = {};
@@ -10,7 +12,7 @@ SelectGrid.template = (props) => {
   let gridOptions = [(
     <div className='select-grid-option select-grid-option-selected' key='irregular'>
       <div className='select-grid-thumb avatar avatar-lg'>
-        <img src='img/Jen_final_mug_Square.jpg' alt='Jen Igartua' />
+        <img src={Jen} alt='Jen Igartua' />
       </div>
       <div className='select-grid-content'>{'Irregular Human'}</div>
     </div>
@@ -19,7 +21,7 @@ SelectGrid.template = (props) => {
     gridOptions.push(
       <div className='select-grid-option' key={'item' + n}>
         <div className='select-grid-thumb avatar avatar-lg'>
-          <img src='img/Troy_Final_Square.jpg' alt='Troy Conquer' />
+          <img src={Troy} alt='Troy Conquer' />
         </div>
         <div className='select-grid-content'>{'Regular Human ' + n}</div>
       </div>
