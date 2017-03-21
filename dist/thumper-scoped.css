@@ -319,7 +319,8 @@ This gives us the freedom to exclude files we dont need or want to replace.
   .thumper-app select,
   .thumper-app summary,
   .thumper-app textarea {
-    touch-action: manipulation; }
+    -ms-touch-action: manipulation;
+        touch-action: manipulation; }
   .thumper-app table {
     border-collapse: collapse;
     background-color: transparent; }
@@ -463,6 +464,7 @@ This gives us the freedom to exclude files we dont need or want to replace.
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     max-width: 100%;
     height: auto; }
@@ -575,8 +577,11 @@ This gives us the freedom to exclude files we dont need or want to replace.
         padding-right: 15px;
         padding-left: 15px; } }
   .thumper-app .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px; }
     @media (min-width: 576px) {
@@ -625,47 +630,76 @@ This gives us the freedom to exclude files we dont need or want to replace.
         padding-right: 15px;
         padding-left: 15px; } }
   .thumper-app .col {
-    flex-basis: 0;
-    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     max-width: 100%; }
   .thumper-app .col-auto {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     width: auto; }
   .thumper-app .col-1 {
-    flex: 0 0 8.33333%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.33333%;
+            flex: 0 0 8.33333%;
     max-width: 8.33333%; }
   .thumper-app .col-2 {
-    flex: 0 0 16.66667%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.66667%;
+            flex: 0 0 16.66667%;
     max-width: 16.66667%; }
   .thumper-app .col-3 {
-    flex: 0 0 25%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
     max-width: 25%; }
   .thumper-app .col-4 {
-    flex: 0 0 33.33333%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+            flex: 0 0 33.33333%;
     max-width: 33.33333%; }
   .thumper-app .col-5 {
-    flex: 0 0 41.66667%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.66667%;
+            flex: 0 0 41.66667%;
     max-width: 41.66667%; }
   .thumper-app .col-6 {
-    flex: 0 0 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
     max-width: 50%; }
   .thumper-app .col-7 {
-    flex: 0 0 58.33333%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.33333%;
+            flex: 0 0 58.33333%;
     max-width: 58.33333%; }
   .thumper-app .col-8 {
-    flex: 0 0 66.66667%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.66667%;
+            flex: 0 0 66.66667%;
     max-width: 66.66667%; }
   .thumper-app .col-9 {
-    flex: 0 0 75%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
     max-width: 75%; }
   .thumper-app .col-10 {
-    flex: 0 0 83.33333%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.33333%;
+            flex: 0 0 83.33333%;
     max-width: 83.33333%; }
   .thumper-app .col-11 {
-    flex: 0 0 91.66667%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.66667%;
+            flex: 0 0 91.66667%;
     max-width: 91.66667%; }
   .thumper-app .col-12 {
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     max-width: 100%; }
   .thumper-app .pull-0 {
     right: auto; }
@@ -743,47 +777,76 @@ This gives us the freedom to exclude files we dont need or want to replace.
     margin-left: 91.66667%; }
   @media (min-width: 576px) {
     .thumper-app .col-sm {
-      flex-basis: 0;
-      flex-grow: 1;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
       max-width: 100%; }
     .thumper-app .col-sm-auto {
-      flex: 0 0 auto;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
       width: auto; }
     .thumper-app .col-sm-1 {
-      flex: 0 0 8.33333%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 8.33333%;
+              flex: 0 0 8.33333%;
       max-width: 8.33333%; }
     .thumper-app .col-sm-2 {
-      flex: 0 0 16.66667%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 16.66667%;
+              flex: 0 0 16.66667%;
       max-width: 16.66667%; }
     .thumper-app .col-sm-3 {
-      flex: 0 0 25%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 25%;
+              flex: 0 0 25%;
       max-width: 25%; }
     .thumper-app .col-sm-4 {
-      flex: 0 0 33.33333%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 33.33333%;
+              flex: 0 0 33.33333%;
       max-width: 33.33333%; }
     .thumper-app .col-sm-5 {
-      flex: 0 0 41.66667%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 41.66667%;
+              flex: 0 0 41.66667%;
       max-width: 41.66667%; }
     .thumper-app .col-sm-6 {
-      flex: 0 0 50%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
       max-width: 50%; }
     .thumper-app .col-sm-7 {
-      flex: 0 0 58.33333%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 58.33333%;
+              flex: 0 0 58.33333%;
       max-width: 58.33333%; }
     .thumper-app .col-sm-8 {
-      flex: 0 0 66.66667%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 66.66667%;
+              flex: 0 0 66.66667%;
       max-width: 66.66667%; }
     .thumper-app .col-sm-9 {
-      flex: 0 0 75%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 75%;
+              flex: 0 0 75%;
       max-width: 75%; }
     .thumper-app .col-sm-10 {
-      flex: 0 0 83.33333%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 83.33333%;
+              flex: 0 0 83.33333%;
       max-width: 83.33333%; }
     .thumper-app .col-sm-11 {
-      flex: 0 0 91.66667%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 91.66667%;
+              flex: 0 0 91.66667%;
       max-width: 91.66667%; }
     .thumper-app .col-sm-12 {
-      flex: 0 0 100%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
       max-width: 100%; }
     .thumper-app .pull-sm-0 {
       right: auto; }
@@ -863,47 +926,76 @@ This gives us the freedom to exclude files we dont need or want to replace.
       margin-left: 91.66667%; } }
   @media (min-width: 768px) {
     .thumper-app .col-md {
-      flex-basis: 0;
-      flex-grow: 1;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
       max-width: 100%; }
     .thumper-app .col-md-auto {
-      flex: 0 0 auto;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
       width: auto; }
     .thumper-app .col-md-1 {
-      flex: 0 0 8.33333%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 8.33333%;
+              flex: 0 0 8.33333%;
       max-width: 8.33333%; }
     .thumper-app .col-md-2 {
-      flex: 0 0 16.66667%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 16.66667%;
+              flex: 0 0 16.66667%;
       max-width: 16.66667%; }
     .thumper-app .col-md-3 {
-      flex: 0 0 25%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 25%;
+              flex: 0 0 25%;
       max-width: 25%; }
     .thumper-app .col-md-4 {
-      flex: 0 0 33.33333%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 33.33333%;
+              flex: 0 0 33.33333%;
       max-width: 33.33333%; }
     .thumper-app .col-md-5 {
-      flex: 0 0 41.66667%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 41.66667%;
+              flex: 0 0 41.66667%;
       max-width: 41.66667%; }
     .thumper-app .col-md-6 {
-      flex: 0 0 50%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
       max-width: 50%; }
     .thumper-app .col-md-7 {
-      flex: 0 0 58.33333%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 58.33333%;
+              flex: 0 0 58.33333%;
       max-width: 58.33333%; }
     .thumper-app .col-md-8 {
-      flex: 0 0 66.66667%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 66.66667%;
+              flex: 0 0 66.66667%;
       max-width: 66.66667%; }
     .thumper-app .col-md-9 {
-      flex: 0 0 75%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 75%;
+              flex: 0 0 75%;
       max-width: 75%; }
     .thumper-app .col-md-10 {
-      flex: 0 0 83.33333%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 83.33333%;
+              flex: 0 0 83.33333%;
       max-width: 83.33333%; }
     .thumper-app .col-md-11 {
-      flex: 0 0 91.66667%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 91.66667%;
+              flex: 0 0 91.66667%;
       max-width: 91.66667%; }
     .thumper-app .col-md-12 {
-      flex: 0 0 100%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
       max-width: 100%; }
     .thumper-app .pull-md-0 {
       right: auto; }
@@ -983,47 +1075,76 @@ This gives us the freedom to exclude files we dont need or want to replace.
       margin-left: 91.66667%; } }
   @media (min-width: 992px) {
     .thumper-app .col-lg {
-      flex-basis: 0;
-      flex-grow: 1;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
       max-width: 100%; }
     .thumper-app .col-lg-auto {
-      flex: 0 0 auto;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
       width: auto; }
     .thumper-app .col-lg-1 {
-      flex: 0 0 8.33333%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 8.33333%;
+              flex: 0 0 8.33333%;
       max-width: 8.33333%; }
     .thumper-app .col-lg-2 {
-      flex: 0 0 16.66667%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 16.66667%;
+              flex: 0 0 16.66667%;
       max-width: 16.66667%; }
     .thumper-app .col-lg-3 {
-      flex: 0 0 25%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 25%;
+              flex: 0 0 25%;
       max-width: 25%; }
     .thumper-app .col-lg-4 {
-      flex: 0 0 33.33333%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 33.33333%;
+              flex: 0 0 33.33333%;
       max-width: 33.33333%; }
     .thumper-app .col-lg-5 {
-      flex: 0 0 41.66667%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 41.66667%;
+              flex: 0 0 41.66667%;
       max-width: 41.66667%; }
     .thumper-app .col-lg-6 {
-      flex: 0 0 50%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
       max-width: 50%; }
     .thumper-app .col-lg-7 {
-      flex: 0 0 58.33333%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 58.33333%;
+              flex: 0 0 58.33333%;
       max-width: 58.33333%; }
     .thumper-app .col-lg-8 {
-      flex: 0 0 66.66667%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 66.66667%;
+              flex: 0 0 66.66667%;
       max-width: 66.66667%; }
     .thumper-app .col-lg-9 {
-      flex: 0 0 75%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 75%;
+              flex: 0 0 75%;
       max-width: 75%; }
     .thumper-app .col-lg-10 {
-      flex: 0 0 83.33333%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 83.33333%;
+              flex: 0 0 83.33333%;
       max-width: 83.33333%; }
     .thumper-app .col-lg-11 {
-      flex: 0 0 91.66667%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 91.66667%;
+              flex: 0 0 91.66667%;
       max-width: 91.66667%; }
     .thumper-app .col-lg-12 {
-      flex: 0 0 100%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
       max-width: 100%; }
     .thumper-app .pull-lg-0 {
       right: auto; }
@@ -1103,47 +1224,76 @@ This gives us the freedom to exclude files we dont need or want to replace.
       margin-left: 91.66667%; } }
   @media (min-width: 1200px) {
     .thumper-app .col-xl {
-      flex-basis: 0;
-      flex-grow: 1;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
       max-width: 100%; }
     .thumper-app .col-xl-auto {
-      flex: 0 0 auto;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
       width: auto; }
     .thumper-app .col-xl-1 {
-      flex: 0 0 8.33333%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 8.33333%;
+              flex: 0 0 8.33333%;
       max-width: 8.33333%; }
     .thumper-app .col-xl-2 {
-      flex: 0 0 16.66667%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 16.66667%;
+              flex: 0 0 16.66667%;
       max-width: 16.66667%; }
     .thumper-app .col-xl-3 {
-      flex: 0 0 25%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 25%;
+              flex: 0 0 25%;
       max-width: 25%; }
     .thumper-app .col-xl-4 {
-      flex: 0 0 33.33333%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 33.33333%;
+              flex: 0 0 33.33333%;
       max-width: 33.33333%; }
     .thumper-app .col-xl-5 {
-      flex: 0 0 41.66667%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 41.66667%;
+              flex: 0 0 41.66667%;
       max-width: 41.66667%; }
     .thumper-app .col-xl-6 {
-      flex: 0 0 50%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
       max-width: 50%; }
     .thumper-app .col-xl-7 {
-      flex: 0 0 58.33333%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 58.33333%;
+              flex: 0 0 58.33333%;
       max-width: 58.33333%; }
     .thumper-app .col-xl-8 {
-      flex: 0 0 66.66667%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 66.66667%;
+              flex: 0 0 66.66667%;
       max-width: 66.66667%; }
     .thumper-app .col-xl-9 {
-      flex: 0 0 75%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 75%;
+              flex: 0 0 75%;
       max-width: 75%; }
     .thumper-app .col-xl-10 {
-      flex: 0 0 83.33333%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 83.33333%;
+              flex: 0 0 83.33333%;
       max-width: 83.33333%; }
     .thumper-app .col-xl-11 {
-      flex: 0 0 91.66667%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 91.66667%;
+              flex: 0 0 91.66667%;
       max-width: 91.66667%; }
     .thumper-app .col-xl-12 {
-      flex: 0 0 100%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
       max-width: 100%; }
     .thumper-app .pull-xl-0 {
       right: auto; }
@@ -1331,6 +1481,7 @@ This gives us the freedom to exclude files we dont need or want to replace.
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
     .thumper-app .form-control::-ms-expand {
       background-color: transparent;
@@ -1340,6 +1491,12 @@ This gives us the freedom to exclude files we dont need or want to replace.
       background-color: #fff;
       border-color: #c9e2b8;
       outline: none; }
+    .thumper-app .form-control::-webkit-input-placeholder {
+      color: #C8C8C8;
+      opacity: 1; }
+    .thumper-app .form-control:-ms-input-placeholder {
+      color: #C8C8C8;
+      opacity: 1; }
     .thumper-app .form-control::placeholder {
       color: #C8C8C8;
       opacity: 1; }
@@ -1475,22 +1632,44 @@ This gives us the freedom to exclude files we dont need or want to replace.
   .thumper-app .has-danger .form-control-danger {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23E04462' viewBox='-2 -2 7 7'%3E%3Cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3E%3Ccircle r='.5'/%3E%3Ccircle cx='3' r='.5'/%3E%3Ccircle cy='3' r='.5'/%3E%3Ccircle cx='3' cy='3' r='.5'/%3E%3C/svg%3E"); }
   .thumper-app .form-inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    align-items: center; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .thumper-app .form-inline .form-check {
       width: 100%; }
     @media (min-width: 576px) {
       .thumper-app .form-inline label {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin-bottom: 0; }
       .thumper-app .form-inline .form-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex: 0 0 auto;
-        flex-flow: row wrap;
-        align-items: center;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin-bottom: 0; }
       .thumper-app .form-inline .form-control {
         display: inline-block;
@@ -1504,9 +1683,15 @@ This gives us the freedom to exclude files we dont need or want to replace.
         margin-bottom: 0;
         vertical-align: middle; }
       .thumper-app .form-inline .form-check {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         width: auto;
         margin-top: 0;
         margin-bottom: 0; }
@@ -1518,9 +1703,15 @@ This gives us the freedom to exclude files we dont need or want to replace.
         margin-right: 0.25rem;
         margin-left: 0; }
       .thumper-app .form-inline .custom-control {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         padding-left: 0; }
       .thumper-app .form-inline .custom-control-indicator {
         position: static;
@@ -1531,6 +1722,7 @@ This gives us the freedom to exclude files we dont need or want to replace.
         top: 0; } }
   .thumper-app .fade {
     opacity: 0;
+    -webkit-transition: opacity 0.15s linear;
     transition: opacity 0.15s linear; }
     .thumper-app .fade.show {
       opacity: 1; }
@@ -1546,6 +1738,7 @@ This gives us the freedom to exclude files we dont need or want to replace.
     position: relative;
     height: 0;
     overflow: hidden;
+    -webkit-transition: height 0.35s ease;
     transition: height 0.35s ease; }
   .thumper-app .dropup,
   .thumper-app .dropdown {
@@ -1642,12 +1835,16 @@ This gives us the freedom to exclude files we dont need or want to replace.
   .thumper-app .btn-group,
   .thumper-app .btn-group-vertical {
     position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     vertical-align: middle; }
     .thumper-app .btn-group > .btn,
     .thumper-app .btn-group-vertical > .btn {
       position: relative;
-      flex: 0 1 auto; }
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 auto;
+              flex: 0 1 auto; }
       .thumper-app .btn-group > .btn:hover,
       .thumper-app .btn-group-vertical > .btn:hover {
         z-index: 2; }
@@ -1666,8 +1863,12 @@ This gives us the freedom to exclude files we dont need or want to replace.
     .thumper-app .btn-group-vertical .btn-group + .btn-group {
       margin-left: -1px; }
   .thumper-app .btn-toolbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start; }
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
     .thumper-app .btn-toolbar .input-group {
       width: auto; }
   .thumper-app .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
@@ -1707,10 +1908,19 @@ This gives us the freedom to exclude files we dont need or want to replace.
     padding-right: 1.125rem;
     padding-left: 1.125rem; }
   .thumper-app .btn-group-vertical {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .thumper-app .btn-group-vertical .btn,
     .thumper-app .btn-group-vertical .btn-group {
       width: 100%; }
@@ -1746,12 +1956,16 @@ This gives us the freedom to exclude files we dont need or want to replace.
     pointer-events: none; }
   .thumper-app .input-group {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%; }
     .thumper-app .input-group .form-control {
       position: relative;
       z-index: 2;
-      flex: 1 1 auto;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 auto;
+              flex: 1 1 auto;
       width: 1%;
       margin-bottom: 0; }
       .thumper-app .input-group .form-control:focus, .thumper-app .input-group .form-control:active, .thumper-app .input-group .form-control:hover {
@@ -1759,9 +1973,16 @@ This gives us the freedom to exclude files we dont need or want to replace.
   .thumper-app .input-group-addon,
   .thumper-app .input-group-btn,
   .thumper-app .input-group .form-control {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .thumper-app .input-group-addon:not(:first-child):not(:last-child),
     .thumper-app .input-group-btn:not(:first-child):not(:last-child),
     .thumper-app .input-group .form-control:not(:first-child):not(:last-child) {
@@ -1820,7 +2041,9 @@ This gives us the freedom to exclude files we dont need or want to replace.
     white-space: nowrap; }
     .thumper-app .input-group-btn > .btn {
       position: relative;
-      flex: 1; }
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
       .thumper-app .input-group-btn > .btn + .btn {
         margin-left: -1px; }
       .thumper-app .input-group-btn > .btn:focus, .thumper-app .input-group-btn > .btn:active, .thumper-app .input-group-btn > .btn:hover {
@@ -1839,6 +2062,8 @@ This gives us the freedom to exclude files we dont need or want to replace.
         z-index: 3; }
   .thumper-app .custom-control {
     position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     min-height: 1.5rem;
     padding-left: 1.5rem;
@@ -1870,7 +2095,10 @@ This gives us the freedom to exclude files we dont need or want to replace.
     width: 1rem;
     height: 1rem;
     pointer-events: none;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     background-color: #ddd;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1887,8 +2115,13 @@ This gives us the freedom to exclude files we dont need or want to replace.
   .thumper-app .custom-radio .custom-control-input:checked ~ .custom-control-indicator {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E"); }
   .thumper-app .custom-controls-stacked {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
     .thumper-app .custom-controls-stacked .custom-control {
       margin-bottom: 0.25rem; }
       .thumper-app .custom-controls-stacked .custom-control + .custom-control {
@@ -1948,7 +2181,10 @@ This gives us the freedom to exclude files we dont need or want to replace.
     line-height: 1.5;
     color: #C8C8C8;
     pointer-events: none;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px; }
@@ -1971,6 +2207,8 @@ This gives us the freedom to exclude files we dont need or want to replace.
     .thumper-app .custom-file-control:lang(en)::before {
       content: "Browse"; }
   .thumper-app .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-left: 0;
     margin-bottom: 0;
@@ -2014,10 +2252,14 @@ This gives us the freedom to exclude files we dont need or want to replace.
     cursor: default;
     background-color: #84BD5E; }
   .thumper-app .nav-fill .nav-item {
-    flex: 1 1 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
     text-align: center; }
   .thumper-app .nav-justified .nav-item {
-    flex: 1 1 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
     text-align: center; }
   .thumper-app .tab-content > .tab-pane {
     display: none; }
@@ -2025,8 +2267,13 @@ This gives us the freedom to exclude files we dont need or want to replace.
     display: block; }
   .thumper-app .navbar {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0.5rem 1rem; }
   .thumper-app .navbar-brand {
     display: inline-block;
@@ -2039,8 +2286,13 @@ This gives us the freedom to exclude files we dont need or want to replace.
     .thumper-app .navbar-brand:focus, .thumper-app .navbar-brand:hover {
       text-decoration: none; }
   .thumper-app .navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none; }
@@ -2052,7 +2304,8 @@ This gives us the freedom to exclude files we dont need or want to replace.
     padding-top: .425rem;
     padding-bottom: .425rem; }
   .thumper-app .navbar-toggler {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
     line-height: 1;
@@ -2084,19 +2337,35 @@ This gives us the freedom to exclude files we dont need or want to replace.
       padding-left: 0; } }
   @media (min-width: 576px) {
     .thumper-app .navbar-toggleable {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: center; }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       .thumper-app .navbar-toggleable .navbar-nav {
-        flex-direction: row; }
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
         .thumper-app .navbar-toggleable .navbar-nav .nav-link {
           padding-right: .5rem;
           padding-left: .5rem; }
       .thumper-app .navbar-toggleable > .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: nowrap;
-        align-items: center; }
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
       .thumper-app .navbar-toggleable .navbar-collapse {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
         display: flex !important;
         width: 100%; }
       .thumper-app .navbar-toggleable .navbar-toggler {
@@ -2110,19 +2379,35 @@ This gives us the freedom to exclude files we dont need or want to replace.
       padding-left: 0; } }
   @media (min-width: 768px) {
     .thumper-app .navbar-toggleable-sm {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: center; }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       .thumper-app .navbar-toggleable-sm .navbar-nav {
-        flex-direction: row; }
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
         .thumper-app .navbar-toggleable-sm .navbar-nav .nav-link {
           padding-right: .5rem;
           padding-left: .5rem; }
       .thumper-app .navbar-toggleable-sm > .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: nowrap;
-        align-items: center; }
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
       .thumper-app .navbar-toggleable-sm .navbar-collapse {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
         display: flex !important;
         width: 100%; }
       .thumper-app .navbar-toggleable-sm .navbar-toggler {
@@ -2136,19 +2421,35 @@ This gives us the freedom to exclude files we dont need or want to replace.
       padding-left: 0; } }
   @media (min-width: 992px) {
     .thumper-app .navbar-toggleable-md {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: center; }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       .thumper-app .navbar-toggleable-md .navbar-nav {
-        flex-direction: row; }
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
         .thumper-app .navbar-toggleable-md .navbar-nav .nav-link {
           padding-right: .5rem;
           padding-left: .5rem; }
       .thumper-app .navbar-toggleable-md > .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: nowrap;
-        align-items: center; }
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
       .thumper-app .navbar-toggleable-md .navbar-collapse {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
         display: flex !important;
         width: 100%; }
       .thumper-app .navbar-toggleable-md .navbar-toggler {
@@ -2162,27 +2463,49 @@ This gives us the freedom to exclude files we dont need or want to replace.
       padding-left: 0; } }
   @media (min-width: 1200px) {
     .thumper-app .navbar-toggleable-lg {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: center; }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       .thumper-app .navbar-toggleable-lg .navbar-nav {
-        flex-direction: row; }
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
         .thumper-app .navbar-toggleable-lg .navbar-nav .nav-link {
           padding-right: .5rem;
           padding-left: .5rem; }
       .thumper-app .navbar-toggleable-lg > .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: nowrap;
-        align-items: center; }
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
       .thumper-app .navbar-toggleable-lg .navbar-collapse {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
         display: flex !important;
         width: 100%; }
       .thumper-app .navbar-toggleable-lg .navbar-toggler {
         display: none; } }
   .thumper-app .navbar-toggleable-xl {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .thumper-app .navbar-toggleable-xl .navbar-nav .dropdown-menu {
       position: static;
       float: none; }
@@ -2190,15 +2513,25 @@ This gives us the freedom to exclude files we dont need or want to replace.
       padding-right: 0;
       padding-left: 0; }
     .thumper-app .navbar-toggleable-xl .navbar-nav {
-      flex-direction: row; }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
       .thumper-app .navbar-toggleable-xl .navbar-nav .nav-link {
         padding-right: .5rem;
         padding-left: .5rem; }
     .thumper-app .navbar-toggleable-xl > .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-wrap: nowrap;
-      align-items: center; }
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
     .thumper-app .navbar-toggleable-xl .navbar-collapse {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
       display: flex !important;
       width: 100%; }
     .thumper-app .navbar-toggleable-xl .navbar-toggler {
@@ -2253,13 +2586,20 @@ This gives us the freedom to exclude files we dont need or want to replace.
     color: rgba(255, 255, 255, 0.5); }
   .thumper-app .card {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 4px; }
   .thumper-app .card-block {
-    flex: 1 1 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
     padding: 1.875rem; }
   .thumper-app .card-title {
     margin-bottom: 1.875rem; }
@@ -2386,22 +2726,41 @@ This gives us the freedom to exclude files we dont need or want to replace.
     border-bottom-left-radius: calc(4px - 1px); }
   @media (min-width: 576px) {
     .thumper-app .card-deck {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-flow: row wrap; }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
       .thumper-app .card-deck .card {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex: 1 0 0;
-        flex-direction: column; }
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 0px;
+                flex: 1 0 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
         .thumper-app .card-deck .card:not(:first-child) {
           margin-left: 15px; }
         .thumper-app .card-deck .card:not(:last-child) {
           margin-right: 15px; } }
   @media (min-width: 576px) {
     .thumper-app .card-group {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-flow: row wrap; }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
       .thumper-app .card-group .card {
-        flex: 1 0 0; }
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 0px;
+                flex: 1 0 0; }
         .thumper-app .card-group .card + .card {
           margin-left: 0;
           border-left: 0; }
@@ -2426,8 +2785,12 @@ This gives us the freedom to exclude files we dont need or want to replace.
             border-radius: 0; } }
   @media (min-width: 576px) {
     .thumper-app .card-columns {
-      column-count: 3;
-      column-gap: 1.25rem; }
+      -webkit-column-count: 3;
+         -moz-column-count: 3;
+              column-count: 3;
+      -webkit-column-gap: 1.25rem;
+         -moz-column-gap: 1.25rem;
+              column-gap: 1.25rem; }
       .thumper-app .card-columns .card {
         display: inline-block;
         width: 100%;
@@ -2457,6 +2820,8 @@ This gives us the freedom to exclude files we dont need or want to replace.
     .thumper-app .breadcrumb-item.active {
       color: #818a91; }
   .thumper-app .pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-left: 0;
     list-style: none;
@@ -2621,12 +2986,20 @@ This gives us the freedom to exclude files we dont need or want to replace.
     .thumper-app .alert-danger .alert-link {
       color: #843534; }
 
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0; }
+  to {
+    background-position: 0 0; } }
+
 @keyframes progress-bar-stripes {
   from {
     background-position: 1rem 0; }
   to {
     background-position: 0 0; } }
   .thumper-app .progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     overflow: hidden;
     font-size: 0.75rem;
@@ -2639,18 +3012,31 @@ This gives us the freedom to exclude files we dont need or want to replace.
     color: #fff;
     background-color: #84BD5E; }
   .thumper-app .progress-bar-striped {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 1rem 1rem; }
   .thumper-app .progress-bar-animated {
-    animation: progress-bar-stripes 1s linear infinite; }
+    -webkit-animation: progress-bar-stripes 1s linear infinite;
+            animation: progress-bar-stripes 1s linear infinite; }
   .thumper-app .media {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start; }
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
   .thumper-app .media-body {
-    flex: 1; }
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
   .thumper-app .list-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-left: 0;
     margin-bottom: 0; }
   .thumper-app .list-group-item-action {
@@ -2668,9 +3054,16 @@ This gives us the freedom to exclude files we dont need or want to replace.
       background-color: #eceeef; }
   .thumper-app .list-group-item {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0.75rem 1.25rem;
     margin-bottom: -1px;
     background-color: #fff;
@@ -2848,10 +3241,15 @@ This gives us the freedom to exclude files we dont need or want to replace.
     overflow: hidden;
     outline: 0; }
     .thumper-app .modal.fade .modal-dialog {
+      -webkit-transition: -webkit-transform 0.3s ease-out;
+      transition: -webkit-transform 0.3s ease-out;
       transition: transform 0.3s ease-out;
-      transform: translate(0, -25%); }
+      transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+      -webkit-transform: translate(0, -25%);
+              transform: translate(0, -25%); }
     .thumper-app .modal.show .modal-dialog {
-      transform: translate(0, 0); }
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); }
   .thumper-app .modal-open .modal {
     overflow-x: hidden;
     overflow-y: auto; }
@@ -2861,8 +3259,13 @@ This gives us the freedom to exclude files we dont need or want to replace.
     margin: 10px; }
   .thumper-app .modal-content {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -2881,9 +3284,15 @@ This gives us the freedom to exclude files we dont need or want to replace.
     .thumper-app .modal-backdrop.show {
       opacity: 0.5; }
   .thumper-app .modal-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 15px;
     border-bottom: 1px solid #eceeef; }
   .thumper-app .modal-title {
@@ -2891,12 +3300,20 @@ This gives us the freedom to exclude files we dont need or want to replace.
     line-height: 1.5; }
   .thumper-app .modal-body {
     position: relative;
-    flex: 1 1 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
     padding: 15px; }
   .thumper-app .modal-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     padding: 15px;
     border-top: 1px solid #eceeef; }
     .thumper-app .modal-footer > :not(:first-child) {
@@ -3077,8 +3494,12 @@ This gives us the freedom to exclude files we dont need or want to replace.
   .thumper-app .d-table-cell {
     display: table-cell !important; }
   .thumper-app .d-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important; }
   .thumper-app .d-inline-flex {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
     display: inline-flex !important; }
   @media (min-width: 576px) {
     .thumper-app .d-sm-none {
@@ -3094,8 +3515,12 @@ This gives us the freedom to exclude files we dont need or want to replace.
     .thumper-app .d-sm-table-cell {
       display: table-cell !important; }
     .thumper-app .d-sm-flex {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
       display: flex !important; }
     .thumper-app .d-sm-inline-flex {
+      display: -webkit-inline-box !important;
+      display: -ms-inline-flexbox !important;
       display: inline-flex !important; } }
   @media (min-width: 768px) {
     .thumper-app .d-md-none {
@@ -3111,8 +3536,12 @@ This gives us the freedom to exclude files we dont need or want to replace.
     .thumper-app .d-md-table-cell {
       display: table-cell !important; }
     .thumper-app .d-md-flex {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
       display: flex !important; }
     .thumper-app .d-md-inline-flex {
+      display: -webkit-inline-box !important;
+      display: -ms-inline-flexbox !important;
       display: inline-flex !important; } }
   @media (min-width: 992px) {
     .thumper-app .d-lg-none {
@@ -3128,8 +3557,12 @@ This gives us the freedom to exclude files we dont need or want to replace.
     .thumper-app .d-lg-table-cell {
       display: table-cell !important; }
     .thumper-app .d-lg-flex {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
       display: flex !important; }
     .thumper-app .d-lg-inline-flex {
+      display: -webkit-inline-box !important;
+      display: -ms-inline-flexbox !important;
       display: inline-flex !important; } }
   @media (min-width: 1200px) {
     .thumper-app .d-xl-none {
@@ -3145,333 +3578,612 @@ This gives us the freedom to exclude files we dont need or want to replace.
     .thumper-app .d-xl-table-cell {
       display: table-cell !important; }
     .thumper-app .d-xl-flex {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
       display: flex !important; }
     .thumper-app .d-xl-inline-flex {
+      display: -webkit-inline-box !important;
+      display: -ms-inline-flexbox !important;
       display: inline-flex !important; } }
   .thumper-app .flex-first {
-    order: -1; }
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1; }
   .thumper-app .flex-last {
-    order: 1; }
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
   .thumper-app .flex-unordered {
-    order: 0; }
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0; }
   .thumper-app .flex-row {
-    flex-direction: row !important; }
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important; }
   .thumper-app .flex-column {
-    flex-direction: column !important; }
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important; }
   .thumper-app .flex-row-reverse {
-    flex-direction: row-reverse !important; }
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: row-reverse !important;
+            flex-direction: row-reverse !important; }
   .thumper-app .flex-column-reverse {
-    flex-direction: column-reverse !important; }
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important; }
   .thumper-app .flex-wrap {
-    flex-wrap: wrap !important; }
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important; }
   .thumper-app .flex-nowrap {
-    flex-wrap: nowrap !important; }
+    -ms-flex-wrap: nowrap !important;
+        flex-wrap: nowrap !important; }
   .thumper-app .flex-wrap-reverse {
-    flex-wrap: wrap-reverse !important; }
+    -ms-flex-wrap: wrap-reverse !important;
+        flex-wrap: wrap-reverse !important; }
   .thumper-app .justify-content-start {
-    justify-content: flex-start !important; }
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important; }
   .thumper-app .justify-content-end {
-    justify-content: flex-end !important; }
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important; }
   .thumper-app .justify-content-center {
-    justify-content: center !important; }
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important; }
   .thumper-app .justify-content-between {
-    justify-content: space-between !important; }
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important; }
   .thumper-app .justify-content-around {
-    justify-content: space-around !important; }
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important; }
   .thumper-app .align-items-start {
-    align-items: flex-start !important; }
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important; }
   .thumper-app .align-items-end {
-    align-items: flex-end !important; }
+    -webkit-box-align: end !important;
+        -ms-flex-align: end !important;
+            align-items: flex-end !important; }
   .thumper-app .align-items-center {
-    align-items: center !important; }
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important; }
   .thumper-app .align-items-baseline {
-    align-items: baseline !important; }
+    -webkit-box-align: baseline !important;
+        -ms-flex-align: baseline !important;
+            align-items: baseline !important; }
   .thumper-app .align-items-stretch {
-    align-items: stretch !important; }
+    -webkit-box-align: stretch !important;
+        -ms-flex-align: stretch !important;
+            align-items: stretch !important; }
   .thumper-app .align-content-start {
-    align-content: flex-start !important; }
+    -ms-flex-line-pack: start !important;
+        align-content: flex-start !important; }
   .thumper-app .align-content-end {
-    align-content: flex-end !important; }
+    -ms-flex-line-pack: end !important;
+        align-content: flex-end !important; }
   .thumper-app .align-content-center {
-    align-content: center !important; }
+    -ms-flex-line-pack: center !important;
+        align-content: center !important; }
   .thumper-app .align-content-between {
-    align-content: space-between !important; }
+    -ms-flex-line-pack: justify !important;
+        align-content: space-between !important; }
   .thumper-app .align-content-around {
-    align-content: space-around !important; }
+    -ms-flex-line-pack: distribute !important;
+        align-content: space-around !important; }
   .thumper-app .align-content-stretch {
-    align-content: stretch !important; }
+    -ms-flex-line-pack: stretch !important;
+        align-content: stretch !important; }
   .thumper-app .align-self-auto {
-    align-self: auto !important; }
+    -ms-flex-item-align: auto !important;
+        -ms-grid-row-align: auto !important;
+        align-self: auto !important; }
   .thumper-app .align-self-start {
-    align-self: flex-start !important; }
+    -ms-flex-item-align: start !important;
+        align-self: flex-start !important; }
   .thumper-app .align-self-end {
-    align-self: flex-end !important; }
+    -ms-flex-item-align: end !important;
+        align-self: flex-end !important; }
   .thumper-app .align-self-center {
-    align-self: center !important; }
+    -ms-flex-item-align: center !important;
+        -ms-grid-row-align: center !important;
+        align-self: center !important; }
   .thumper-app .align-self-baseline {
-    align-self: baseline !important; }
+    -ms-flex-item-align: baseline !important;
+        align-self: baseline !important; }
   .thumper-app .align-self-stretch {
-    align-self: stretch !important; }
+    -ms-flex-item-align: stretch !important;
+        -ms-grid-row-align: stretch !important;
+        align-self: stretch !important; }
   @media (min-width: 576px) {
     .thumper-app .flex-sm-first {
-      order: -1; }
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; }
     .thumper-app .flex-sm-last {
-      order: 1; }
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
     .thumper-app .flex-sm-unordered {
-      order: 0; }
+      -webkit-box-ordinal-group: 1;
+          -ms-flex-order: 0;
+              order: 0; }
     .thumper-app .flex-sm-row {
-      flex-direction: row !important; }
+      -webkit-box-orient: horizontal !important;
+      -webkit-box-direction: normal !important;
+          -ms-flex-direction: row !important;
+              flex-direction: row !important; }
     .thumper-app .flex-sm-column {
-      flex-direction: column !important; }
+      -webkit-box-orient: vertical !important;
+      -webkit-box-direction: normal !important;
+          -ms-flex-direction: column !important;
+              flex-direction: column !important; }
     .thumper-app .flex-sm-row-reverse {
-      flex-direction: row-reverse !important; }
+      -webkit-box-orient: horizontal !important;
+      -webkit-box-direction: reverse !important;
+          -ms-flex-direction: row-reverse !important;
+              flex-direction: row-reverse !important; }
     .thumper-app .flex-sm-column-reverse {
-      flex-direction: column-reverse !important; }
+      -webkit-box-orient: vertical !important;
+      -webkit-box-direction: reverse !important;
+          -ms-flex-direction: column-reverse !important;
+              flex-direction: column-reverse !important; }
     .thumper-app .flex-sm-wrap {
-      flex-wrap: wrap !important; }
+      -ms-flex-wrap: wrap !important;
+          flex-wrap: wrap !important; }
     .thumper-app .flex-sm-nowrap {
-      flex-wrap: nowrap !important; }
+      -ms-flex-wrap: nowrap !important;
+          flex-wrap: nowrap !important; }
     .thumper-app .flex-sm-wrap-reverse {
-      flex-wrap: wrap-reverse !important; }
+      -ms-flex-wrap: wrap-reverse !important;
+          flex-wrap: wrap-reverse !important; }
     .thumper-app .justify-content-sm-start {
-      justify-content: flex-start !important; }
+      -webkit-box-pack: start !important;
+          -ms-flex-pack: start !important;
+              justify-content: flex-start !important; }
     .thumper-app .justify-content-sm-end {
-      justify-content: flex-end !important; }
+      -webkit-box-pack: end !important;
+          -ms-flex-pack: end !important;
+              justify-content: flex-end !important; }
     .thumper-app .justify-content-sm-center {
-      justify-content: center !important; }
+      -webkit-box-pack: center !important;
+          -ms-flex-pack: center !important;
+              justify-content: center !important; }
     .thumper-app .justify-content-sm-between {
-      justify-content: space-between !important; }
+      -webkit-box-pack: justify !important;
+          -ms-flex-pack: justify !important;
+              justify-content: space-between !important; }
     .thumper-app .justify-content-sm-around {
-      justify-content: space-around !important; }
+      -ms-flex-pack: distribute !important;
+          justify-content: space-around !important; }
     .thumper-app .align-items-sm-start {
-      align-items: flex-start !important; }
+      -webkit-box-align: start !important;
+          -ms-flex-align: start !important;
+              align-items: flex-start !important; }
     .thumper-app .align-items-sm-end {
-      align-items: flex-end !important; }
+      -webkit-box-align: end !important;
+          -ms-flex-align: end !important;
+              align-items: flex-end !important; }
     .thumper-app .align-items-sm-center {
-      align-items: center !important; }
+      -webkit-box-align: center !important;
+          -ms-flex-align: center !important;
+              align-items: center !important; }
     .thumper-app .align-items-sm-baseline {
-      align-items: baseline !important; }
+      -webkit-box-align: baseline !important;
+          -ms-flex-align: baseline !important;
+              align-items: baseline !important; }
     .thumper-app .align-items-sm-stretch {
-      align-items: stretch !important; }
+      -webkit-box-align: stretch !important;
+          -ms-flex-align: stretch !important;
+              align-items: stretch !important; }
     .thumper-app .align-content-sm-start {
-      align-content: flex-start !important; }
+      -ms-flex-line-pack: start !important;
+          align-content: flex-start !important; }
     .thumper-app .align-content-sm-end {
-      align-content: flex-end !important; }
+      -ms-flex-line-pack: end !important;
+          align-content: flex-end !important; }
     .thumper-app .align-content-sm-center {
-      align-content: center !important; }
+      -ms-flex-line-pack: center !important;
+          align-content: center !important; }
     .thumper-app .align-content-sm-between {
-      align-content: space-between !important; }
+      -ms-flex-line-pack: justify !important;
+          align-content: space-between !important; }
     .thumper-app .align-content-sm-around {
-      align-content: space-around !important; }
+      -ms-flex-line-pack: distribute !important;
+          align-content: space-around !important; }
     .thumper-app .align-content-sm-stretch {
-      align-content: stretch !important; }
+      -ms-flex-line-pack: stretch !important;
+          align-content: stretch !important; }
     .thumper-app .align-self-sm-auto {
-      align-self: auto !important; }
+      -ms-flex-item-align: auto !important;
+          -ms-grid-row-align: auto !important;
+          align-self: auto !important; }
     .thumper-app .align-self-sm-start {
-      align-self: flex-start !important; }
+      -ms-flex-item-align: start !important;
+          align-self: flex-start !important; }
     .thumper-app .align-self-sm-end {
-      align-self: flex-end !important; }
+      -ms-flex-item-align: end !important;
+          align-self: flex-end !important; }
     .thumper-app .align-self-sm-center {
-      align-self: center !important; }
+      -ms-flex-item-align: center !important;
+          -ms-grid-row-align: center !important;
+          align-self: center !important; }
     .thumper-app .align-self-sm-baseline {
-      align-self: baseline !important; }
+      -ms-flex-item-align: baseline !important;
+          align-self: baseline !important; }
     .thumper-app .align-self-sm-stretch {
-      align-self: stretch !important; } }
+      -ms-flex-item-align: stretch !important;
+          -ms-grid-row-align: stretch !important;
+          align-self: stretch !important; } }
   @media (min-width: 768px) {
     .thumper-app .flex-md-first {
-      order: -1; }
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; }
     .thumper-app .flex-md-last {
-      order: 1; }
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
     .thumper-app .flex-md-unordered {
-      order: 0; }
+      -webkit-box-ordinal-group: 1;
+          -ms-flex-order: 0;
+              order: 0; }
     .thumper-app .flex-md-row {
-      flex-direction: row !important; }
+      -webkit-box-orient: horizontal !important;
+      -webkit-box-direction: normal !important;
+          -ms-flex-direction: row !important;
+              flex-direction: row !important; }
     .thumper-app .flex-md-column {
-      flex-direction: column !important; }
+      -webkit-box-orient: vertical !important;
+      -webkit-box-direction: normal !important;
+          -ms-flex-direction: column !important;
+              flex-direction: column !important; }
     .thumper-app .flex-md-row-reverse {
-      flex-direction: row-reverse !important; }
+      -webkit-box-orient: horizontal !important;
+      -webkit-box-direction: reverse !important;
+          -ms-flex-direction: row-reverse !important;
+              flex-direction: row-reverse !important; }
     .thumper-app .flex-md-column-reverse {
-      flex-direction: column-reverse !important; }
+      -webkit-box-orient: vertical !important;
+      -webkit-box-direction: reverse !important;
+          -ms-flex-direction: column-reverse !important;
+              flex-direction: column-reverse !important; }
     .thumper-app .flex-md-wrap {
-      flex-wrap: wrap !important; }
+      -ms-flex-wrap: wrap !important;
+          flex-wrap: wrap !important; }
     .thumper-app .flex-md-nowrap {
-      flex-wrap: nowrap !important; }
+      -ms-flex-wrap: nowrap !important;
+          flex-wrap: nowrap !important; }
     .thumper-app .flex-md-wrap-reverse {
-      flex-wrap: wrap-reverse !important; }
+      -ms-flex-wrap: wrap-reverse !important;
+          flex-wrap: wrap-reverse !important; }
     .thumper-app .justify-content-md-start {
-      justify-content: flex-start !important; }
+      -webkit-box-pack: start !important;
+          -ms-flex-pack: start !important;
+              justify-content: flex-start !important; }
     .thumper-app .justify-content-md-end {
-      justify-content: flex-end !important; }
+      -webkit-box-pack: end !important;
+          -ms-flex-pack: end !important;
+              justify-content: flex-end !important; }
     .thumper-app .justify-content-md-center {
-      justify-content: center !important; }
+      -webkit-box-pack: center !important;
+          -ms-flex-pack: center !important;
+              justify-content: center !important; }
     .thumper-app .justify-content-md-between {
-      justify-content: space-between !important; }
+      -webkit-box-pack: justify !important;
+          -ms-flex-pack: justify !important;
+              justify-content: space-between !important; }
     .thumper-app .justify-content-md-around {
-      justify-content: space-around !important; }
+      -ms-flex-pack: distribute !important;
+          justify-content: space-around !important; }
     .thumper-app .align-items-md-start {
-      align-items: flex-start !important; }
+      -webkit-box-align: start !important;
+          -ms-flex-align: start !important;
+              align-items: flex-start !important; }
     .thumper-app .align-items-md-end {
-      align-items: flex-end !important; }
+      -webkit-box-align: end !important;
+          -ms-flex-align: end !important;
+              align-items: flex-end !important; }
     .thumper-app .align-items-md-center {
-      align-items: center !important; }
+      -webkit-box-align: center !important;
+          -ms-flex-align: center !important;
+              align-items: center !important; }
     .thumper-app .align-items-md-baseline {
-      align-items: baseline !important; }
+      -webkit-box-align: baseline !important;
+          -ms-flex-align: baseline !important;
+              align-items: baseline !important; }
     .thumper-app .align-items-md-stretch {
-      align-items: stretch !important; }
+      -webkit-box-align: stretch !important;
+          -ms-flex-align: stretch !important;
+              align-items: stretch !important; }
     .thumper-app .align-content-md-start {
-      align-content: flex-start !important; }
+      -ms-flex-line-pack: start !important;
+          align-content: flex-start !important; }
     .thumper-app .align-content-md-end {
-      align-content: flex-end !important; }
+      -ms-flex-line-pack: end !important;
+          align-content: flex-end !important; }
     .thumper-app .align-content-md-center {
-      align-content: center !important; }
+      -ms-flex-line-pack: center !important;
+          align-content: center !important; }
     .thumper-app .align-content-md-between {
-      align-content: space-between !important; }
+      -ms-flex-line-pack: justify !important;
+          align-content: space-between !important; }
     .thumper-app .align-content-md-around {
-      align-content: space-around !important; }
+      -ms-flex-line-pack: distribute !important;
+          align-content: space-around !important; }
     .thumper-app .align-content-md-stretch {
-      align-content: stretch !important; }
+      -ms-flex-line-pack: stretch !important;
+          align-content: stretch !important; }
     .thumper-app .align-self-md-auto {
-      align-self: auto !important; }
+      -ms-flex-item-align: auto !important;
+          -ms-grid-row-align: auto !important;
+          align-self: auto !important; }
     .thumper-app .align-self-md-start {
-      align-self: flex-start !important; }
+      -ms-flex-item-align: start !important;
+          align-self: flex-start !important; }
     .thumper-app .align-self-md-end {
-      align-self: flex-end !important; }
+      -ms-flex-item-align: end !important;
+          align-self: flex-end !important; }
     .thumper-app .align-self-md-center {
-      align-self: center !important; }
+      -ms-flex-item-align: center !important;
+          -ms-grid-row-align: center !important;
+          align-self: center !important; }
     .thumper-app .align-self-md-baseline {
-      align-self: baseline !important; }
+      -ms-flex-item-align: baseline !important;
+          align-self: baseline !important; }
     .thumper-app .align-self-md-stretch {
-      align-self: stretch !important; } }
+      -ms-flex-item-align: stretch !important;
+          -ms-grid-row-align: stretch !important;
+          align-self: stretch !important; } }
   @media (min-width: 992px) {
     .thumper-app .flex-lg-first {
-      order: -1; }
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; }
     .thumper-app .flex-lg-last {
-      order: 1; }
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
     .thumper-app .flex-lg-unordered {
-      order: 0; }
+      -webkit-box-ordinal-group: 1;
+          -ms-flex-order: 0;
+              order: 0; }
     .thumper-app .flex-lg-row {
-      flex-direction: row !important; }
+      -webkit-box-orient: horizontal !important;
+      -webkit-box-direction: normal !important;
+          -ms-flex-direction: row !important;
+              flex-direction: row !important; }
     .thumper-app .flex-lg-column {
-      flex-direction: column !important; }
+      -webkit-box-orient: vertical !important;
+      -webkit-box-direction: normal !important;
+          -ms-flex-direction: column !important;
+              flex-direction: column !important; }
     .thumper-app .flex-lg-row-reverse {
-      flex-direction: row-reverse !important; }
+      -webkit-box-orient: horizontal !important;
+      -webkit-box-direction: reverse !important;
+          -ms-flex-direction: row-reverse !important;
+              flex-direction: row-reverse !important; }
     .thumper-app .flex-lg-column-reverse {
-      flex-direction: column-reverse !important; }
+      -webkit-box-orient: vertical !important;
+      -webkit-box-direction: reverse !important;
+          -ms-flex-direction: column-reverse !important;
+              flex-direction: column-reverse !important; }
     .thumper-app .flex-lg-wrap {
-      flex-wrap: wrap !important; }
+      -ms-flex-wrap: wrap !important;
+          flex-wrap: wrap !important; }
     .thumper-app .flex-lg-nowrap {
-      flex-wrap: nowrap !important; }
+      -ms-flex-wrap: nowrap !important;
+          flex-wrap: nowrap !important; }
     .thumper-app .flex-lg-wrap-reverse {
-      flex-wrap: wrap-reverse !important; }
+      -ms-flex-wrap: wrap-reverse !important;
+          flex-wrap: wrap-reverse !important; }
     .thumper-app .justify-content-lg-start {
-      justify-content: flex-start !important; }
+      -webkit-box-pack: start !important;
+          -ms-flex-pack: start !important;
+              justify-content: flex-start !important; }
     .thumper-app .justify-content-lg-end {
-      justify-content: flex-end !important; }
+      -webkit-box-pack: end !important;
+          -ms-flex-pack: end !important;
+              justify-content: flex-end !important; }
     .thumper-app .justify-content-lg-center {
-      justify-content: center !important; }
+      -webkit-box-pack: center !important;
+          -ms-flex-pack: center !important;
+              justify-content: center !important; }
     .thumper-app .justify-content-lg-between {
-      justify-content: space-between !important; }
+      -webkit-box-pack: justify !important;
+          -ms-flex-pack: justify !important;
+              justify-content: space-between !important; }
     .thumper-app .justify-content-lg-around {
-      justify-content: space-around !important; }
+      -ms-flex-pack: distribute !important;
+          justify-content: space-around !important; }
     .thumper-app .align-items-lg-start {
-      align-items: flex-start !important; }
+      -webkit-box-align: start !important;
+          -ms-flex-align: start !important;
+              align-items: flex-start !important; }
     .thumper-app .align-items-lg-end {
-      align-items: flex-end !important; }
+      -webkit-box-align: end !important;
+          -ms-flex-align: end !important;
+              align-items: flex-end !important; }
     .thumper-app .align-items-lg-center {
-      align-items: center !important; }
+      -webkit-box-align: center !important;
+          -ms-flex-align: center !important;
+              align-items: center !important; }
     .thumper-app .align-items-lg-baseline {
-      align-items: baseline !important; }
+      -webkit-box-align: baseline !important;
+          -ms-flex-align: baseline !important;
+              align-items: baseline !important; }
     .thumper-app .align-items-lg-stretch {
-      align-items: stretch !important; }
+      -webkit-box-align: stretch !important;
+          -ms-flex-align: stretch !important;
+              align-items: stretch !important; }
     .thumper-app .align-content-lg-start {
-      align-content: flex-start !important; }
+      -ms-flex-line-pack: start !important;
+          align-content: flex-start !important; }
     .thumper-app .align-content-lg-end {
-      align-content: flex-end !important; }
+      -ms-flex-line-pack: end !important;
+          align-content: flex-end !important; }
     .thumper-app .align-content-lg-center {
-      align-content: center !important; }
+      -ms-flex-line-pack: center !important;
+          align-content: center !important; }
     .thumper-app .align-content-lg-between {
-      align-content: space-between !important; }
+      -ms-flex-line-pack: justify !important;
+          align-content: space-between !important; }
     .thumper-app .align-content-lg-around {
-      align-content: space-around !important; }
+      -ms-flex-line-pack: distribute !important;
+          align-content: space-around !important; }
     .thumper-app .align-content-lg-stretch {
-      align-content: stretch !important; }
+      -ms-flex-line-pack: stretch !important;
+          align-content: stretch !important; }
     .thumper-app .align-self-lg-auto {
-      align-self: auto !important; }
+      -ms-flex-item-align: auto !important;
+          -ms-grid-row-align: auto !important;
+          align-self: auto !important; }
     .thumper-app .align-self-lg-start {
-      align-self: flex-start !important; }
+      -ms-flex-item-align: start !important;
+          align-self: flex-start !important; }
     .thumper-app .align-self-lg-end {
-      align-self: flex-end !important; }
+      -ms-flex-item-align: end !important;
+          align-self: flex-end !important; }
     .thumper-app .align-self-lg-center {
-      align-self: center !important; }
+      -ms-flex-item-align: center !important;
+          -ms-grid-row-align: center !important;
+          align-self: center !important; }
     .thumper-app .align-self-lg-baseline {
-      align-self: baseline !important; }
+      -ms-flex-item-align: baseline !important;
+          align-self: baseline !important; }
     .thumper-app .align-self-lg-stretch {
-      align-self: stretch !important; } }
+      -ms-flex-item-align: stretch !important;
+          -ms-grid-row-align: stretch !important;
+          align-self: stretch !important; } }
   @media (min-width: 1200px) {
     .thumper-app .flex-xl-first {
-      order: -1; }
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; }
     .thumper-app .flex-xl-last {
-      order: 1; }
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
     .thumper-app .flex-xl-unordered {
-      order: 0; }
+      -webkit-box-ordinal-group: 1;
+          -ms-flex-order: 0;
+              order: 0; }
     .thumper-app .flex-xl-row {
-      flex-direction: row !important; }
+      -webkit-box-orient: horizontal !important;
+      -webkit-box-direction: normal !important;
+          -ms-flex-direction: row !important;
+              flex-direction: row !important; }
     .thumper-app .flex-xl-column {
-      flex-direction: column !important; }
+      -webkit-box-orient: vertical !important;
+      -webkit-box-direction: normal !important;
+          -ms-flex-direction: column !important;
+              flex-direction: column !important; }
     .thumper-app .flex-xl-row-reverse {
-      flex-direction: row-reverse !important; }
+      -webkit-box-orient: horizontal !important;
+      -webkit-box-direction: reverse !important;
+          -ms-flex-direction: row-reverse !important;
+              flex-direction: row-reverse !important; }
     .thumper-app .flex-xl-column-reverse {
-      flex-direction: column-reverse !important; }
+      -webkit-box-orient: vertical !important;
+      -webkit-box-direction: reverse !important;
+          -ms-flex-direction: column-reverse !important;
+              flex-direction: column-reverse !important; }
     .thumper-app .flex-xl-wrap {
-      flex-wrap: wrap !important; }
+      -ms-flex-wrap: wrap !important;
+          flex-wrap: wrap !important; }
     .thumper-app .flex-xl-nowrap {
-      flex-wrap: nowrap !important; }
+      -ms-flex-wrap: nowrap !important;
+          flex-wrap: nowrap !important; }
     .thumper-app .flex-xl-wrap-reverse {
-      flex-wrap: wrap-reverse !important; }
+      -ms-flex-wrap: wrap-reverse !important;
+          flex-wrap: wrap-reverse !important; }
     .thumper-app .justify-content-xl-start {
-      justify-content: flex-start !important; }
+      -webkit-box-pack: start !important;
+          -ms-flex-pack: start !important;
+              justify-content: flex-start !important; }
     .thumper-app .justify-content-xl-end {
-      justify-content: flex-end !important; }
+      -webkit-box-pack: end !important;
+          -ms-flex-pack: end !important;
+              justify-content: flex-end !important; }
     .thumper-app .justify-content-xl-center {
-      justify-content: center !important; }
+      -webkit-box-pack: center !important;
+          -ms-flex-pack: center !important;
+              justify-content: center !important; }
     .thumper-app .justify-content-xl-between {
-      justify-content: space-between !important; }
+      -webkit-box-pack: justify !important;
+          -ms-flex-pack: justify !important;
+              justify-content: space-between !important; }
     .thumper-app .justify-content-xl-around {
-      justify-content: space-around !important; }
+      -ms-flex-pack: distribute !important;
+          justify-content: space-around !important; }
     .thumper-app .align-items-xl-start {
-      align-items: flex-start !important; }
+      -webkit-box-align: start !important;
+          -ms-flex-align: start !important;
+              align-items: flex-start !important; }
     .thumper-app .align-items-xl-end {
-      align-items: flex-end !important; }
+      -webkit-box-align: end !important;
+          -ms-flex-align: end !important;
+              align-items: flex-end !important; }
     .thumper-app .align-items-xl-center {
-      align-items: center !important; }
+      -webkit-box-align: center !important;
+          -ms-flex-align: center !important;
+              align-items: center !important; }
     .thumper-app .align-items-xl-baseline {
-      align-items: baseline !important; }
+      -webkit-box-align: baseline !important;
+          -ms-flex-align: baseline !important;
+              align-items: baseline !important; }
     .thumper-app .align-items-xl-stretch {
-      align-items: stretch !important; }
+      -webkit-box-align: stretch !important;
+          -ms-flex-align: stretch !important;
+              align-items: stretch !important; }
     .thumper-app .align-content-xl-start {
-      align-content: flex-start !important; }
+      -ms-flex-line-pack: start !important;
+          align-content: flex-start !important; }
     .thumper-app .align-content-xl-end {
-      align-content: flex-end !important; }
+      -ms-flex-line-pack: end !important;
+          align-content: flex-end !important; }
     .thumper-app .align-content-xl-center {
-      align-content: center !important; }
+      -ms-flex-line-pack: center !important;
+          align-content: center !important; }
     .thumper-app .align-content-xl-between {
-      align-content: space-between !important; }
+      -ms-flex-line-pack: justify !important;
+          align-content: space-between !important; }
     .thumper-app .align-content-xl-around {
-      align-content: space-around !important; }
+      -ms-flex-line-pack: distribute !important;
+          align-content: space-around !important; }
     .thumper-app .align-content-xl-stretch {
-      align-content: stretch !important; }
+      -ms-flex-line-pack: stretch !important;
+          align-content: stretch !important; }
     .thumper-app .align-self-xl-auto {
-      align-self: auto !important; }
+      -ms-flex-item-align: auto !important;
+          -ms-grid-row-align: auto !important;
+          align-self: auto !important; }
     .thumper-app .align-self-xl-start {
-      align-self: flex-start !important; }
+      -ms-flex-item-align: start !important;
+          align-self: flex-start !important; }
     .thumper-app .align-self-xl-end {
-      align-self: flex-end !important; }
+      -ms-flex-item-align: end !important;
+          align-self: flex-end !important; }
     .thumper-app .align-self-xl-center {
-      align-self: center !important; }
+      -ms-flex-item-align: center !important;
+          -ms-grid-row-align: center !important;
+          align-self: center !important; }
     .thumper-app .align-self-xl-baseline {
-      align-self: baseline !important; }
+      -ms-flex-item-align: baseline !important;
+          align-self: baseline !important; }
     .thumper-app .align-self-xl-stretch {
-      align-self: stretch !important; } }
+      -ms-flex-item-align: stretch !important;
+          -ms-grid-row-align: stretch !important;
+          align-self: stretch !important; } }
   .thumper-app .float-left {
     float: left !important; }
   .thumper-app .float-right {
@@ -3519,6 +4231,7 @@ This gives us the freedom to exclude files we dont need or want to replace.
     left: 0;
     z-index: 1030; }
   .thumper-app .sticky-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1030; }
@@ -4749,7 +5462,11 @@ This gives us the freedom to exclude files we dont need or want to replace.
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
     border: none;
     cursor: pointer;
@@ -4768,7 +5485,8 @@ This gives us the freedom to exclude files we dont need or want to replace.
     .thumper-app .btn:active, .thumper-app .btn.active {
       background-image: none;
       box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
-      transform: scaleY(0.96); }
+      -webkit-transform: scaleY(0.96);
+              transform: scaleY(0.96); }
   .thumper-app a.btn.disabled,
   .thumper-app fieldset[disabled] a.btn {
     pointer-events: none; }
@@ -4893,27 +5611,52 @@ This gives us the freedom to exclude files we dont need or want to replace.
     height: 100vh;
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: stretch; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
   .thumper-app .container h1:first-child, .thumper-app .container .h1:first-child {
     margin-top: 25px; }
   .thumper-app .container.container-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-grow: 1; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
     .thumper-app .container.container-flex .card.card-flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex: 1; }
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
       .thumper-app .container.container-flex .card.card-flex .row {
-        flex: 1; }
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
   .thumper-app div:not(.navbar) > .container {
     margin-bottom: 25px; }
   .thumper-app .navbar-fixed-top + .container, .thumper-app .navbar-fixed-top + .app-container {
     padding-top: 54px; }
   .thumper-app .col-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .thumper-app .bg-secondary {
     background-color: #636363 !important; }
   .thumper-app a.bg-secondary:focus, .thumper-app a.bg-secondary:hover {
@@ -4943,25 +5686,39 @@ This gives us the freedom to exclude files we dont need or want to replace.
   .thumper-app .card {
     overflow: hidden; }
     .thumper-app .card.flex-card {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex: 1; }
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
     .thumper-app .card > .row .card-left-panel {
       padding-left: 2.8125rem;
       padding-right: 1.875rem;
       padding-top: 1.875rem;
       padding-bottom: 1.875rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column; }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
       .thumper-app .card > .row .card-left-panel + div {
         padding-left: 0; }
     .thumper-app .card > .row .card-panel-block {
-      flex-grow: 1;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
       overflow-y: scroll;
       height: 0; }
     .thumper-app .card > .row .card-panel-footer {
       width: 100%;
-      align-self: flex-end;
-      flex-grow: 0; }
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0; }
     .thumper-app .card .card-footer {
       padding-top: 1.875rem;
       padding-bottom: 1.875rem; }
@@ -4978,16 +5735,22 @@ This gives us the freedom to exclude files we dont need or want to replace.
   .thumper-app .card-block > .card:last-child {
     margin-bottom: 0; }
   .thumper-app .dropdown .dropdown-toggle:not(.nav-link) {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: #eceeef;
     color: #404547; }
     .thumper-app .dropdown .dropdown-toggle:not(.nav-link):focus, .thumper-app .dropdown .dropdown-toggle:not(.nav-link) .focus {
       border-radius: 4px 4px 0 0;
       box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
-      transform: scaleY(1); }
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1); }
     .thumper-app .dropdown .dropdown-toggle:not(.nav-link):active, .thumper-app .dropdown .dropdown-toggle:not(.nav-link) .active {
-      transform: scaleY(0.96); }
+      -webkit-transform: scaleY(0.96);
+              transform: scaleY(0.96); }
     .thumper-app .dropdown .dropdown-toggle:not(.nav-link):after {
       content: '\F107';
       font-family: FontAwesome;
@@ -5000,6 +5763,7 @@ This gives us the freedom to exclude files we dont need or want to replace.
   .thumper-app .dropdown .dropdown-menu {
     border: none;
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     margin-top: 0;
     padding-top: 0;
@@ -5043,47 +5807,71 @@ This gives us the freedom to exclude files we dont need or want to replace.
     border-top-right-radius: 0; }
   .thumper-app .msg-block {
     padding-bottom: 0;
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
     .thumper-app .msg-block .msg-container {
       overflow-y: scroll;
       height: 0;
-      flex-grow: 1; }
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
       .thumper-app .msg-block .msg-container .msg-content {
         min-height: 100%;
         padding-bottom: 1.25rem;
         font-weight: 300;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        flex: 1; }
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
         .thumper-app .msg-block .msg-container .msg-content .msg {
           max-width: 40%;
           padding: 6px 12px;
           border-radius: 6px;
-          flex-shrink: 0; }
+          -ms-flex-negative: 0;
+              flex-shrink: 0; }
           .thumper-app .msg-block .msg-container .msg-content .msg:not(:last-child) {
             margin-bottom: 10px; }
           .thumper-app .msg-block .msg-container .msg-content .msg.msg-inbound {
             background-color: #D1DEDE;
             border-top-left-radius: 0;
-            align-self: flex-start; }
+            -ms-flex-item-align: start;
+                align-self: flex-start; }
           .thumper-app .msg-block .msg-container .msg-content .msg.msg-outbound {
             background-color: #84BD5E;
             border-top-right-radius: 0;
-            align-self: flex-end;
+            -ms-flex-item-align: end;
+                align-self: flex-end;
             color: white; }
         .thumper-app .msg-block .msg-container .msg-content .msg-user {
           max-width: 40%;
           padding: 3px 0;
-          flex-shrink: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0;
           font-size: 12px;
           color: #818a91; }
           .thumper-app .msg-block .msg-container .msg-content .msg-user.msg-inbound {
-            align-self: flex-start; }
+            -ms-flex-item-align: start;
+                align-self: flex-start; }
           .thumper-app .msg-block .msg-container .msg-content .msg-user.msg-outbound {
-            align-self: flex-end; }
+            -ms-flex-item-align: end;
+                align-self: flex-end; }
         .thumper-app .msg-block .msg-container .msg-content .msg.msg-inbound + .msg-user.msg-inbound {
           display: none; }
         .thumper-app .msg-block .msg-container .msg-content .msg.msg-outbound + .msg-user.msg-outbound {
@@ -5103,9 +5891,21 @@ This gives us the freedom to exclude files we dont need or want to replace.
     border-radius: 4px;
     box-shadow: none;
     background-color: #f7f7f9; }
+    .thumper-app .form-control::-webkit-input-placeholder {
+      font-style: italic;
+      color: #636363; }
+    .thumper-app .form-control:-ms-input-placeholder {
+      font-style: italic;
+      color: #636363; }
     .thumper-app .form-control::placeholder {
       font-style: italic;
       color: #636363; }
+    .thumper-app .form-control:focus::-webkit-input-placeholder {
+      font-style: italic;
+      color: #C8C8C8; }
+    .thumper-app .form-control:focus:-ms-input-placeholder {
+      font-style: italic;
+      color: #C8C8C8; }
     .thumper-app .form-control:focus::placeholder {
       font-style: italic;
       color: #C8C8C8; }
@@ -5131,18 +5931,31 @@ This gives us the freedom to exclude files we dont need or want to replace.
   .thumper-app .select-grid {
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
     overflow-y: scroll; }
     .thumper-app .select-grid .select-grid-option {
       background: white;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       padding: 10px;
-      flex-basis: 12.5rem;
-      flex-grow: 1;
+      -ms-flex-preferred-size: 12.5rem;
+          flex-basis: 12.5rem;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
       cursor: pointer; }
       .thumper-app .select-grid .select-grid-option:hover {
         background-color: #C8C8C8; }
@@ -5157,18 +5970,32 @@ This gives us the freedom to exclude files we dont need or want to replace.
           height: 100%;
           font-family: 'FontAwesome';
           text-align: center;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          align-items: center;
-          justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
           font-size: 1.33333em;
-          user-select: none;
+          -webkit-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
           color: white; }
       .thumper-app .select-grid .select-grid-option .select-grid-thumb {
-        flex-grow: 0;
-        flex-basis: 3.375rem;
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        -ms-flex-preferred-size: 3.375rem;
+            flex-basis: 3.375rem;
         position: relative; }
       .thumper-app .select-grid .select-grid-option .select-grid-content {
-        flex-grow: 1;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
         padding-left: 10px; }
       .thumper-app .select-grid .select-grid-option.select-grid-option-selected {
         background-color: #404547; }
@@ -5183,11 +6010,20 @@ This gives us the freedom to exclude files we dont need or want to replace.
           height: 100%;
           font-family: 'FontAwesome';
           text-align: center;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          align-items: center;
-          justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
           font-size: 1.33333em;
-          user-select: none;
+          -webkit-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
           color: white; }
         .thumper-app .select-grid .select-grid-option.select-grid-option-selected .select-grid-content {
           color: white; }
@@ -5199,8 +6035,11 @@ This gives us the freedom to exclude files we dont need or want to replace.
     padding-top: 5px;
     padding-bottom: 5px;
     text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     position: relative; }
     .thumper-app .table-block .table-head .table-head-item {
       font-size: 0.75rem; }
@@ -5242,8 +6081,11 @@ This gives us the freedom to exclude files we dont need or want to replace.
     padding-top: 8px;
     padding-bottom: 8px;
     margin-bottom: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     position: relative; }
     .thumper-app .table-block .table-row input, .thumper-app .table-block .table-row p {
       font-family: "SourceSansPro-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -5279,12 +6121,14 @@ This gives us the freedom to exclude files we dont need or want to replace.
     background: white;
     border: none;
     border-radius: 0;
+    -webkit-transition: .5s all;
     transition: .5s all; }
     .thumper-app .table-block .table-left-btn:hover, .thumper-app .table-block .table-right-btn:hover {
       color: #636363; }
     .thumper-app .table-block .table-left-btn:focus, .thumper-app .table-block .table-right-btn:focus {
       color: #636363;
-      transform: scale(1.25);
+      -webkit-transform: scale(1.25);
+              transform: scale(1.25);
       border: none;
       box-shadow: none; }
   .thumper-app .table-block .table-right-menu, .thumper-app .table-block .table-left-menu {
@@ -5297,6 +6141,7 @@ This gives us the freedom to exclude files we dont need or want to replace.
       background: white;
       border: none;
       border-radius: 0;
+      -webkit-transition: .5s all;
       transition: .5s all; }
       .thumper-app .table-block .table-right-menu > button:hover, .thumper-app .table-block .table-left-menu > button:hover {
         color: #636363; }
@@ -5310,8 +6155,12 @@ This gives us the freedom to exclude files we dont need or want to replace.
     right: 100%; }
   .thumper-app .icon-group {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .thumper-app .icon-group i:not(:first-child) {
       margin-left: 10px; }
     .thumper-app .icon-group.pull-right i {
@@ -5319,22 +6168,29 @@ This gives us the freedom to exclude files we dont need or want to replace.
     .thumper-app .icon-group.pull-right i:not(:last-child) {
       margin-right: 10px; }
   .thumper-app .avatar-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap; }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     .thumper-app .avatar-group .avatar {
       margin-right: 5px;
       margin-bottom: 5px; }
   .thumper-app .avatar {
     border-radius: 50%;
     overflow: hidden;
+    -webkit-transition: -webkit-transform .15s ease-in-out;
+    transition: -webkit-transform .15s ease-in-out;
     transition: transform .15s ease-in-out;
+    transition: transform .15s ease-in-out, -webkit-transform .15s ease-in-out;
     border: 1px solid white; }
     .thumper-app .avatar img {
       width: 100%;
       height: 100%;
       vertical-align: top; }
     .thumper-app .avatar:hover {
-      transform: scale(1.2); }
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
     .thumper-app .avatar.avatar-sm {
       width: 22px;
       height: 22px; }
@@ -5357,11 +6213,20 @@ This gives us the freedom to exclude files we dont need or want to replace.
         content: "\F067";
         font-family: 'FontAwesome';
         text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         font-size: 1.25em;
-        user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
         color: white; }
       .thumper-app .avatar.avatar-action-plus:hover.avatar-action-light:after {
         position: absolute;
@@ -5374,11 +6239,20 @@ This gives us the freedom to exclude files we dont need or want to replace.
         content: "\F067";
         font-family: 'FontAwesome';
         text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         font-size: 1.25em;
-        user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
         color: #636363; }
     .thumper-app .avatar.avatar-action-search:hover {
       cursor: pointer; }
@@ -5393,11 +6267,20 @@ This gives us the freedom to exclude files we dont need or want to replace.
         content: "\F002";
         font-family: 'FontAwesome';
         text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         font-size: 1.25em;
-        user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
         color: white; }
       .thumper-app .avatar.avatar-action-search:hover.avatar-action-light:after {
         position: absolute;
@@ -5410,11 +6293,20 @@ This gives us the freedom to exclude files we dont need or want to replace.
         content: "\F002";
         font-family: 'FontAwesome';
         text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         font-size: 1.25em;
-        user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
         color: #636363; }
     .thumper-app .avatar.avatar-action-times:hover {
       cursor: pointer; }
@@ -5429,11 +6321,20 @@ This gives us the freedom to exclude files we dont need or want to replace.
         content: "\F00D";
         font-family: 'FontAwesome';
         text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         font-size: 1.25em;
-        user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
         color: white; }
       .thumper-app .avatar.avatar-action-times:hover.avatar-action-light:after {
         position: absolute;
@@ -5446,20 +6347,38 @@ This gives us the freedom to exclude files we dont need or want to replace.
         content: "\F00D";
         font-family: 'FontAwesome';
         text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         font-size: 1.25em;
-        user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
         color: #636363; }
     .thumper-app .avatar.avatar-placeholder {
       border: 1px dotted #C8C8C8;
       text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       font-size: 1.33333em;
-      user-select: none; }
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none; }
       .thumper-app .avatar.avatar-placeholder:hover {
         cursor: pointer; }
     .thumper-app .avatar.avatar-status-active {
