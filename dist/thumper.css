@@ -1,7 +1,7 @@
 /*!
  * © Go Nimbly Inc.
  * 2017
- * Thumper 4.0.1
+ * Thumper 5.0.0
  */
 @charset "UTF-8";
 @font-face {
@@ -7303,5 +7303,3 @@ input[type="number"] {
       border-bottom: 1px dotted #959595;
       outline: none;
       background-color: transparent; }
-
-/*# sourceMappingURL=thumper.css.map*/

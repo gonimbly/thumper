@@ -1,7 +1,7 @@
 {
   "name": "thumper",
-  "main": "dist/thumper.js",
-  "version": "4.0.1",
+  "main": "dist/thumper.css",
+  "version": "5.0.0",
   "engines": {
     "node": ">=6.1.0"
   },
@@ -25,8 +25,6 @@
     "express": "^4.15.2",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.10.1",
-    "font-awesome": "^4.6.3",
-    "font-awesome-loader": "^1.0.2",
     "fuse.js": "^2.6.2",
     "jsx-to-string": "^1.1.0",
     "lodash": "^4.17.4",

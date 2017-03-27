@@ -1,7 +1,7 @@
 /*!
  * © Go Nimbly Inc.
  * 2017
- * Thumper 4.0.1
+ * Thumper 5.0.0
  */
 @charset "UTF-8";
 .thumper-app {
@@ -6534,5 +6534,3 @@ This gives us the freedom to exclude files we dont need or want to replace.
         border-bottom: 1px dotted #959595;
         outline: none;
         background-color: transparent; }
-
-/*# sourceMappingURL=thumper-scoped.css.map*/

@@ -1,87 +1,65 @@
 # thumper
 
-> A static website powered by [React.js](http://facebook.github.io/react/)
-> and [Webpack](http://webpack.github.io/).
-
-**Note**: *This project is based on [react-static-boilerplate](https://github.com/koistya/react-static-boilerplate).*
+> A customized version of bootstrap with customized for use with Go Nimbly projects and extended with new custom component styles.
 
 ### Features
 
-✓ Generates static `.html` pages from [React](http://facebook.github.io/react/) components
-✓ Generates routes based on the list of files in the `/pages` folder
-✓ Next generation JavaScript with [Babel](https://github.com/babel/babel)
-✓ [Sass](http://sass-lang.com/) syntax for CSS via [postCSS](https://github.com/postcss/postcss) and [precss](https://github.com/jonathantneal/precss)
-✓ Development web server with [BrowserSync](http://www.browsersync.io) and [React Transform](https://github.com/gaearon/babel-plugin-react-transform)
-✓ Bundling and optimization with [Webpack](http://webpack.github.io/)
-✓ [Code-splitting](https://github.com/webpack/docs/wiki/code-splitting) and async chunk loading
-✓ Easy deployment to [GitHub Pages](https://pages.github.com/), [Amazon S3](http://davidwalsh.name/hosting-website-amazon-s3) or [Firebase](https://www.firebase.com/)
-✓ [Yeoman](http://yeoman.io/) generator ([generator-react-static](https://www.npmjs.com/package/generator-react-static))
+✓ Subjectively better looking than bootstrap!
+✓ Scoped version for inclusion in environments that already have css we don't want to override.
+✓ Webpackable js or css
+✓ Sourcemaps
+✓ Only one file to include
+✓ Font Awesome optional
+
+### Installation: Webpack project
+
+```
+# Make sure to customize the version below
+$ npm i bitbucket:gonimbly/thumper#4.0.1 --save-dev
+```
+
+If you're using webpack then you can add `import 'thumper'` or `require('thumper')` to your project but you will also need a style-loader entry in your webpack config.
+
+If you would like to use [Font Awesome](http://fontawesome.io/) icons in your project then add the latest [cdn link](https://www.bootstrapcdn.com/fontawesome/) or install via npm.
 
 ### Directory Layout
 
 ```
 .
-├── /build/                     # The folder for compiled output
-├── /node_modules/              # 3rd-party libraries and utilities
-├── /components/                # React components
-├── /lib/                       # Libraries and utilities
-├── /pages/                     # React.js-based web pages
-│   ├── /blog/                  # Blog post entries example
-│   ├── /404.js                 # Not Found page
-│   ├── /500.js                 # Error page
-│   ├── /about.js               # About Us page
-│   └── /index.js               # Home page
-├── /static/                    # Static files such as favicon.ico etc.
-├── /test/                      # Unit and integration tests
-├── /tools/                     # Build automation scripts and utilities
-│── app.js                      # The main JavaScript file (entry point)
-│── config.js                   # Website configuration / settings
-│── LICENSE.txt                 # License file
+├── /bin/                       # Build scripts
+├── /node_modules/              # 3rd-party libraries and utilities _generated_
+├── /components/                # Documentation components
+├── /deploy/                    # Deployment folder, _generated_
+├── /dist/                      # Production build folder _generated_
+├── /pages/                     # React.js-based Documentation pages/styles
+│   ├── /examples/              # Documentation examples, can be mixed and matched into pages
+│      ├── /img/                # Documentation example images
+├── /public/                    # Development build folder _generated_
+├── /src/                       # Thumper src files
+├── /views/                     # Server-side views
+│── app.js                      # The main Documentation JavaScript file (entry point)
+│── server.js                   # Server configuration / settings
 │── package.json                # Dev dependencies and NPM scripts
-└── README.md                   # Project overview
 ```
 
-### Getting Started
+### Getting Started with development
 
 Just clone the repo, install Node.js modules and run `npm start`:
 
 ```
-$ git clone -o react-static-boilerplate -b master --single-branch \
-      https://github.com/koistya/react-static-boilerplate.git MyApp
-$ cd MyApp
+$ git clone git@bitbucket.org:gonimbly/thumper.git
 $ npm install
 $ npm start
 ```
 
-Then open [http://localhost:3000/](http://localhost:3000/) in your browser.
+App will open [http://localhost:3000/](http://localhost:3000/) in your browser.
 
 ### How to Test
 
-The unit tests are powered by [chai](http://chaijs.com/) and [mocha](http://mochajs.org/).
-
-```
-$ npm test
-```
+There are no tests, we should add some
 
 ### How to Deploy
 
 ```shell
-$ npm run deploy                # Deploys the project to GitHub Pages
+$ npm run deploy                # Deploys the project to https://nimbly-thumper.herokuapp.com/
 ```
-
-### Related Projects
-
-  * [React Starter Kit](https://github.com/kriasoft/react-starter-kit)
-  * [React Routing](https://github.com/kriasoft/react-routing)
-  * [React Decorators](https://github.com/kriasoft/react-decorators)
-
-### Learn More
-
-  * [Getting Started with React.js](http://facebook.github.io/react/)
-  * [Getting Started with GraphQL and Relay](https://quip.com/oLxzA1gTsJsE)
-  * [React.js Questions on StackOverflow](http://stackoverflow.com/questions/tagged/reactjs)
-  * [React.js Discussion Board](https://discuss.reactjs.org/)
-  * [Learn ES6](https://babeljs.io/docs/learn-es6/), [ES6 Features](https://github.com/lukehoban/es6features#readme)
-
----
-Copyright (c) Grant Helton. All rights reserved.
