@@ -13,9 +13,8 @@
 
 ### Installation: Webpack project
 
-```
-# Make sure to customize the version below
-$ npm i bitbucket:gonimbly/thumper#4.0.1 --save-dev
+```bash
+npm install @gonimbly/thumper --save-dev
 ```
 
 If you're using webpack then you can add `import 'thumper'` or `require('thumper')` to your project but you will also need a style-loader entry in your webpack config.
