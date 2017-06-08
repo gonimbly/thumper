@@ -17,7 +17,7 @@
 npm install @gonimbly/thumper --save-dev
 ```
 
-If you're using webpack then you can add `import 'thumper'` or `require('thumper')` to your project but you will also need a style-loader entry in your webpack config.
+If you're using webpack then you can add `import '@gonimbly/thumper'` or `require('@gonimbly/thumper')` to your project but you will also need a style-loader entry in your webpack config.
 
 If you would like to use [Font Awesome](http://fontawesome.io/) icons in your project then add the latest [cdn link](https://www.bootstrapcdn.com/fontawesome/) or install via npm.
 
