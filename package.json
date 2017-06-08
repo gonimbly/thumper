@@ -1,9 +1,19 @@
 {
-  "name": "thumper",
-  "main": "dist/thumper.css",
+  "name": "@gonimbly/thumper",
   "version": "5.0.0",
-  "engines": {
-    "node": ">=6.1.0"
+  "description": "Bootstrap styles customized for Go Nimbly",
+  "homepage": "https://nimbly-thumper.herokuapp.com/",
+  "license": "MIT",
+  "author": "Grant Helton <grant@gonimbly.com>",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "main": "dist/thumper.css",
+  "repository": "bitbucket:gonimbly/thumper",
+  "scripts": {
+    "deploy": "./bin/deploy.sh",
+    "start": "./bin/start.sh"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",
@@ -49,18 +59,7 @@
     "webpack-livereload-plugin": "^0.10.0",
     "webpack-notifier": "^1.5.0"
   },
-  "dependencies": {
-    "ejs": "^2.5.2",
-    "express": "^4.14.0"
-  },
-  "scripts": {
-    "start": "./bin/start.sh",
-    "deploy": "./bin/deploy.sh"
-  },
-  "repository": {
-    "url": "git@bitbucket.org:gonimbly/thumper.git",
-    "type": "git"
-  },
-  "author": "Grant Helton <grant@gonimbly.com>",
-  "license": "MIT"
+  "engines": {
+    "node": ">=6.1.0"
+  }
 }
