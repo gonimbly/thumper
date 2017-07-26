@@ -7,22 +7,6 @@ const AvatarBasic = {};
 AvatarBasic.title = 'Avatar Basic';
 
 AvatarBasic.template = class extends Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      primaryOpen: false,
-      secondaryOpen: false
-    };
-  }
-
-  toggle(key) {
-    var newValue = {};
-    newValue[key] = !this.state[key];
-    this.setState(newValue);
-  }
-
   render() {
     return (
       <CodeCard id={'AvatarBasic'} title={AvatarBasic.title}>

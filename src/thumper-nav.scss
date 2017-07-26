@@ -1,4 +1,21 @@
 .nav {
+  &.nav-tabs {
+    border-color: $gray-darkest;
+
+    .nav-link {
+      border: none;
+      color: $gray-darker;
+
+      &.active {
+        color: $gray-darkest;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 4px solid $gray-darkest;
+      }
+    }
+  }
+
   &.nav-pills {
     .nav-link {
       
