@@ -1,17 +1,17 @@
 .nav {
   &.nav-tabs {
-    border-color: $gray-darkest;
+    border-color: $brand-secondary;
 
     .nav-link {
       border: none;
       color: $gray-darker;
 
       &.active {
-        color: $gray-darkest;
+        color: $brand-secondary;
         border-top: none;
         border-left: none;
         border-right: none;
-        border-bottom: 4px solid $gray-darkest;
+        border-bottom: 4px solid $brand-secondary;
       }
     }
   }
@@ -24,7 +24,9 @@
       }
 
       &.active {
-      
+        background-color: $brand-secondary;
+        color: white;
+
         &:hover {
           text-decoration: none;
         }
