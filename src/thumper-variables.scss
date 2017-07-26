@@ -38,7 +38,7 @@ $gray-cool-light:           #F8FAFC !default;
 
 $brand-primary:             #84BD5E !default;
 $brand-primary-light:       #B7D383 !default;
-$brand-secondary:           $gray-darker !default;
+$brand-secondary:           #424f6d !default;
 $brand-success:             $brand-primary !default;
 $brand-info:                #5bc0de !default;
 $brand-warning:             #F3B216 !default;
@@ -434,9 +434,9 @@ $input-color-placeholder:        $gray !default;
 // $pagination-hover-bg:                  $gray-lighter !default;
 // $pagination-hover-border:              #ddd !default;
 
-// $pagination-active-color:              #fff !default;
-// $pagination-active-bg:                 $brand-primary !default;
-// $pagination-active-border:             $brand-primary !default;
+$pagination-active-color:              #fff !default;
+$pagination-active-bg:                 $brand-secondary !default;
+$pagination-active-border:             $brand-secondary !default;
 
 // $pagination-disabled-color:            $gray-light !default;
 // $pagination-disabled-bg:               #fff !default;
@@ -513,15 +513,15 @@ $card-spacer-y:            $grid-gutter-width !default;
 // $popover-bg:                          #fff !default;
 // $popover-max-width:                   276px !default;
 // $popover-border-width:                $border-width !default;
-$popover-border-color:                $gray-darker !default;
+$popover-border-color:                $brand-secondary !default;
 
-$popover-title-bg:                    $gray-darker !default;
+$popover-title-bg:                    $brand-secondary !default;
 
 // $popover-arrow-width:                 10px !default;
-$popover-arrow-color:                 $gray-darker !default;
+$popover-arrow-color:                 $brand-secondary !default;
 
 // $popover-arrow-outer-width:           ($popover-arrow-width + 1) !default;
-$popover-arrow-outer-color:           fade-in($gray-darker, 0.05) !default;
+$popover-arrow-outer-color:           fade-in($brand-secondary, 0.05) !default;
 $popover-title-padding-y:             11px;
 // $popover-content-padding-y:           1rem;
 $popover-content-padding-x:           1rem;

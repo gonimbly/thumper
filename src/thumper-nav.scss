@@ -1,4 +1,21 @@
 .nav {
+  &.nav-tabs {
+    border-color: $brand-secondary;
+
+    .nav-link {
+      border: none;
+      color: $gray-darker;
+
+      &.active {
+        color: $brand-secondary;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 4px solid $brand-secondary;
+      }
+    }
+  }
+
   &.nav-pills {
     .nav-link {
       
@@ -7,7 +24,9 @@
       }
 
       &.active {
-      
+        background-color: $brand-secondary;
+        color: white;
+
         &:hover {
           text-decoration: none;
         }

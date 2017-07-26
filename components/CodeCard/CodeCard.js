@@ -14,25 +14,42 @@ class CodeCard extends Component {
     this.collapse = this.collapse.bind(this);
     this.show = this.show.bind(this);
     this.toggle = this.toggle.bind(this);
+    
+    const {stringCode, displayChildren, cardLinks} = this.getChildrenStateValues(props);
+    this.state = {
+      isOpened: false,
+      forceOpen: false,
+      // the children processed down to a string that represents their code
+      stringCode,
+      // the react children to render
+      displayChildren,
+      // links to documentation for ex
+      cardLinks
+    };
+  }
 
+  getChildrenStateValues(props) {
     let allChildren = props.children.hasOwnProperty('length') ? props.children : [props.children];
-    let separatedChildren = this.separateChildren(allChildren);
-    let codeChildren = this.removeNotCodeChildren(separatedChildren.displayChildren, '...');
+    // process all children to retrieve the displayChildren and any extra cardLinks
+    let {displayChildren, cardLinks} = this.separateChildren(allChildren);
+    // you can include a class 'notcode' to use an element for display purposes and not render it in the code example, this method strips them out
+    let codeChildren = this.removeNotCodeChildren(displayChildren, '...');
+    // process all the children and compile them into a string that we can render for the code example
     let strChildren = [];
     forEach(codeChildren, child => {
       strChildren.push(jsxToString(child));
     });
     let stringCode = strChildren.join('\n');
-    this.state = {
-      isOpened: false,
-      forceOpen: false,
-      displayChildren: separatedChildren.displayChildren,
-      cardLinks: separatedChildren.cardLinks,
+
+    return {
+      displayChildren,
+      cardLinks,
       stringCode
-    };
+    }
   }
 
   removeNotCodeChildren(children, replaceItems) {
+    // you can include a class 'notcode' to use an element for display purposes and not render it in the code example, this method strips them out
     var docChildren = [];
     forEach(children, child => {
       // remove if child is notcode
@@ -58,6 +75,7 @@ class CodeCard extends Component {
   }
 
   separateChildren(children) {
+    // process all children to retrieve the displayChildren and any extra cardLinks
     var cardLinks = [];
     var displayChildren = [];
     forEach(children, child => {
@@ -127,6 +145,10 @@ class CodeCard extends Component {
 
   componentWillUnmount() {
     this.state.clipboard.destroy();
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState(this.getChildrenStateValues(nextProps))
   }
 
 }

@@ -10,7 +10,7 @@ NavTabs.template = (props) => {
     <CodeCard id={'navTabs'} title={NavTabs.title}>
       <ul className='nav nav-tabs'>
         <li className='nav-item'>
-          <a className='nav-link active' href='#'>Active</a>
+          <a className='nav-link active'>Active</a>
         </li>
         <li className='nav-item'>
           <a className='nav-link' href='#'>Link</a>

@@ -3,6 +3,8 @@ import Filter from '../components/Filter/Filter';
 import CodeCards from '../components/CodeCards/CodeCards';
 import RSDropdowns from './examples/rsDropdowns.example.js';
 import RSSearchableDropdowns from './examples/rsSearchableDropdowns.example.js';
+import RSPagination from './examples/rsPagination.example.js';
+import RSTabs from './examples/rsTabs.example.js';
 
 class Forms extends Component {
 
@@ -12,7 +14,9 @@ class Forms extends Component {
       filteredData: null,
       cards: [
         RSDropdowns,
-        RSSearchableDropdowns
+        RSSearchableDropdowns,
+        RSPagination,
+        RSTabs
       ]
     };
   }
