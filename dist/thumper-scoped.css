@@ -1,7 +1,7 @@
 /*!
  * © Go Nimbly Inc.
  * 2017
- * Thumper 5.0.0
+ * Thumper 5.0.5
  */
 @charset "UTF-8";
 .thumper-app {
@@ -287,10 +287,10 @@ This gives us the freedom to exclude files we dont need or want to replace.
   .thumper-app blockquote {
     margin: 0 0 1rem; }
   .thumper-app a {
-    color: #636363;
+    color: #424f6d;
     text-decoration: none; }
     .thumper-app a:focus, .thumper-app a:hover {
-      color: #3d3d3d;
+      color: #252c3d;
       text-decoration: underline; }
   .thumper-app a:not([href]):not([tabindex]) {
     color: inherit;
@@ -464,7 +464,6 @@ This gives us the freedom to exclude files we dont need or want to replace.
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 4px;
-    -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     max-width: 100%;
     height: auto; }
@@ -1481,7 +1480,6 @@ This gives us the freedom to exclude files we dont need or want to replace.
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
     .thumper-app .form-control::-ms-expand {
       background-color: transparent;
@@ -1722,7 +1720,6 @@ This gives us the freedom to exclude files we dont need or want to replace.
         top: 0; } }
   .thumper-app .fade {
     opacity: 0;
-    -webkit-transition: opacity 0.15s linear;
     transition: opacity 0.15s linear; }
     .thumper-app .fade.show {
       opacity: 1; }
@@ -1738,7 +1735,6 @@ This gives us the freedom to exclude files we dont need or want to replace.
     position: relative;
     height: 0;
     overflow: hidden;
-    -webkit-transition: height 0.35s ease;
     transition: height 0.35s ease; }
   .thumper-app .dropup,
   .thumper-app .dropdown {
@@ -2786,10 +2782,8 @@ This gives us the freedom to exclude files we dont need or want to replace.
   @media (min-width: 576px) {
     .thumper-app .card-columns {
       -webkit-column-count: 3;
-         -moz-column-count: 3;
               column-count: 3;
       -webkit-column-gap: 1.25rem;
-         -moz-column-gap: 1.25rem;
               column-gap: 1.25rem; }
       .thumper-app .card-columns .card {
         display: inline-block;
@@ -2836,8 +2830,8 @@ This gives us the freedom to exclude files we dont need or want to replace.
   .thumper-app .page-item.active .page-link {
     z-index: 2;
     color: #fff;
-    background-color: #84BD5E;
-    border-color: #84BD5E; }
+    background-color: #424f6d;
+    border-color: #424f6d; }
   .thumper-app .page-item.disabled .page-link {
     color: #818a91;
     pointer-events: none;
@@ -2850,11 +2844,11 @@ This gives us the freedom to exclude files we dont need or want to replace.
     padding: 0.5rem 0.75rem;
     margin-left: -1px;
     line-height: 1.25;
-    color: #636363;
+    color: #424f6d;
     background-color: #fff;
     border: 1px solid #ddd; }
     .thumper-app .page-link:focus, .thumper-app .page-link:hover {
-      color: #3d3d3d;
+      color: #252c3d;
       text-decoration: none;
       background-color: #eceeef;
       border-color: #ddd; }
@@ -3012,7 +3006,6 @@ This gives us the freedom to exclude files we dont need or want to replace.
     color: #fff;
     background-color: #84BD5E; }
   .thumper-app .progress-bar-striped {
-    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 1rem 1rem; }
   .thumper-app .progress-bar-animated {
@@ -3241,7 +3234,6 @@ This gives us the freedom to exclude files we dont need or want to replace.
     overflow: hidden;
     outline: 0; }
     .thumper-app .modal.fade .modal-dialog {
-      -webkit-transition: -webkit-transform 0.3s ease-out;
       transition: -webkit-transform 0.3s ease-out;
       transition: transform 0.3s ease-out;
       transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
@@ -5466,7 +5458,6 @@ This gives us the freedom to exclude files we dont need or want to replace.
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    -webkit-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
     border: none;
     cursor: pointer;
@@ -5495,7 +5486,7 @@ This gives us the freedom to exclude files we dont need or want to replace.
     background-color: #84BD5E; }
   .thumper-app .btn-secondary {
     color: #fff;
-    background-color: #636363; }
+    background-color: #424f6d; }
   .thumper-app .btn-info {
     color: #fff;
     background-color: #5bc0de; }
@@ -5523,8 +5514,8 @@ This gives us the freedom to exclude files we dont need or want to replace.
     border-color: #84BD5E;
     color: #84BD5E; }
   .thumper-app .btn-outline-secondary {
-    border-color: #636363;
-    color: #636363; }
+    border-color: #424f6d;
+    color: #424f6d; }
   .thumper-app .btn-outline-info {
     border-color: #5bc0de;
     color: #5bc0de; }
@@ -5539,7 +5530,7 @@ This gives us the freedom to exclude files we dont need or want to replace.
     color: #E04462; }
   .thumper-app .btn-link {
     font-weight: normal;
-    color: #636363;
+    color: #424f6d;
     border-radius: 4px; }
     .thumper-app .btn-link, .thumper-app .btn-link:active, .thumper-app .btn-link.active, .thumper-app .btn-link:disabled {
       background-color: transparent; }
@@ -5548,7 +5539,7 @@ This gives us the freedom to exclude files we dont need or want to replace.
     .thumper-app .btn-link:hover {
       border-color: transparent; }
     .thumper-app .btn-link:focus, .thumper-app .btn-link:hover {
-      color: #3d3d3d;
+      color: #252c3d;
       text-decoration: underline;
       background-color: transparent; }
     .thumper-app .btn-link:disabled {
@@ -5658,23 +5649,37 @@ This gives us the freedom to exclude files we dont need or want to replace.
         -ms-flex-direction: column;
             flex-direction: column; }
   .thumper-app .bg-secondary {
-    background-color: #636363 !important; }
+    background-color: #424f6d !important; }
   .thumper-app a.bg-secondary:focus, .thumper-app a.bg-secondary:hover {
-    background-color: #4a4a4a !important; }
+    background-color: #2f384d !important; }
   .thumper-app .bg-primary-light {
     background-color: #B7D383 !important; }
   .thumper-app a.bg-primary-light:focus, .thumper-app a.bg-primary-light:hover {
     background-color: #a1c65d !important; }
   .thumper-app .btn .fa {
     margin-right: 5px; }
+  .thumper-app .nav.nav-tabs {
+    border-color: #424f6d; }
+    .thumper-app .nav.nav-tabs .nav-link {
+      border: none;
+      color: #636363; }
+      .thumper-app .nav.nav-tabs .nav-link.active {
+        color: #424f6d;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 4px solid #424f6d; }
   .thumper-app .nav.nav-pills .nav-link:hover {
     text-decoration: underline; }
-  .thumper-app .nav.nav-pills .nav-link.active:hover {
-    text-decoration: none; }
+  .thumper-app .nav.nav-pills .nav-link.active {
+    background-color: #424f6d;
+    color: white; }
+    .thumper-app .nav.nav-pills .nav-link.active:hover {
+      text-decoration: none; }
   .thumper-app .bg-secondary .nav-item > .nav-link {
     color: white; }
     .thumper-app .bg-secondary .nav-item > .nav-link.active {
-      background-color: #4a4a4a;
+      background-color: #2f384d;
       color: white; }
   .thumper-app .bg-primary .navbar-brand {
     color: white; }
@@ -5725,8 +5730,8 @@ This gives us the freedom to exclude files we dont need or want to replace.
     .thumper-app .card .card-header {
       margin-bottom: 0; }
   .thumper-app .card-secondary {
-    background-color: #636363;
-    border-color: #636363; }
+    background-color: #424f6d;
+    border-color: #424f6d; }
     .thumper-app .card-secondary .card-header,
     .thumper-app .card-secondary .card-footer {
       background-color: transparent; }
@@ -5763,7 +5768,6 @@ This gives us the freedom to exclude files we dont need or want to replace.
   .thumper-app .dropdown .dropdown-menu {
     border: none;
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
-    -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     margin-top: 0;
     padding-top: 0;
@@ -6107,7 +6111,7 @@ This gives us the freedom to exclude files we dont need or want to replace.
       font-weight: bold;
       margin-bottom: 0; }
   .thumper-app .table-block .table-summary {
-    background-color: #636363;
+    background-color: #424f6d;
     border-radius: 0 0 17px 17px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -6121,7 +6125,6 @@ This gives us the freedom to exclude files we dont need or want to replace.
     background: white;
     border: none;
     border-radius: 0;
-    -webkit-transition: .5s all;
     transition: .5s all; }
     .thumper-app .table-block .table-left-btn:hover, .thumper-app .table-block .table-right-btn:hover {
       color: #636363; }
@@ -6141,7 +6144,6 @@ This gives us the freedom to exclude files we dont need or want to replace.
       background: white;
       border: none;
       border-radius: 0;
-      -webkit-transition: .5s all;
       transition: .5s all; }
       .thumper-app .table-block .table-right-menu > button:hover, .thumper-app .table-block .table-left-menu > button:hover {
         color: #636363; }
@@ -6179,7 +6181,6 @@ This gives us the freedom to exclude files we dont need or want to replace.
   .thumper-app .avatar {
     border-radius: 50%;
     overflow: hidden;
-    -webkit-transition: -webkit-transform .15s ease-in-out;
     transition: -webkit-transform .15s ease-in-out;
     transition: transform .15s ease-in-out;
     transition: transform .15s ease-in-out, -webkit-transform .15s ease-in-out;
@@ -6425,7 +6426,7 @@ This gives us the freedom to exclude files we dont need or want to replace.
     word-wrap: break-word;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #636363;
+    border: 1px solid #424f6d;
     border-radius: 4px;
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15); }
     .thumper-app .popover.popover-top, .thumper-app .popover.bs-tether-element-attached-bottom {
@@ -6436,11 +6437,11 @@ This gives us the freedom to exclude files we dont need or want to replace.
       .thumper-app .popover.popover-top::before, .thumper-app .popover.bs-tether-element-attached-bottom::before {
         bottom: -11px;
         margin-left: -11px;
-        border-top-color: #636363; }
+        border-top-color: #424f6d; }
       .thumper-app .popover.popover-top::after, .thumper-app .popover.bs-tether-element-attached-bottom::after {
         bottom: -10px;
         margin-left: -10px;
-        border-top-color: #636363; }
+        border-top-color: #424f6d; }
     .thumper-app .popover.popover-right, .thumper-app .popover.bs-tether-element-attached-left {
       margin-left: 10px; }
       .thumper-app .popover.popover-right::before, .thumper-app .popover.popover-right::after, .thumper-app .popover.bs-tether-element-attached-left::before, .thumper-app .popover.bs-tether-element-attached-left::after {
@@ -6449,11 +6450,11 @@ This gives us the freedom to exclude files we dont need or want to replace.
       .thumper-app .popover.popover-right::before, .thumper-app .popover.bs-tether-element-attached-left::before {
         left: -11px;
         margin-top: -11px;
-        border-right-color: #636363; }
+        border-right-color: #424f6d; }
       .thumper-app .popover.popover-right::after, .thumper-app .popover.bs-tether-element-attached-left::after {
         left: -10px;
         margin-top: -10px;
-        border-right-color: #636363; }
+        border-right-color: #424f6d; }
     .thumper-app .popover.popover-bottom, .thumper-app .popover.bs-tether-element-attached-top {
       margin-top: 10px; }
       .thumper-app .popover.popover-bottom::before, .thumper-app .popover.popover-bottom::after, .thumper-app .popover.bs-tether-element-attached-top::before, .thumper-app .popover.bs-tether-element-attached-top::after {
@@ -6462,11 +6463,11 @@ This gives us the freedom to exclude files we dont need or want to replace.
       .thumper-app .popover.popover-bottom::before, .thumper-app .popover.bs-tether-element-attached-top::before {
         top: -11px;
         margin-left: -11px;
-        border-bottom-color: #636363; }
+        border-bottom-color: #424f6d; }
       .thumper-app .popover.popover-bottom::after, .thumper-app .popover.bs-tether-element-attached-top::after {
         top: -10px;
         margin-left: -10px;
-        border-bottom-color: #636363; }
+        border-bottom-color: #424f6d; }
       .thumper-app .popover.popover-bottom .popover-title::before, .thumper-app .popover.bs-tether-element-attached-top .popover-title::before {
         position: absolute;
         top: 0;
@@ -6475,7 +6476,7 @@ This gives us the freedom to exclude files we dont need or want to replace.
         width: 20px;
         margin-left: -10px;
         content: "";
-        border-bottom: 1px solid #636363; }
+        border-bottom: 1px solid #424f6d; }
     .thumper-app .popover.popover-left, .thumper-app .popover.bs-tether-element-attached-right {
       margin-left: -10px; }
       .thumper-app .popover.popover-left::before, .thumper-app .popover.popover-left::after, .thumper-app .popover.bs-tether-element-attached-right::before, .thumper-app .popover.bs-tether-element-attached-right::after {
@@ -6484,18 +6485,18 @@ This gives us the freedom to exclude files we dont need or want to replace.
       .thumper-app .popover.popover-left::before, .thumper-app .popover.bs-tether-element-attached-right::before {
         right: -11px;
         margin-top: -11px;
-        border-left-color: #636363; }
+        border-left-color: #424f6d; }
       .thumper-app .popover.popover-left::after, .thumper-app .popover.bs-tether-element-attached-right::after {
         right: -10px;
         margin-top: -10px;
-        border-left-color: #636363; }
+        border-left-color: #424f6d; }
   .thumper-app .popover-title {
     padding: 11px 14px;
     margin-bottom: 0;
     text-align: center;
-    background-color: #636363;
+    background-color: #424f6d;
     color: white;
-    border-bottom: 1px solid #565656;
+    border-bottom: 1px solid #38435d;
     border-top-right-radius: calc(4px - 1px);
     border-top-left-radius: calc(4px - 1px); }
     .thumper-app .popover-title:empty {
@@ -6534,3 +6535,6 @@ This gives us the freedom to exclude files we dont need or want to replace.
         border-bottom: 1px dotted #959595;
         outline: none;
         background-color: transparent; }
+  .thumper-app .tab-content {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem; }
