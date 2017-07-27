@@ -4,20 +4,32 @@
 
 ### Features
 
-✓ Subjectively better looking than bootstrap!
-✓ Scoped version for inclusion in environments that already have css we don't want to override.
-✓ Webpackable js or css
-✓ Sourcemaps
-✓ Only one file to include
-✓ Font Awesome optional
+✓ Subjectively better looking than bootstrap!  
+✓ Scoped version for inclusion in environments that already have css we don't want to override.  
+✓ Webpackable js or css  
+✓ Sourcemaps  
+✓ Only one file to include  
+✓ Font Awesome optional  
 
-### Installation: Webpack project
+### Install
 
 ```bash
-npm install @gonimbly/thumper --save-dev
+yarn add @gonimbly/thumper
 ```
 
-If you're using webpack then you can add `import '@gonimbly/thumper'` or `require('@gonimbly/thumper')` to your project but you will also need a style-loader entry in your webpack config.
+### Usage
+
+At the beginning of your project's main `styles.css` add:
+
+```css
+@import '~@gonimbly/thumper/dist/thumper.css';
+```
+
+and in your app's entry point (e.g. `index.js`) add:
+
+```javascript
+import './styles.css';
+```
 
 If you would like to use [Font Awesome](http://fontawesome.io/) icons in your project then add the latest [cdn link](https://www.bootstrapcdn.com/fontawesome/) or install via npm.
 
@@ -61,4 +73,11 @@ There are no tests, we should add some
 
 ```shell
 $ npm run deploy                # Deploys the project to https://nimbly-thumper.herokuapp.com/
+```
+
+### Publishing a new version on NPM
+
+```
+npm version <major|minor|patch>
+npm publish
 ```
