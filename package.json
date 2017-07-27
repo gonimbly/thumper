@@ -9,13 +9,18 @@
   "main": "dist/thumper.css",
   "repository": "bitbucket:gonimbly/thumper",
   "scripts": {
-    "heroku-prebuild": "./scripts/npmrc.sh",
-    "precommit": "lint-staged",
+    "build": "webpack --config webpackConfig.thumper.js --bail",
+    "build-app": "webpack --config webpackConfig.app.js --bail",
+    "clean": "rimraf dist",
     "deploy": "./bin/deploy.sh",
+    "heroku-prebuild": "npm-run-all npmrc clean build build-app",
+    "npmrc": "./scripts/npmrc.sh",
+    "precommit": "lint-staged",
+    "prepublishOnly": "npm-run-all clean build",
     "start": "./bin/start.sh"
   },
   "engines": {
-    "yarn": "~0.27.5"
+    "node": "6.1.0"
   },
   "lint-staged": {
     "*.js": ["eslint --fix", "git add"],
@@ -54,6 +59,7 @@
     "lodash": "^4.17.4",
     "node-sass": "^4.5.1",
     "nodemon": "^1.10.2",
+    "npm-run-all": "^4.0.2",
     "postcss-loader": "^1.3.3",
     "prettier": "^1.5.2",
     "progress-bar-webpack-plugin": "^1.9.3",
@@ -68,14 +74,12 @@
     "react-syntax-highlighter": "^5.1.1",
     "react-transition-group": "^1.1.2",
     "reactstrap": "^4.3.0",
+    "rimraf": "^2.6.1",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.15.0",
     "url-loader": "^0.5.7",
     "webpack": "^2.3.0",
     "webpack-livereload-plugin": "^0.10.0",
     "webpack-notifier": "^1.5.0"
-  },
-  "engines": {
-    "node": "6.1.0"
   }
 }
