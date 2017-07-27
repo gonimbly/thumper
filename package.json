@@ -9,9 +9,13 @@
   "main": "dist/thumper.css",
   "repository": "bitbucket:gonimbly/thumper",
   "scripts": {
+    "heroku-prebuild": "./scripts/npmrc.sh",
     "precommit": "lint-staged",
     "deploy": "./bin/deploy.sh",
     "start": "./bin/start.sh"
+  },
+  "engines": {
+    "yarn": "~0.27.5"
   },
   "lint-staged": {
     "*.js": ["eslint --fix", "git add"],
