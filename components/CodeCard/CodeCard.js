@@ -45,7 +45,7 @@ class CodeCard extends Component {
       displayChildren,
       cardLinks,
       stringCode
-    }
+    };
   }
 
   removeNotCodeChildren(children, replaceItems) {
@@ -148,7 +148,7 @@ class CodeCard extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState(this.getChildrenStateValues(nextProps))
+    this.setState(this.getChildrenStateValues(nextProps));
   }
 
 }
