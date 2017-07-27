@@ -16,7 +16,7 @@
     "start": "./bin/start.sh"
   },
   "dependencies": {
-    "express": "^4.15.2",
+    "express": "^4.15.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",
