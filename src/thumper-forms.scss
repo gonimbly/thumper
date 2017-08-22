@@ -9,9 +9,10 @@ input {
 }
 
 .form-control {
-  border-radius: $border-radius;
+  border: none;
   box-shadow: none;
   background-color: $gray-lightest;
+  border: 1px solid transparent;
 
   &::placeholder {
     font-style: italic;
@@ -19,6 +20,8 @@ input {
   }
 
   &:focus {
+    background-color: $gray-lightest;
+    border: 1px solid $brand-secondary;
     &::placeholder {
       font-style: italic;
       color: $gray;
@@ -27,16 +30,18 @@ input {
 }
 
 /* Hide HTML5 Up and Down arrows. */
-input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
- 
-input[type="number"] {
-    -moz-appearance: textfield;
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-[type="checkbox"], [type="radio"] {
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+[type="checkbox"],
+[type="radio"] {
   margin-right: 10px;
 }
 .inline-input {
@@ -44,7 +49,6 @@ input[type="number"] {
 }
 
 // Select with thumbnails
-
 
 @mixin overlay-box() {
   position: absolute;
@@ -85,7 +89,7 @@ input[type="number"] {
     flex-grow: 1;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
       background-color: $gray;
 
       .select-grid-thumb:after {
