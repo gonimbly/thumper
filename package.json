@@ -17,7 +17,7 @@
     "heroku-prebuild": "npm run npmrc",
     "npmrc": "./scripts/npmrc.sh",
     "precommit": "lint-staged",
-    "prepublishOnly": "npm-run-all clean build",
+    "prepack": "npm-run-all clean build",
     "start": "./bin/start.sh"
   },
   "engines": {
