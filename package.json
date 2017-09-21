@@ -21,7 +21,8 @@
     "start": "./bin/start.sh"
   },
   "engines": {
-    "yarn": "~0.27.5"
+    "node": ">=7.10.1",
+    "yarn": "0.27.5 || >=1.0.2"
   },
   "lint-staged": {
     "*.js": ["eslint --fix", "git add"],
