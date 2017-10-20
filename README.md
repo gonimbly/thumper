@@ -2,6 +2,8 @@
 
 > A customized version of bootstrap with customized for use with Go Nimbly projects and extended with new custom component styles.
 
+[Examples and Documentation](https://nimbly-thumper.herokuapp.com/)
+
 ### Features
 
 ✓ Subjectively better looking than bootstrap!  
@@ -71,9 +73,7 @@ There are no tests, we should add some
 
 ### How to Deploy
 
-```shell
-$ npm run deploy                # Deploys the project to https://nimbly-thumper.herokuapp.com/
-```
+Heroku deploys commits to `master` automatically.
 
 ### Publishing a new version on NPM
 
